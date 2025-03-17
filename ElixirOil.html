@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argan Elixir Oil</title>
+    <style>
+        body {
+            font-family: 'The seasons', The seasons;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #8a8a86;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #8a8a86;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            background: #8a8a86;
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 5px rgba(243, 241, 241, 0.1);
+            position: relative;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem;
+            background: #eee5e5;
+        }
+        nav a {
+            text-decoration: none;
+            color: #555151;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        h1 {
+            color: #f6f6f6;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+        .image-slider {
+            position: relative;
+            width: 90%;
+            max-width: 800px;
+            overflow: hidden;
+            margin: 0 auto 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        .navigation button {
+            background-color: #464445;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .navigation button:hover {
+            background-color: #c39818;
+        }
+        .cta-button {
+            background-color: #575558;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            
+        }
+        .center 
+        {
+display: flex;
+justify-content: center;
+        }
+        footer {
+            background: linear-gradient( to top, #716252 , #eee5e5);
+            text-align: center;
+            padding: 1rem 0;
+        }
+        footer p {
+            color: #281f31;
+        }
+    </style>
+</head>
+<body>
+    <header><a href="HeraHair.html"> <img src="new logo2.png" alt="HERA HAIR ESSENTIALS" class="right" width="80" length=" 50"></a>
+    </header>
+    <nav>
+        <a href="productspage.html">Products</a>
+        <a href="contactus.html">Contact</a>
+        <a href="HeraHair.html">Home</a>
+    </nav>
+    <div class="container">
+        <div class="image-slider">
+            <div class="slides">
+                <img src="oilbottle2.jpg" alt="argan elixir oil">
+                <img src="oilopen.jpg" alt="Spray Heat Protector Image 2" >
+                <img src="image3.jpg" alt="Spray Heat Protector Image 3">
+            </div>
+        </div>
+        <div class="navigation">
+            <button onclick="moveSlide(1)">Previous</button>
+            <button onclick="moveSlide(1)">Next</button>
+        </div>
+       <div class="center">
+
+        <button  class="cta-button" data-en="Buy Now"><a href="" Buy Now ></a></button>
+       </div>
+
+        <h1>Argan Elixir oil</h1>
+        <p>Introducing our Argan Hair Elixir <strong></strong>, carefully crafted with the finest Argan oil to provide the following benefits:</p>
+        <ul>
+            <li><strong>Healthy Hair:</strong> Rapid-absorbing elixir oil that is a savior for chemically damaged hair or dry hair without a heavy sensation.</li>
+            <li><strong>Damage repair:</strong> Our elixir is designed to repair and reconstruct hair fibers, preventing breakage and bringing life back to your hair.</li>
+            <li><strong>:</strong>.</li>
+        </ul>
+    </div>
+
+    <script>
+        const slides = document.querySelector('.slides');
+        let currentSlide = 0;
+
+        function moveSlide(direction) {
+            const totalSlides = slides.children.length;
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+    </script>
+      <footer>
+        <p data-en="&copy; 2023 Hera Hair Essentials. All rights reserved." data-es="&copy; 2023 Hera Hair Essentials. Todos los derechos reservados.">&copy; 2023 Hera Hair Essentials. All rights reserved.</p>
+    </footer>
+</body>
+</html>
