@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hera Hair Essentials</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'time', Open-Sans;
+            margin: 0;
+            padding: 0;
+            background-image:url(backgroundbeige.png);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            background-image: url(backgroundbeige.png);
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 5px rgba(243, 241, 241, 0.1);
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #fcfafa;
+            margin: 0;
+        }
+
+        .language-toggle {
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+            background-color: #4a4743;
+            color: #eee5ec;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .language-toggle:hover {
+            background-color: #86827a;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem;
+            background-color: #555;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fcfafa;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #7d7780;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: color(srgb red green blue);
+            animation: bounce 2s infinite;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            color: #edebef;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            color: #eee5ec;
+        }
+
+        .cta-button {
+            background-color: #575558;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .product {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 1.5rem;
+            max-width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .product h3 {
+            color: #100f0f;
+            margin: 1rem 0;
+        }
+
+        .product p {
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: linear-gradient( to top, #6b6a6b , #9a9898);
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            color: #281f31;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Scroll effect */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hera Hair Essentials</h1>
+        <button class="language-toggle" onclick="toggleLanguage()">EN/ES</button>
+    </header>
+    <nav>
+        <a href="productspage.html">Products</a>
+        <a href="abouthera.html">About</a>
+        <a href="contactus.html">Contact</a>
+    </nav>
+    <div class="hero">
+        <img src="oilsprayduo.jpg" alt="Hair Oil and Beach" style="align-self: baseline;" width="1500" height="900">
+    </div>
+    <div class="hero">
+        <video autoplay>
+            <source src="" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        <h2 data-en="Your Hair Deserves the Best" data-es="Tu cabello merece lo mejor">Your Hair Deserves the Best</h2>
+        <p data-en="Discover premium hair care essentials tailored for every style." data-es="Descubre productos premium para el cuidado del cabello adaptados a cada estilo.">Discover premium hair care essentials tailored for every style.</p>
+        <button class="cta-button" data-en="Shop Now" data-es="Comprar Ahora">Shop Now</button>
+    </div>
+    
+    <section id="products" class="products">
+        <div class="product">
+            <a href="ElixirOil.html">
+            <img src="oilbottle2.jpg" alt="Product 1">
+        </a>
+            <h3 data-en="Hair Elixir Oil" data-es="Hair Elixir Oil">Hair Elixir Oil</h3>
+            <p data-en="Tame frizz, add shine, and health with our lightweight serum." data-es="Controla, añade brillo, y salud a tu cabello con nuestro suero ligero.">Tame frizz, add shine, and health with our lightweight serum.</p>
+            <a href="https://heraesntls.myshopify.com/products/hera-argan-hair-oil"><button class="cta-button" data-en="Buy Now" data-es="Comprar">Buy Now</button></a>
+        </div>
+        <div class="product">
+            <a href="HeatProtectant.html">
+            <img src="heatspray.jpg" alt="Product 2">
+            </a>
+            <h3 data-en="Heatlocks Heat Protectant" data-es="Heatlocks Heat Protectant">Heatlocks Heat Protectant</h3>
+            <p data-en="Boost volume and cleanse gently for fuller, healthier hair." data-es="Aumenta el volumen y limpia suavemente para un cabello más lleno y saludable.">Boost volume and cleanse gently for fuller, healthier hair.</p>
+            <a href="https://heraesntls.myshopify.com/products/hera-heat-protector"><button class="cta-button" data-en="Buy Now" data-es="Comprar">Buy Now</button></a>
+        </div>
+        <div class="product">
+            <img src="Twisty 1.jpeg" alt="Twisty Straightener" class="center" width="50" length="200">
+            <h3 data-en="Twisty Straightener" data-es="Plancha Twisty">Twisty Straightener</h3>
+            <p data-en="Evolutionary Hair Straightener with an innovative design that features a unique twist in the middle, making it super easy to create effortlessly chic wavy looks" data-es="Hidrata y repara con nuestro acondicionador profundo nutritivo.">Evolutionary Hair Straightener with an innovative design that features a unique twist in the middle, making it super easy to create effortlessly chic wavy looks.</p>
+            <a href="https://heraesntls.myshopify.com/products/hera-twisty-straightener"><button class="cta-button" data-en="Buy Now" data-es="Comprar">Buy Now</button></a>
+        </div>
+       
+    </section>
+    <footer>
+        <p data-en="&copy; 2023 Hera Hair Essentials. All rights reserved." data-es="&copy; 2023 Hera Hair Essentials. Todos los derechos reservados.">&copy; 2023 Hera Hair Essentials. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let currentLanguage = 'en';
+
+        function toggleLanguage() {
+            currentLanguage = currentLanguage === 'en' ? 'es' : 'en';
+            document.querySelectorAll('[data-en]').forEach(el => {
+                el.textContent = el.getAttribute(`data-${currentLanguage}`);
+            });
+        }
+    </script>
+</body>
+</html>
