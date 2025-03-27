@@ -34,8 +34,8 @@
         nav {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
-            padding: 1rem;
+            gap: 3rem;
+            padding: 0rem;
             background: #eee5e5;
         }
 
@@ -110,9 +110,9 @@
         <h1><a href="HeraHair.html">Hera Hair Essentials</a></h1></header>
     
         <nav>
-            <a href="productspage.html">Products</a>
+            <a href="heraesntls.myshopify.com">Products</a>
             <a href="abouthera.html">About</a>
-            <a href="HeraHair.html">Home</a>
+            <a href="heraesntls.com">Home</a>
         </nav>
         <div class="container">
             <h1>Contact Us</h1>
@@ -125,9 +125,10 @@
             <a href="https://www.tiktok.com/@herahairesntls" target="_blank">TikTok</a>
         </div>
 
-        <form action="#" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="9a618e48-3f92-420b-a6b5-35913201c2c4">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="text" id="name" name="name" placeholder="Your Name">
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Your Email" required>
@@ -137,6 +138,7 @@
 
             <label for="comment">Comment:</label>
             <textarea id="comment" name="comment" rows="5" placeholder="Your Comment" required></textarea>
+             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
             <button type="submit">Submit</button>
         </form>
