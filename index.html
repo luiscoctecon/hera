@@ -15,6 +15,12 @@
             color: #333;
             overflow-x: hidden;
         }
+        .wrapper-main {
+            height: 100%;
+            width: 100%;
+            padding: 100px;
+            margin: 0 auto;
+        }
 
         header {
             display:flex;
@@ -52,6 +58,9 @@
             color: #0e0d0d;
             display: block;
             transition: 0.3s;
+        }
+        .sidenav a:hover {
+            color #f1f1f1f1;
         }
         .sidenav .closebtn {
             position: absolute;
@@ -172,9 +181,7 @@ animation: slideshow 15s ease-in-out infinite;
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
-            flex-wrap: wrap;
             gap: 2rem;
-            justify-content: center;
             padding: 2rem;
         }
 
