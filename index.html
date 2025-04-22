@@ -11,15 +11,15 @@
             font-family: 'time', Open-Sans;
             margin: 0;
             padding: 0;
-            background-image:url(backgroundbeige.png);
+            background-color: #ffffff;
             color: #333;
             overflow-x: hidden;
         }
 
         header {
             text-align: center;
-            background-image: url(backgroundbeige.png);
-            padding: 1.5rem 0;
+            background-color: #ffffff;
+            padding: .5rem 0;
             box-shadow: 0 2px 5px rgba(243, 241, 241, 0.1);
             position: relative;
         }
@@ -29,6 +29,78 @@
             color: #fcfafa;
             margin: 0;
         }
+
+        .sidenav {
+            height:100%;
+            float: left;
+            width: 0;
+            position:fixed;
+            z-index: 1;
+            top: 0%;
+            left: 0%;
+            background-color: #f8f5f5;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            float: left;
+            color: #0e0d0d;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            font-size: 1rem;
+            transition: margin-left .5s;
+            padding: 20px;
+            position: absolute;
+            left: 2px;
+            top: 35%;
+            height: 50%;
+        }
+        @media scree and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+        .slideshow {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -15;
+}
+@keyframes slideshow {
+    1%{ background-image: url(duomain.jpg);}
+    18%{background-image: url(KL9A0376.jpg);}
+    36%{background-image: url(heatspray.jpg);}
+    54%{background-image: url(KL9A0379.jpg);}
+    72%{background-image: url(KL9A0493.jpg);}
+    86%{background-image: url(KL9A0514.jpg);}
+    100%{background-image: url(KL9A0548.jpg);}
+
+}
+.slideshow {
+animation: slideshow 15s ease-in-out infinite;
+}
 
         .language-toggle {
             position: absolute;
@@ -49,25 +121,6 @@
             background-color: #86827a;
         }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 4rem;
-            padding: 0rem;
-            background-color: #555;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #fcfafa;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #7d7780;
-        }
-
         .hero {
             max-width: 100%;
             text-align: center;
@@ -77,33 +130,48 @@
         }
 
         .hero h2 {
-            font-size: 2rem;
-            color: #edebef;
+            font-size: 1rem;
+            color: #ffffff;
+            z-index: 100;
         }
 
         .hero p {
             font-size: 1.2rem;
             margin: 1rem 0;
-            color: #eee5ec;
+            color: #ffffff;
+            z-index: 100;
         }
 
         .cta-button {
-            background-color: #575558;
-            color: #fff;
+            background-color: #ffffff;
+            color: #000000;
             border: none;
             padding: 0.75rem 1.5rem;
             font-size: 1rem;
             border-radius: 25px;
             cursor: pointer;
             transition: transform 0.3s;
+            z-index: 100;
         }
 
         .cta-button:hover {
             transform: scale(1.05);
         }
+        .slider {
+            display: flexbox;
+        }
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
 
         .products {
             display: flex;
+            overflow-x:auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
             flex-wrap: wrap;
             gap: 2rem;
             justify-content: center;
@@ -111,6 +179,9 @@
         }
 
         .product {
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+            justify-content: center;
             background: #fff;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -118,6 +189,7 @@
             padding: 1.5rem;
             max-width: 300px;
             transition: transform 0.3s;
+            user-select: none;
         }
 
         .product:hover {
@@ -127,6 +199,8 @@
         .product img {
             width: 100%;
             border-radius: 15px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
         }
 
         .product h3 {
@@ -186,6 +260,7 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             .products {
+                display: inline-flex;
                 flex-direction: column;
                 align-items: center;
             }
@@ -200,20 +275,39 @@
     <header>
         <img src="HERA.svg" alt="HERA HAIR ESSENTIALS" class="right" width="10%" length="10%">
         <button class="language-toggle" onclick="toggleLanguage()">EN/ES</button>
-    </header>
-    <nav>
+        <div id="mySidenav" class="sidenav">
         <a href="https://heraesntls.myshopify.com" target="_blank">Products</a>
         <a href="abouthera.html">About</a>
         <a href="contactus.html">Contact</a>
-    </nav>
-    <div class="hero">
-     <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1075636161?h=0e9755b75e&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autoplay=1&loop=autopause=0&muted=1&background=1&quality=1080p;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="heravideo"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-       <h2 data-en="Your Hair Deserves the Best" data-es="Tu cabello merece lo mejor">Your Hair Deserves the Best</h2>
+        </div>
+        <div id="main">
+            <span class="marginLeft" style="font-size: 100%;cursor:pointer" onclick="openNav()">$#9776;MENU</span>
+        </div>
+        <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+      }
+      </script>
+    </header>
+    <div class="slideshow"
+        ><div class="hero">
+           
+        <h3 data-en="YOUR HAIR DESERVES THE BEST" data-es="TU CABELLO MERECE LO MEJOR">YOUR HAIR DESERVES THE BEST</h3>
         <p data-en="Discover premium hair care essentials tailored for every style." data-es="Descubre productos premium para el cuidado del cabello adaptados a cada estilo.">Discover premium hair care essentials tailored for every style.</p>
-        <a href="https://heraesntls.myshopify.com" target="_blank"><button class="cta-button" data-en="Shop Now" data-es="Comprar Ahora">Shop Now</button></a>
-    </div>
-    
-    <section id="products" class="products">
+        <button class="cta-button" data-en="Shop Now" data-es="Comprar Ahora">Shop Now</button>
+    <div class="overlay"></div> 
+        </div>
+        
+    <div class+"slider">
+    <div class="products">
         <div class="product">
             <a href="https://heraesntls.myshopify.com/products/hera-argan-hair-oil" target="_blank">
             <img src="oilbottle2.jpg" alt="Product 1">
@@ -238,7 +332,38 @@
             <p data-en="Evolutionary Hair Straightener with an innovative design that features a unique twist in the middle, making it super easy to create effortlessly chic wavy looks" data-es="Plancha de pelo evolutiva con un diseño innovador que presenta un giro único en el medio, lo que hace que sea muy fácil crear looks ondulados elegantes y sin esfuerzo.">Evolutionary Hair Straightener with an innovative design that features a unique twist in the middle, making it super easy to create effortlessly chic wavy looks.</p>
             <a href="https://heraesntls.myshopify.com/products/hera-twisty-straightener" target="_blank"><button class="cta-button" data-en="Buy Now" data-es="Comprar">Buy Now</button></a>
         </div>
-    </section>
+    </div>
+        <script>
+        // Optional: Add drag-to-scroll functionality
+        const carousel = document.getElementById('carousel');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+    
+        carousel.addEventListener('mousedown', (e) => {
+          isDown = true;
+          startX = e.pageX - carousel.offsetLeft;
+          scrollLeft = carousel.scrollLeft;
+        });
+    
+        carousel.addEventListener('mouseleave', () => {
+          isDown = false;
+        });
+    
+        carousel.addEventListener('mouseup', () => {
+          isDown = false;
+        });
+    
+        carousel.addEventListener('mousemove', (e) => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - carousel.offsetLeft;
+          const walk = (x - startX) * 1.5; // scroll speed
+          carousel.scrollLeft = scrollLeft - walk;
+        });
+      </script>
+        <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1075636161?h=0e9755b75e&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autoplay=1&loop=autopause=0&muted=1&background=1&quality=1080p;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="heravideo"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        
         <div class="journey">
         <h3 data-en="Be Part Of Our Journey:" data-es="Sé Parte De Nuestro Viaje:">Be Part Of Our Journey:</h3>
         </div>
