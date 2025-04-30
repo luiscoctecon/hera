@@ -90,14 +90,15 @@
             
 }
 .hero-inner {
-            height: 80vh;
-            max-width: 100%;
-            text-align: center;
-            padding: 12rem 4rem;
-            background: color(srgb red green blue);
-            z-index: 2;
-            justify-content: center;
-            align-items:center;
+    height: 80vh;
+    max-width: 100%;
+    text-align: center;
+    position:relative;
+    padding: 2rem;
+    color: white;
+    z-index: 2;
+    justify-content: center;
+    align-items:center;
 }
 .hero-inner h2{
     font-size: 1.5rem;
@@ -112,15 +113,7 @@
     z-index: 100;
 }
     
-.hero-overlay {
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -15;
-}
+
 .cta-button {
             background-color: #ffffff;
             color: #000000;
@@ -151,6 +144,15 @@
         .slide.active {
             opacity: 1;
         }
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -15;
+}
 .language-toggle {
             position: absolute;
             top: 50%;
