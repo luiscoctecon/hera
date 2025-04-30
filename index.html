@@ -119,10 +119,12 @@
         }
 
         .hero {
+            height: 80vh;
             max-width: 100%;
             text-align: center;
             padding: 12rem 4rem;
             background: color(srgb red green blue);
+            z-index: 2;
            
         }
 
@@ -154,6 +156,14 @@
 
         .cta-button:hover {
             transform: scale(1.05);
+        }
+        .slideshow-container {
+            position: absolute;
+            height:100%;
+            width:100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
         }
         .slide {
             position: absolute;
@@ -308,7 +318,7 @@
       </script>
     </header>
     <section class="slideshow"> 
-    <div class="slideshow-container" id="slides">
+    <div class="slideshow-container" id="show">
         <img src="duomain.webp" class="slide active" alt="Background1">
         <img src="KL9A0376.webp" class="slide" alt="Background2">
         <img src="KL9A0379.webp" class="slide" alt="Background3">
