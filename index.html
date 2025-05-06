@@ -697,7 +697,7 @@
 </script>
         </div>
         <div class="product">
-<div id='product-component-1746268076923'></div>
+<div id='product-component-1746541791316'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -726,17 +726,21 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: '9862845989181',
-        node: document.getElementById('product-component-1746268076923'),
+        node: document.getElementById('product-component-1746541791316'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
+          "max-width": "100%",
+          "margin-left": "0",
           "margin-bottom": "50px"
-        }
+        },
+        "text-align": "left"
+      },
+      "title": {
+        "font-size": "26px"
       },
       "button": {
         "font-family": "Droid Sans, sans-serif",
@@ -750,8 +754,26 @@
         "border-radius": "8px",
         "padding-left": "100px",
         "padding-right": "100px"
+      },
+      "price": {
+        "font-size": "18px"
+      },
+      "compareAt": {
+        "font-size": "15.299999999999999px"
+      },
+      "unitPrice": {
+        "font-size": "15.299999999999999px"
       }
     },
+    "layout": "horizontal",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true,
+      "description": true
+    },
+    "width": "100%",
     "text": {
       "button": "Add to cart"
     },
@@ -795,6 +817,30 @@
         "border-radius": "8px",
         "padding-left": "100px",
         "padding-right": "100px"
+      },
+      "title": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "bold",
+        "font-size": "26px",
+        "color": "#4c4c4c"
+      },
+      "price": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "18px",
+        "color": "#4c4c4c"
+      },
+      "compareAt": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#4c4c4c"
+      },
+      "unitPrice": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#4c4c4c"
       }
     },
     "googleFonts": [
