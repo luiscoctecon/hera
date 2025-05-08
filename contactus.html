@@ -9,12 +9,14 @@
     <title>Contact Us - Eunice & Luis</title>
     <style>
         body {
-            font-family: 'time', open-sans;
+            font-family: 'Times New Roman', open-sans;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #ffffff;
             color: #333;
+            overflox-x: auto;
+            overflow-wrap: anywhere;
         }
         .container {
             max-width: 800px;
@@ -25,16 +27,60 @@
             border-radius: 8px;
         }
         header {
-            background: #ffffff;
-            padding: 1.5rem 0;
+            background-color: #ffffff;
+            padding: 1rem 0;
             border-bottom: 1px solid #eee;
-            position: solid;
+            position: sticky;
+            top: 0;
             z-index: 1000;
             
             
         }
         .logo {
-            height: 80px
+            height: 100px;
+            align-items: center;
+        }
+        .sidenav {
+            height: 100%;
+            float: left;
+            width: 0;
+            position: fixed;
+            z-index: 1; 
+            top: 0%;
+            left: 0%;
+            background-color: #f8f5f5;
+            overflow-x: hidden;
+            transition: 0.5s;
+            paddint-top: 60px;
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            float: left;
+            color: #0e0d0d;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidenav a:hover {
+            color: #f1f1f1f1;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            font-size: 1rem;
+            transition: margin-left .5s;
+            padding: 20px;
+            position: absolute;
+            left: 2px;
+            top: 35%;
+            height: 50%;
         }
         .menu-toggle,
         .language-toggle,
@@ -44,6 +90,7 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
+        
         .side-menu {
             position: fixed;
             top: 0;
@@ -145,85 +192,36 @@
 </head>
 <body>
     <header>
-    <div class="container header-container">
+    <div class="header-container">
         <a href="heraesntls.com">
-          <img src="SIMPLEheralogo.svg" alt="HERA HAIR ESSENTIALS" class="logo" />
+          <img src="SIMPLEheralogo.svg" alt="HERA HAIR ESSENTIALS" class="logo" >
         </a>
-          <button class="menu-toggle" aria-label="Toggle menu">
-           <i class="fa-solid fa-bars"></i>
-          </button>
-          <nav class="side-menu">
-            <button class="close-menu" aria-label="Close menu">&times;</button>
+        <button class="language-toggle" onclick="togglelanguage()">EN/ES</button>
+        <div id="mySidenav" class="sidenav">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="heraesntls.com#products">Products</a>
             <a href="abouthera.html">About</a>
-            <a href="heraesntls.com">Home</a>
-          </nav>
-          <button class="language-toggle">EN/ES</button>
         </div>
-      </header>
-     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const menuToggle = document.querySelector(".menu-toggle");
-          const closeMenu = document.querySelector(".close-menu");
-          const sideMenu = document.querySelector(".side-menu");
-      
-          menuToggle.addEventListener("click", () => {
-            sideMenu.classList.add("active");
-          });
-      
-          closeMenu.addEventListener("click", () => {
-            sideMenu.classList.remove("active");
-          });
-        });
-        console.log("Script Loaded")
-        console.log(document.querySelector(".menu-toggle"));
-console.log(document.querySelector(".side-menu"));
-console.log(document.querySelector(".close-menu"));
-      </script>
-      <script>
-        document.addEventListener("DOMContentLoaded", () => {
-  const slides = document.querySelectorAll(".slide");
-  let current = 0;
 
-  setInterval(() => {
-    slides[current].classList.remove("active");
-    current = (current + 1) % slides.length;
-    slides[current].classList.add("active");
-  }, 5000);
-});
-      </script>
-    <script>
-    document.querySelector('.language-toggle').addEventListener('click', () => {
-      const elements = document.querySelectorAll('[data-en]');
-      elements.forEach(el => {
-        const currentLang = el.textContent === el.getAttribute('data-en') ? 'en' : 'es';
-        el.textContent = el.getAttribute(currentLang === 'en' ? 'data-es' : 'data-en');
-      });
-    });
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const menuToggle = document.querySelector(".menu-toggle");
-      const closeMenu = document.querySelector(".close-menu");
-      const sideMenu = document.querySelector(".side-menu");
-  
-      console.log("Script loaded");
-  
-      if (menuToggle && closeMenu && sideMenu) {
-        menuToggle.addEventListener("click", () => {
-          console.log("Opening menu...");
-          sideMenu.classList.add("active");
-        });
-  
-        closeMenu.addEventListener("click", () => {
-          console.log("Closing menu...");
-          sideMenu.classList.remove("active");
-        });
-      } else {
-        console.error("One or more elements not found!");
-      }
-    });
-  </script>
+        <div id="main">
+            <span class="marginLeft" style="font-size:100%;cursor:pointer" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+        </div>
+    </div>
+    
+     <script>
+         function openNav() {
+             document.getElementById("mySidenav").style.width = "250px";
+             document.getElementById("main").style.marginLeft = "250px";
+             document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+         }
+         function closeNav() {
+             document.getElementById("mySidenav").style.width = "0";
+             document.getElementById("main").style.marginLeft= "0";
+             document.body.style.backgroundColor = "white"; 
+         }
+     </script>
+    </header>
         
         <div class="container">
             <h1>Contact Us</h1>
