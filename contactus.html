@@ -150,22 +150,81 @@
           <img src="SIMPLEheralogo.svg" alt="HERA HAIR ESSENTIALS" class="logo" />
         </a>
           <button class="menu-toggle" aria-label="Toggle menu">
-            <i class="fas fa-bars"></i>
+           <i class="fa-solid fa-bars"></i>
           </button>
           <nav class="side-menu">
             <button class="close-menu" aria-label="Close menu">&times;</button>
-            <a href="#products">Products</a>
+            <a href="heraesntls.com#products">Products</a>
             <a href="abouthera.html">About</a>
             <a href="heraesntls.com">Home</a>
           </nav>
           <button class="language-toggle">EN/ES</button>
         </div>
       </header>
-        <nav>
-            <a href="heraesntls.myshopify.com" target="_blank">Products</a>
-            <a href="abouthera.html">About</a>
-            <a href="heraesntls.com">Home</a>
-        </nav>
+     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const menuToggle = document.querySelector(".menu-toggle");
+          const closeMenu = document.querySelector(".close-menu");
+          const sideMenu = document.querySelector(".side-menu");
+      
+          menuToggle.addEventListener("click", () => {
+            sideMenu.classList.add("active");
+          });
+      
+          closeMenu.addEventListener("click", () => {
+            sideMenu.classList.remove("active");
+          });
+        });
+        console.log("Script Loaded")
+        console.log(document.querySelector(".menu-toggle"));
+console.log(document.querySelector(".side-menu"));
+console.log(document.querySelector(".close-menu"));
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".slide");
+  let current = 0;
+
+  setInterval(() => {
+    slides[current].classList.remove("active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("active");
+  }, 5000);
+});
+      </script>
+    <script>
+    document.querySelector('.language-toggle').addEventListener('click', () => {
+      const elements = document.querySelectorAll('[data-en]');
+      elements.forEach(el => {
+        const currentLang = el.textContent === el.getAttribute('data-en') ? 'en' : 'es';
+        el.textContent = el.getAttribute(currentLang === 'en' ? 'data-es' : 'data-en');
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const closeMenu = document.querySelector(".close-menu");
+      const sideMenu = document.querySelector(".side-menu");
+  
+      console.log("Script loaded");
+  
+      if (menuToggle && closeMenu && sideMenu) {
+        menuToggle.addEventListener("click", () => {
+          console.log("Opening menu...");
+          sideMenu.classList.add("active");
+        });
+  
+        closeMenu.addEventListener("click", () => {
+          console.log("Closing menu...");
+          sideMenu.classList.remove("active");
+        });
+      } else {
+        console.error("One or more elements not found!");
+      }
+    });
+  </script>
+        
         <div class="container">
             <h1>Contact Us</h1>
         <p>Your opinion is extremely important to us. Feel free to leave your honest review, and we will be happy to assist you with any questions.</p>
