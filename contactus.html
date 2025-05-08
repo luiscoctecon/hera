@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9a0348bff4.js" crossorigin="anonymous"></script>
     <title>Contact Us - Eunice & Luis</title>
     <style>
         body {
@@ -24,13 +25,49 @@
             border-radius: 8px;
         }
         header {
-            text-align: center;
-            background-color: #ffffff;
+            background: #ffffff;
             padding: 1.5rem 0;
-            box-shadow: 0 2px 5px rgba(243, 241, 241, 0.1);
-            position: relative;
+            border-bottom: 1px solid #eee;
+            position: solid;
+            z-index: 1000;
             
             
+        }
+        .logo {
+            height: 80px
+        }
+        .menu-toggle,
+        .language-toggle,
+        .close-menu {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .side-menu {
+            position: fixed;
+            top: 0;
+            right: -100;
+            width: 70%;
+            height: 100%;
+            background-color: black;
+            padding: 2rem;
+            box-shadow: -4px 0 6px rgba(0,0,0,0.1);
+            transition: right 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .side-menu.active {
+            right: 0;
+        }
+        .side-menu a {
+            font-size: 1.2rem;
+            color: #fff;
+        }
+        .close-menu {
+            font-size: 2rem;
+            align-self: flex-end;
         }
 
         nav {
@@ -108,8 +145,22 @@
 </head>
 <body>
     <header>
-        <a href="heraesntls.com"> <img src="SIMPLEheralogo.svg" alt="HERA HAIR ESSENTIALS" class="right" width="100%" length=" 5%"> </a></header>
-    
+    <div class="container header-container">
+        <a href="heraesntls.com">
+          <img src="SIMPLEheralogo.svg" alt="HERA HAIR ESSENTIALS" class="logo" />
+        </a>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <nav class="side-menu">
+            <button class="close-menu" aria-label="Close menu">&times;</button>
+            <a href="#products">Products</a>
+            <a href="abouthera.html">About</a>
+            <a href="heraesntls.com">Home</a>
+          </nav>
+          <button class="language-toggle">EN/ES</button>
+        </div>
+      </header>
         <nav>
             <a href="heraesntls.myshopify.com" target="_blank">Products</a>
             <a href="abouthera.html">About</a>
