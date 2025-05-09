@@ -6,12 +6,14 @@
     <title>About Us - Eunice & Luis</title>
     <style>
         body {
-            font-family: 'Times New Roman', Times, serif, sans-serif;
+            font-family: 'Times New Roman', Open-Sans;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #ffffff;
             color: #333;
+            overflow-x: auto;
+            overflow-wrap: anywhere;
         }
         .container {
             max-width: 800px;
@@ -23,12 +25,70 @@
         }
         header {
             text-align: center;
+            border-bottom: 1px solid #eee;
             background-color: #ffffff;
-            padding: 0rem 0;
-            box-shadow: 0 2px 5px rgba(243, 241, 241, 0.1);
-            position: relative;
+            position: sticky;
+            top: 0;
+            padding: 1rem 0;
+            
+            z-index: 1000;
             
         
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-cotent: space-between;
+        }
+        .logo {
+            height: 100px;
+            align-items: center;
+        }
+        .sidenav {
+            height:100%;
+            float: left;
+            width: 0;
+            position:fixed;
+            z-index: 1;
+            top: 0%;
+            left: 0%;
+            background-color: #f8f5f5;
+            
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            float: left;
+            color: #0e0d0d;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidenav a:hover {
+            color #f1f1f1f1;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            font-size: 1rem;
+            transition: margin-left .5s;
+            padding: 20px;
+            position: absolute;
+            left: 2px;
+            top: 35%;
+            height: 50%;
+        }
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
         }
 
         nav {
@@ -64,24 +124,49 @@
             font-weight: bold;
         }
         footer {
-            background: linear-gradient( to top, #151515 , #777474);
+            background-color: #f8f8f8;
             text-align: center;
             padding: 1rem 0;
+            font-size: 0.9rem;
         }
         footer p {
-            color: #f3f2f5;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <header>
-        <a href="heraesntls.com"> <img src="SIMPLEheralogo.svg" alt="HERA HAIR ESSENTIALS" class="right" width="100%" length=" 10%"></a>
-    </header>
-    <nav>
-        <a href="https://heraesntls.myshopify.com">Products</a>
+      <div class="header-container">
+        <img src="SIMPLEheralogo.svg" alt="HERA HAIR ESSENTIALS" class="logo">
+        <button class="language-toggle" onclick="toggleLanguage()">EN/ES</button>
+        
+        <div id="mySidenav" class="sidenav">
+            
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://heraesntls.myshopify.com" target="_blank">Products</a>
+        <a href="heraesntls.com">Home</a>    
         <a href="contactus.html">Contact</a>
-        <a href="heraesntls.com">Home</a>
-    </nav>
+        </div>
+        <div id="main">
+        
+        <span class="marginLeft" style="font-size:100%;cursor:pointer" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+        </div>
+        </div>
+        <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+      }
+      </script>
+    </header>
+   
     <div class="container">
         <h1>Who We Are</h1>
         <p>We are <span class="highlight" >Eunice Romo</span> and <span class="highlight">Luis Coctecon</span>, professionals in the beauty industry with nearly a decade of experience. Eunice specializes as a Hairdresser and Luis as a Barber. Together, we have consistently sought ways to simplify salon processes while ensuring exceptional results, particularly in styling our clients' hair after a haircut or color service.</p>
