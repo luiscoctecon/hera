@@ -65,27 +65,26 @@
 
         .sidenav {
             height:100%;
-            float: left;
-            width: 0;
+            right: -100%;
+            width: 70%;
             position:fixed;
-            z-index: 1;
+            display: flex;
+            flex-direction: column;
             top: 0%;
-            left: 0%;
+            gap: 1.5rem;
+            
             background-color: #f8f5f5;
             overflow-x: hidden;
             overflow-y: auto;
-            transition: 0.5s;
+            transition: right 0.3s ease-in-out;
             padding-top: 60px;
         }
         .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            float: left;
-            color: #0e0d0d;
             display: block;
-            flex-direction: column;
-            transition: 0.3s;
+            color: black;
+            font-size: 1.5rem;
+            
+      
         }
         .sidenav a:hover {
             color #f1f1f1f1;
