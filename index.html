@@ -65,23 +65,28 @@
 
         .sidenav {
             height:100%;
-            right: -100%;
-            width: 70%;
-            position:fixed;
-            display: flex;
-            flex-direction: column;
-            top: 0;
-            gap: 1.5rem;
-            padding: 2rem;
+            float: left;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0%;
+            left: 0%;
             background-color: #f8f5f5;
-            
-            transition: right 0.3s ease-in-out;
+            overflow-x: hidden;
+            overflow-y: auto;
+            transition: 0.5s;
+            padding-top: 60px;
+
             
         }
         .sidenav a {
-            display: block;
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            float: left;
             color: black;
-            font-size: 1.5rem;
+            display: block
+            
             
       
         }
