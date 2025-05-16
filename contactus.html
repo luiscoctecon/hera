@@ -37,8 +37,9 @@
             
         }
         .logo {
-            height: 100px;
-            align-items: center;
+            height: 150px;
+            position: absolute;
+            right: 43%
         }
         .sidenav {
             height: 100%;
@@ -51,7 +52,7 @@
             background-color: #f8f5f5;
             overflow-x: hidden;
             transition: 0.5s;
-            paddint-top: 60px;
+            paddint-top: 30px;
         }
         .sidenav a {
             padding: 8px 8px 8px 32px;
@@ -74,13 +75,13 @@
         }
 
         #main {
-            font-size: 1rem;
+            font-size: 2rem;
             transition: margin-left .5s;
-            padding: 20px;
+            padding: 0%;
             position: absolute;
-            left: 2px;
-            top: 35%;
-            height: 50%;
+            left: 3px;
+            top: 10px;
+            height: 0%;
         }
         .menu-toggle,
         .language-toggle,
@@ -213,8 +214,8 @@
     
      <script>
          function openNav() {
-             document.getElementById("mySidenav").style.width = "250px";
-             document.getElementById("main").style.marginLeft = "250px";
+             document.getElementById("mySidenav").style.width = "200px";
+             document.getElementById("main").style.marginLeft = "100px";
              document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
          }
          function closeNav() {
