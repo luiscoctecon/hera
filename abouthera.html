@@ -55,8 +55,9 @@
             justify-cotent: space-between;
         }
         .logo {
-            height: 100px;
-            align-items: center;
+            height: 150px;
+            position: absolute;
+            right: 43%;
         }
         .sidenav {
             height:100%;
@@ -94,13 +95,13 @@
         }
 
         #main {
-            font-size: 1rem;
+            font-size: 2rem;
             transition: margin-left .5s;
-            padding: 20px;
+            padding: 0;
             position: absolute;
-            left: 2px;
-            top: 35%;
-            height: 50%;
+            left: 3px;
+            top: 10px;
+            height: 0%;
         }
         @media screen and (max-height: 450px) {
             .sidenav {padding-top: 15px;}
@@ -174,7 +175,7 @@
     <header>
       <div class="header-container">
           <a href="heraesntls.com">
-        <img src="SIMPLEheralogo.svg" alt="HERA HAIR ESSENTIALS" class="logo">
+        <img src="Herabiglogo.svg" alt="HERA HAIR ESSENTIALS" class="logo">
           </a>
         <button class="language-toggle" onclick="toggleLanguage()">EN/ES</button>
         
@@ -192,8 +193,8 @@
         </div>
         <script>
       function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("mySidenav").style.width = "200px";
+        document.getElementById("main").style.marginLeft = "100px";
         document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
       }
       
