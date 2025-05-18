@@ -69,9 +69,9 @@
             text-decoration: none;
             font-size: 25px;
             float: left;
-            color: #0e0d0d;
+            color: black;
             display: block;
-            transition: 0.3s;
+           
         }
         .sidenav a:hover {
             color: #f1f1f1f1;
@@ -93,6 +93,14 @@
             top: 10px;
             height: 0%;
         }
+
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+        
         .menu-toggle,
         .language-toggle,
         .close-menu {
@@ -210,8 +218,8 @@
           <img src="Herabiglogo.svg" alt="HERA HAIR ESSENTIALS" class="logo" >
         </a>
         <button class="language-toggle" onclick="togglelanguage()">EN/ES</button>
+       
         <div id="mySidenav" class="sidenav">
-
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="heraesntls.com#products">Products</a>
             <a href="abouthera.html">About</a>
