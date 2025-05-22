@@ -53,7 +53,10 @@
         .header-container {
             display: inline-flex;
             align-items: center;
-        }  
+        }
+        .spacer {
+            flex: 1;
+        }
         .logo {
             height: 150px;
             position: fixed;
@@ -343,6 +346,7 @@
 <body>
     <header>
         <div class="header-container">
+            <div class="spacer"></div>
         <img src="heralogowhite.svg" alt="HERA HAIR ESSENTIALS" class="logo">
         <button  class="language-toggle" onclick="toggleLanguage()">EN/ES</button>
         
