@@ -54,6 +54,19 @@
             display: inline-flex;
             align-items: center;
         }  
+        .logo {
+            height: 150px;
+            position: fixed;
+            right: 39%;
+            z-index: 2000;
+        }
+        .language-toggle {
+            display: flex;
+            right: 3px;
+            top: 10px;
+            height: 0;
+            z-index: 2000;
+        }
      
 
         header h1 {
@@ -330,8 +343,8 @@
 <body>
     <header>
         <div class="header-container">
-        <img src="heralogowhite.svg" alt="HERA HAIR ESSENTIALS" c>
-        <button  onclick="toggleLanguage()">EN/ES</button>
+        <img src="heralogowhite.svg" alt="HERA HAIR ESSENTIALS" class="logo">
+        <button  class="language-toggle" onclick="toggleLanguage()">EN/ES</button>
         
         <div id="mySidenav" class="sidenav">
             
