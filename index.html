@@ -39,36 +39,34 @@
         }
 
         header {
-            
-            
-            padding: 0;
-            border-bottom: 0px solid #eee;
-            background-color: rgba(0,0,0,0.0);
-            position: absolute;
-            top: 0;
-            z-index: 1000;
+            background: transparent;
+            padding: 1rem 2rem;
             
         }
       
         .header-container {
-            display: inline-flex;
+            display: flex;
             align-items: center;
+            justify-content: space-between;
+            position: relative;
         }
         .spacer {
             flex: 1;
         }
         .logo {
-            height: 150px;
-            position: fixed;
-            right: 39%;
+            
+            position: absolute;
+            transform: translatex(-50%);
+            leftt: 50%;
+            font-size: 1.5rem;
             z-index: 2000;
         }
         .language-toggle {
             display: flex;
-            right: 3px;
-            top: 10px;
-            height: 0;
-            z-index: 2000;
+            border: none;
+            color: ffff;
+            padding: 0.5rem;
+            border-radius: 4px;
         }
      
 
