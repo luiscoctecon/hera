@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hera Hair Essentials</title>
+    <link rel="icon" href="heraicon.png" type="image/hera-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <meta name="description" content="Often called: liquid gold, argan oil is a rare and treasured natural oil celebrated for its powerful benefits for hair, skin, and overall wellness. With roots deep in Moroccan tradition, this nutrient-rich oil has evolved from a cultural staple to a global beauty essential. Let's explore the fascinating origins of argan oil, its traditional uses, and why it's become a hero ingredient in modern hair care." />
+    <link rel="canonical" href="https://heraesntls.myshopify.com" />
+    <script src="https://kit.fontawesome.com/9a0348bff4.js" crossorigin="anonymous"></script>
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+            font-family: 'Times New Roman', Open-Sans;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            overflow-x: auto;
+            overflow-wrap: anywhere;
+        }
+        .wrapper-main {
+            height: 100%;
+            width: 100%;
+            padding: 100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: transparent;
+            padding: 0;
+            
+        }
+      
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        
+        
+        .logo {
+            
+            position: absolute;
+            transform: translatex(-50%);
+            left: 50%;
+            top: -27px;
+            height: 120px;
+            z-index: 10;
+        }
+
+            .language-toggle {
+            position: absolute;
+            top: 30px;
+            right: 1rem;
+            transform: translateY(-50%);
+            background-color: #4a4743;
+            color: #eee5ec;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            z-index: 10;
+        }
+
+        .language-toggle:hover {
+            background-color: #86827a;
+        }
+    
+     .language-toggle:hover {
+         background-color: #86827a;
+     }
+
+        header h1 {
+            font-size: 1rem;
+            color: black;
+            margin: 0;
+        }
+
+        .sidenav {
+            height:100%;
+            float: left;
+            width: 0;
+            position: fixed;
+            z-index: 2000;
+            top: 0%;
+            left: 0%;
+            background-color: #f8f5f5;
+            overflow-x: hidden;
+            overflow-y: auto;
+            transition: 0.5s;
+            padding-top: 30px;
+
+            
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            float: left;
+            color: black;
+            display: block
+            
+            
+      
+        }
+        .sidenav a:hover {
+            color #f1f1f1f1;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            font-size: 2rem;
+            color: white;
+            transition: margin-left .5s;
+            padding: 0%;
+            position: absolute;
+            left: 3px;
+            top: 10px;
+            height: 0%;
+            z-index: 10;
+        }
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+        .hero {
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+        .blog{
+            position: relative;
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .social-media a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: #333333;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .journey h4 {
+            display: flex;
+            color: #5a5959;
+            justify-content: center;
+            font-family: 'Times New Roman', Times;
+        }
+    
+        footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            color: #666;
+        }
+        footer icons {
+            color: #666
+            gap: 10px;
+            font-size: 2rem;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div id="main">
+                    <span style="font-size:100%;cursor:pointer" onclick="openNav()">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </div>
+            <img src="blackheralogo.svg" alt="HERA HAIR ESSENTIALS" class="logo"/>
+            <button  class="language-toggle" onclick="toggleLanguage()">EN/ES</button>
+            </div>
+            
+            <div id="mySidenav" class="sidenav">
+                
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="https://heraesntls.myshopify.com" target="_blank">Products</a>
+            <a href="abouthera.html">About</a>
+            <a href="contactus.html">Contact</a>
+            </div>
+            
+            <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+            document.getElementById("main").style.marginLeft = "100px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "white";
+          }
+          </script>
+         </header>
+         <section class="hero">
+            <div class="blog">
+                <img src="blog1.svg" style="width: 100%; height: 100%;" onload="scaleToFullScreen()"/>
+            </div>
+         </section>
+         
+         <script>
+            window.onresize = onResize;
+            
+            function onResize(e){
+                var img = var img = document.images.myImage;
+                if ( img.width > img.height )
+                    img.width = window.innerWidth
+                else
+                    img.height = window.innerHeight;
+            }
+            </script>
+             <div class="journey">
+                <h4 data-en="Be Part Of Our Journey:" data-es="Sé Parte De Nuestro Viaje:">Be Part Of Our Journey:</h4>
+                </div>
+                 <div class="social-media">
+                    <a href="https://www.facebook.com/heraesntls" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/heraesntls/" target="_blank\"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@herahairesntls" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+     <footer>
+                <p data-en="&copy; 2023 Hera Hair Essentials. All rights reserved." data-es="&copy; 2023 Hera Hair Essentials. Todos los derechos reservados.">&copy; 2023 Hera Hair Essentials. All rights reserved.</p>
+                <div class="icons">
+                <i class="fa-brands fa-apple-pay"></i> <i class="fa-brands fa-cc-visa"></i> <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-brands fa-cc-paypal"></i>
+                </div>
+    </footer>
+    </body>
