@@ -57,18 +57,29 @@
             
             position: absolute;
             transform: translatex(-50%);
-            leftt: 50%;
+            left: 50%;
             font-size: 1.5rem;
-            z-index: 2000;
+            height: 120px;
+            z-index: 10;
         }
         .language-toggle {
-            display: flex;
+            background-color: #4a4743;
+            color: #eee5ec;
             border: none;
-            color: ffff;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            
+            border: none;
+            
             padding: 0.5rem;
-            border-radius: 4px;
+            border-radius: 20px;
+            z-index: 10;
         }
-     
+     .language-toggle:hover {
+         background-color: #86827a;
+     }
 
         header h1 {
             font-size: 1rem;
