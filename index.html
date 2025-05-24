@@ -355,9 +355,15 @@
 <body>
     <header>
         <div class="header-container">
+            <div id="main">
+                <span style="font-size:100%;cursor:pointer" onclick="openNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </div>
             <div class="spacer"></div>
-        <img src="heralogowhite.svg" alt="HERA HAIR ESSENTIALS" class="logo">
+        <img src="heralogowhite.svg" alt="HERA HAIR ESSENTIALS" class="logo"/>
         <button  class="language-toggle" onclick="toggleLanguage()">EN/ES</button>
+        </div>
         
         <div id="mySidenav" class="sidenav">
             
@@ -366,11 +372,7 @@
         <a href="abouthera.html">About</a>
         <a href="contactus.html">Contact</a>
         </div>
-        <div id="main">
         
-        <span class="marginLeft" style="font-size:100%;cursor:pointer" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
-        </div>
-        </div>
         <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "200px";
