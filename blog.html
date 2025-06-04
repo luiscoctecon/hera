@@ -59,6 +59,59 @@ body {
       border-radius: 20px;
       cursor: pointer;
     }
+        .sidenav {
+            height:100%;
+            float: left;
+            width: 0;
+            position: fixed;
+            z-index: 2000;
+            top: 0%;
+            left: 0%;
+            background-color: #f8f5f5;
+            overflow-x: hidden;
+            overflow-y: auto;
+            transition: 0.5s;
+            padding-top: 30px;
+
+            
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            float: left;
+            color: black;
+            display: block
+            
+            
+      
+        }
+        .sidenav a:hover {
+            color #f1f1f1f1;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            font-size: 2rem;
+            color: white;
+            transition: margin-left .5s;
+            padding: 0%;
+            position: absolute;
+            left: 3px;
+            top: 10px;
+            height: 0%;
+            z-index: 10;
+        }
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
 
     main {
       display: flex;
@@ -124,14 +177,15 @@ body {
       text-decoration: underline;
     }
     .read-more {
-        background-color: #ffff;
+   position: relative;
+        display: flex;
   color: black;
-  padding: 0.75rem 1.5rem;
+  padding: 0;
   font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition:  0.3s;
+  
     }
 
     footer {
