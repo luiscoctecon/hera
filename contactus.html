@@ -110,50 +110,7 @@
             cursor: pointer;
         }
         
-        .side-menu {
-            position: fixed;
-            top: 0;
-            right: -100;
-            width: 70%;
-            height: 100%;
-            background-color: black;
-            padding: 2rem;
-            box-shadow: -4px 0 6px rgba(0,0,0,0.1);
-            transition: right 0.3s ease-in-out;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-        .side-menu.active {
-            right: 0;
-        }
-        .side-menu a {
-            font-size: 1.2rem;
-            color: #fff;
-        }
-        .close-menu {
-            font-size: 2rem;
-            align-self: flex-end;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            padding: 0rem;
-            background-color: #eee5e5;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #fcfafa;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #7d7780;
-        }
+        
         h1 {
             color: #444;
             text-align: center;
@@ -221,8 +178,10 @@
        
         <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="heraesntls.com#products">Products</a>
+            <a href="heraesntls.com">Home</a>
+            <a href="products.html">Products</a>
             <a href="abouthera.html">About</a>
+            <a href="blog.html">Blog</a>
         </div>
 
         <div id="main">
