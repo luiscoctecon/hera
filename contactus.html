@@ -18,6 +18,12 @@
             overflox-x: auto;
             overflow-wrap: anywhere;
         }
+        .wrapper-main {
+            height: 100%;
+            width: 100%;
+            padding: 100px;
+            margin: 0 auto;
+        }
         .container {
             max-width: 800px;
             margin: 50px auto;
@@ -27,12 +33,8 @@
             border-radius: 8px;
         }
         header {
-            background-color: #ffffff;
-            padding: 1rem 0;
-            border-bottom: 1px solid #eee;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            background: transparent;
+            padding: 0;
             
             
         }
@@ -40,27 +42,53 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            position: relative;
         }
-        .header-container a {
-            height: 150px;
-            position: absolute;
-            right: 43%;
-        }
+     
         .logo {
-            height: 150px;
             position: absolute;
-            right: 43%
+            transform: translatex(-50%);
+            left: 50%;
+            top: -27px;
+            height: 120px;
+            z-index: 10;
         }
+        .language-toggle {
+            position: absolute;
+            top: 30px;
+            right: 1rem;
+            transform: translateY(-50%);
+            background-color: #4a4743;
+            color: #eee5ec;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            z-index: 10;
+        }
+
+        .language-toggle:hover {
+            background-color: #86827a;
+        }
+    
+     .language-toggle:hover {
+         background-color: #86827a;
+     }
+
+        
         .sidenav {
             height: 100%;
             float: left;
             width: 0;
             position: fixed;
-            z-index: 1; 
+            z-index: 2000; 
             top: 0%;
             left: 0%;
             background-color: #f8f5f5;
             overflow-x: hidden;
+            overflow-y: auto;
             transition: 0.5s;
             padding-top: 30px;
         }
@@ -86,12 +114,14 @@
 
         #main {
             font-size: 2rem;
+            color: black;
             transition: margin-left .5s;
             padding: 0%;
             position: absolute;
             left: 3px;
             top: 10px;
             height: 0%;
+            z-index: 10;
         }
 
 
@@ -101,15 +131,7 @@
         }
 
         
-        .menu-toggle,
-        .language-toggle,
-        .close-menu {
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-        
+      
         
         h1 {
             color: #444;
@@ -165,6 +187,11 @@
         }
         footer p {
             color: #666;
+        }
+         footer icons {
+            color: #666
+            gap: 10px;
+            font-size: 2rem;
         }
     </style>
 </head>
@@ -233,8 +260,23 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+    <footer>
+          <p data-en="&copy; 2023 Hera Hair Essentials. All rights reserved." data-es="&copy; 2023 Hera Hair Essentials. Todos los derechos reservados.">&copy; 2023 Hera Hair Essentials. All rights reserved.</p>
+        <div class="icons">
+        <i class="fa-brands fa-apple-pay"></i> <i class="fa-brands fa-cc-visa"></i> <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-brands fa-cc-paypal"></i>
+        </div>
+    </footer>
+    
+    <script>
+        let currentLanguage = 'en';
+
+        function toggleLanguage() {
+            currentLanguage = currentLanguage === 'en' ? 'es' : 'en';
+            document.querySelectorAll('[data-en]').forEach(el => {
+                el.textContent = el.getAttribute(`data-${currentLanguage}`);
+            });
+        }
+    </script>
 </body>
-<footer>
-    <p data-en="&copy; 2023 Hera Hair Essentials. All rights reserved." data-es="&copy; 2023 Hera Hair Essentials. Todos los derechos reservados.">&copy; 2023 Hera Hair Essentials. All rights reserved.</p>
-</footer>
+
 </html>
