@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/9a0348bff4.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="heraicon.png" type="image/hera-icon">
+<meta property="og:title" content="Hera Hair Essentials | Natural Hair Care Products">
+<meta property="og:description" content="Premium oils, heat protectants, and tools for healthy, styled hair. Our products include Lightweight Argan Oil that is engineered with the purpose of being lightweight to aid in penetrating deep in the hair strand giving complete hydration without feeling greasy.">
+<meta property="og:image" content="https://yourwebsite.com/images/social-preview.jpg">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta property="og:type" content="website">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HERA Hair Essentials – Products</title>
+  <link rel="stylesheet" href="/path/to/your/site.css">
+  <style>
+    body {
+      background: #fff;
+      color: #333;
+      font-family: Poppins, sans-serif;
+      margin: 0;
+    }
+     .wrapper-main {
+            height: 100%;
+            width: 100%;
+            padding: 100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: transparent;
+            padding: 0;
+            
+        }
+      
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        
+        
+        .logo {
+            
+            position: absolute;
+            transform: translatex(-50%);
+            left: 50%;
+            top: -27px;
+            height: 120px;
+            z-index: 10;
+        }
+
+            .language-toggle {
+            position: absolute;
+            top: 30px;
+            right: 1rem;
+            transform: translateY(-50%);
+            background-color: #4a4743;
+            color: #eee5ec;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            z-index: 10;
+        }
+
+        .language-toggle:hover {
+            background-color: #86827a;
+        }
+    
+     .language-toggle:hover {
+         background-color: #86827a;
+     }
+
+        header h1 {
+            font-size: 1rem;
+            color: black;
+            margin: 0;
+        }
+
+        .sidenav {
+            height:100%;
+            float: left;
+            width: 0;
+            position: fixed;
+            z-index: 2000;
+            top: 0%;
+            left: 0%;
+            background-color: #f8f5f5;
+            overflow-x: hidden;
+            overflow-y: auto;
+            transition: 0.5s;
+            padding-top: 30px;
+
+            
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            float: left;
+            color: black;
+            display: block
+            
+            
+      
+        }
+        .sidenav a:hover {
+            color #f1f1f1f1;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            font-size: 2rem;
+            color: white;
+            transition: margin-left .5s;
+            padding: 0%;
+            position: absolute;
+            left: 3px;
+            top: 10px;
+            height: 0%;
+            z-index: 10;
+        }
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+    .products-page {
+      max-width: 1200px;
+      padding: 80px 20px;
+      margin: 0 auto;
+    }
+
+    .products-title {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .product h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+    .shop-btn {
+      border-radius: 20px 20px;
+      gap: 1px;
+      border: none;
+      padding: 1rem 4rem;
+      color: white;
+      background-color: black;
+    }
+
+    /* Accordion */
+    .accordion {
+      margin: 60px auto;
+      max-width: 800px;
+    }
+    .accordion-item {
+      background: #fff;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+    .accordion-title {
+      padding: 20px;
+      background: #fcefe6;
+      font-weight: 600;
+      position: relative;
+      cursor: pointer;
+    }
+    .accordion-title::after {
+      content: '+';
+      position: absolute;
+      right: 20px;
+      font-size: 24px;
+    }
+    .accordion-title.active::after {
+      content: '-';
+    }
+    .accordion-content {
+      display: none;
+      padding: 20px;
+      background: #fff7f0;
+    }
+    footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            color: #666;
+        }
+        footer icons {
+            color: #666
+            gap: 10px;
+            font-size: 2rem;
+        }
+  </style>
+</head>
+<body>
+
+  <!-- SAME HEADER -->
+  <header>
+        <div class="header-container">
+            <div id="main">
+                <span style="font-size:100%;cursor:pointer" onclick="openNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </div>
+        <img src="Herabiglogo.svg" alt="HERA HAIR ESSENTIALS" class="logo"/>
+        <button  class="language-toggle" onclick="toggleLanguage()">EN/ES</button>
+        </div>
+        
+        <div id="mySidenav" class="sidenav">
+            
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://heraesntls.myshopify.com" target="_blank">Products</a>
+        <a href="abouthera.html">About</a>
+        <a href="contactus.html">Contact</a>
+        <a href="blog.html">Blog</a>    
+        </div>
+        
+        <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "200px";
+        document.getElementById("main").style.marginLeft = "100px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+      }
+      </script>
+            
+    </header>
+
+  <main class="products-page">
+    <h1 class="products-title">Our Products</h1>
+    <div class="products-grid">
+       <!-- Replace image URLs with actual product assets -->
+      <div class="product">
+        <a href="ElixirOil.html">
+        <img src="oilbottle1.jpg" alt="Argan Hair Oil">
+        </a>
+        <h3>Hera Argan Hair Oil</h3>
+        <p>Nourishes, hydrates and lightweight</p>
+        <a href="ElixirOil.html">
+          <button class="shop-btn">Shop</button>
+        </a>
+        
+      </div>
+      
+      <div class="product">
+        <a href="HeatProtectant.html">
+        <img src="heatspray.jpg" alt="Heat Protectant">
+        </a>
+        <h3>Hera Heat Protector</h3>
+        <p>Reconstructs your hair and protects against the heat</p>
+        <a href="Heatprotectant.html"><button class="shop-btn">Shop</button></a>
+      </div>
+      <div class="product">
+        <img src="{{ 'product3.jpg' | asset_url }}" alt="Keratin Heat Spray">
+        <h3>Hera Essential Duo</h3>
+        <p>Protects from heat damage while adding instant shine.</p>
+      </div>
+      <div class="product">
+        <img src="{{ 'product4.jpg' | asset_url }}" alt="Repair Oil Serum">
+        <h3>Hera Twisty Straightener</h3>
+        <p>Seals split ends and adds nourishment without buildup.</p>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-title">Customer Reviews</div>
+        <div class="accordion-content">
+          <p><strong>Jane D.</strong> “My hair has never felt softer! The shampoo and conditioner combo is amazing.”</p>
+          <p><strong>Maria L.</strong> “Love the keratin spray. It gives a salon finish every time I blow dry!”</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-title">Frequently Asked Questions</div>
+        <div class="accordion-content">
+          <p><strong>Q:</strong> Are your products safe for color-treated hair?<br>
+             <strong>A:</strong> Yes! All our products are sulfate-free and color-safe.</p>
+          <p><strong>Q:</strong> Are these cruelty-free?<br>
+             <strong>A:</strong> Absolutely. We never test on animals.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- SAME FOOTER -->
+  <footer>
+        <p data-en="&copy; 2023 Hera Hair Essentials. All rights reserved." data-es="&copy; 2023 Hera Hair Essentials. Todos los derechos reservados.">&copy; 2023 Hera Hair Essentials. All rights reserved.</p>
+        <div class="icons">
+        <i class="fa-brands fa-apple-pay"></i> <i class="fa-brands fa-cc-visa"></i> <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-brands fa-cc-paypal"></i>
+        </div>
+    </footer>
+
+    <script>
+        let currentLanguage = 'en';
+
+        function toggleLanguage() {
+            currentLanguage = currentLanguage === 'en' ? 'es' : 'en';
+            document.querySelectorAll('[data-en]').forEach(el => {
+                el.textContent = el.getAttribute(`data-${currentLanguage}`);
+            });
+        }
+    </script>
+
+  <script>
+    document.querySelectorAll('.accordion-title
