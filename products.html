@@ -249,7 +249,7 @@
         <div id="mySidenav" class="sidenav">
             
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="https://heraesntls.myshopify.com" target="_blank">Products</a>
+        <a href="heraesntls.com">Home</a>
         <a href="abouthera.html">About</a>
         <a href="contactus.html">Contact</a>
         <a href="blog.html">Blog</a>    
@@ -336,6 +336,16 @@
         <i class="fa-brands fa-apple-pay"></i> <i class="fa-brands fa-cc-visa"></i> <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-brands fa-cc-paypal"></i>
         </div>
     </footer>
+  <script>
+  document.querySelectorAll('.accordion-title').forEach(title => {
+    title.addEventListener('click', () => {
+      title.classList.toggle('active');
+      const content = title.nextElementSibling;
+      content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+    });
+  });
+</script>
+
 
     <script>
         let currentLanguage = 'en';
