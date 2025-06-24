@@ -11,7 +11,7 @@
     <meta property="og:description" content="Premium Heat Protector. See results in just 3 days. Our fast absorbing heat protector also nurishes your hair while protecting from heat. Infused with keratin; a key ingredient to bring your hair back to life">
     <style>
         body {
-            font-family: 'The seasons', The seasons;
+            font-family: Times New Roman;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -295,6 +295,50 @@ justify-content: center;
             gap: 10px;
             font-size: 2rem;
         }
+         #zoomModal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  .zoom-overlay {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    max-height: 90%;
+  }
+  #zoomedImage {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  .zoom-in {
+    transform: scale(1.05);
+  }
+  .zoom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.7);
+    border: none;
+    font-size: 2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 10000;
+  }
+  .zoom-arrow.left {
+    left: -60px;
+  }
+  .zoom-arrow.right {
+    right: -60px;
+  }       
     </style>
 </head>
 <body>
