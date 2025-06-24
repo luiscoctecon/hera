@@ -374,8 +374,9 @@ justify-content: center;
        <div class="hero-button" id='product-component-1750531317302'></div>     
         </div>
         </div>
+    </section>
+    </div>
         
-       <div class="center">
        
 
        
@@ -552,7 +553,7 @@ justify-content: center;
 })();
 /*]]>*/
 </script>
-       </div>
+       
         <h2>Description</h2>
         <p>Introducing our <strong> Spray Heat Protector</strong>, infused with keratin to provide the following benefits:</p>
         <ul>
@@ -593,33 +594,97 @@ justify-content: center;
             });
         }
     </script>
-    <script>
-  document.querySelectorAll('.accordion-title').forEach(title => {
+    document.querySelectorAll('.accordion-title').forEach(title => {
     title.addEventListener('click', () => {
       title.classList.toggle('active');
       const content = title.nextElementSibling;
       content.style.display = (content.style.display === 'block') ? 'none' : 'block';
     });
   });
-
-  const thumbnails = document.querySelectorAll('.thumb');
+   const thumbnails = document.querySelectorAll('.thumb');
   const mainImage = document.getElementById('mainProductImage');
+  let currentIndex = 0;
 
-  thumbnails.forEach(thumb => {
+  thumbnails.forEach((thumb, index) => {
     thumb.addEventListener('click', () => {
       thumbnails.forEach(t => t.classList.remove('active'));
       thumb.classList.add('active');
       mainImage.src = thumb.src;
       mainImage.alt = thumb.alt;
+      currentIndex = index;
     });
   });
 
-  // Expand image on click
-  mainImage.addEventListener('click', () => {
-    const zoomWindow = window.open('', '_blank');
-    zoomWindow.document.write(`<img src="${mainImage.src}" style="width:100%">`);
+  // Expand image in modal
+const zoomModal = document.createElement('div');
+zoomModal.id = 'zoomModal';
+zoomModal.innerHTML = `
+  <div class="zoom-overlay">
+      <button class="zoom-arrow left">&#10094;</button>
+      <img id="zoomedImage" src="" alt="">
+      <button class="zoom-arrow right">&#10095;</button>
+    </div>
+`;
+document.body.appendChild(zoomModal);
+
+const zoomedImage = document.getElementById('zoomedImage');
+ const leftArrow = zoomModal.querySelector('.zoom-arrow.left');
+  const rightArrow = zoomModal.querySelector('.zoom-arrow.right');
+
+  function updateZoomedImage(index) {
+    zoomedImage.classList.remove('zoom-in');
+    void zoomedImage.offsetWidth; // trigger reflow
+    zoomedImage.src = thumbnails[index].src;
+    zoomedImage.alt = thumbnails[index].alt;
+    zoomedImage.classList.add('zoom-in');
+  }
+
+mainImage.addEventListener('click', () => {
+  zoomedImage.src = mainImage.src;
+  zoomModal.style.display = 'flex';
+});
+
+  leftArrow.addEventListener('click', e => {
+    e.stopPropagation();
+    currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
+    updateZoomedImage(currentIndex);
+  });
+
+  rightArrow.addEventListener('click', e => {
+    e.stopPropagation();
+    currentIndex = (currentIndex + 1) % thumbnails.length;
+    updateZoomedImage(currentIndex);
+  });
+
+zoomModal.addEventListener('click', () => {
+  zoomModal.style.display = 'none';
+});
+
+let startX = 0;
+  let endX = 0;
+
+  zoomedImage.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+  });
+
+  zoomedImage.addEventListener('touchmove', e => {
+    endX = e.touches[0].clientX;
+  });
+
+  zoomedImage.addEventListener('touchend', () => {
+    if (startX - endX > 50) {
+      // swipe left
+      currentIndex = (currentIndex + 1) % thumbnails.length;
+      updateZoomedImage(currentIndex);
+    } else if (endX - startX > 50) {
+      // swipe right
+      currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
+      updateZoomedImage(currentIndex);
+    }
+    startX = endX = 0;
   });
 </script>
+    
 
 </body>
 </html>
