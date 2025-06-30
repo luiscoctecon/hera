@@ -451,6 +451,15 @@ justify-content: center;
 </details>
             </div>
         </div>
+    <script>
+  document.querySelectorAll('details').forEach(title => {
+    title.addEventListener('click', () => {
+      title.classList.toggle('active');
+      const content = title.nextElementSibling;
+      content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+    });
+  });
+</script>
                 
        <p class="hero-description"><i class="fa-solid fa-leaf" style="color: #000;"></i> Vegan
        <br><i class="fa-solid fa-temperature-arrow-up" style="color: #000;"></i> Heat Protectant up to: 450°F (230°C) 
