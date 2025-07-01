@@ -374,6 +374,39 @@ justify-content: center;
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
   }
+ /* Accordion */
+    .accordion {
+      margin: 60px auto;
+      max-width: 800px;
+    }
+    .accordion-item {
+      background: #ebe5e37d;
+      border-radius: 1px;
+      margin-bottom: 1px;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+    .accordion-title {
+      padding: 1px;
+      background: #ebe5e37d;
+      font-weight: 600;
+      position: relative;
+      cursor: pointer;
+    }
+    .accordion-title::after {
+      content: '+';
+      position: absolute;
+      right: 20px;
+      font-size: 24px;
+    }
+    .accordion-title.active::after {
+      content: '-';
+    }
+    .accordion-content {
+      display: none;
+      padding: 20px;
+      background: #fff7f0;
+    }
     </style>
 </head>
 <body>
