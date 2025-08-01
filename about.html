@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="heraicon.png" type="image/hera-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - HERA Hair Essentials</title>
+    <meta name="description" content="Learn about HERA Hair Essentials' mission to empower women through premium hair care that transforms routines into self-love rituals.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f7f5f2',
+                        'primary-dark': '#525150',
+                        'primary-light': '#525150',
+                        cream: '#F5F1E8',
+                        'cream-dark': '#E8E0D0',
+                        beige: '#D4C4A8',
+                        taupe: '#B8A082',
+                        charcoal: 'rgb(54,51,47)',
+                        'charcoal-light': '#4A4A4A',
+                        'gray-warm': '#8B8680'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Playfair Display', 'Georgia', 'serif']
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px rgba(0, 0, 0, 0.08)',
+                        'medium': '0 8px 30px rgba(0, 0, 0, 0.12)',
+                        'strong': '0 12px 40px rgba(0, 0, 0, 0.15)',
+                        'gold': '0 4px 20px rgba(212, 175, 55, 0.2)'
+                    },
+                    backgroundImage: {
+                        'hero-gradient': '#f7f5f2',
+                        'section-gradient': '#f7f5f2',
+                        'gold-gradient': 'linear-gradient(135deg, #D4AF37 0%, #B8941F 100%)'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-charcoal bg-cream">
+    <!-- Header / Navigation -->
+    <header class="bg-charcoal shadow-soft sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center h-20">
+            <a href="index.html" class="font-serif text-white text-2xl text-primary-dark">HERA</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-white hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="text-white hover:text-primary transition-colors">About</a>
+                <a href="shop.html" class="text-white hover:text-primary transition-colors">Shop</a>
+                <a href="ritual.html" class="text-white hover:text-primary transition-colors">Ritual</a>
+                <a href="contact.html" class="text-white hover:text-primary transition-colors">Support</a>
+                <a href="blog.html" class="text-white hover:text-primary transition-colors">Blog</a>
+                <a href="FAQS.html" class="text-white hover:text-primary transition-colors">FAQs</a>
+            </nav>
+            <form class="hidden md:block" action="search.html" method="GET">
+                <input type="text" name="q" placeholder="Search..." class="px-4 py-2 rounded-lg shadow-soft">
+            </form>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-white" aria-label="Open menu">
+                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-soft absolute w-full left-0 top-20 z-40">
+            <nav class="flex flex-col space-y-4 p-6">
+                <a href="index.html" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                <a href="shop.html" class="text-gray-700 hover:text-primary transition-colors">Shop</a>
+                <a href="ritual.html" class="text-gray-700 hover:text-primary transition-colors">Ritual</a>
+                <a href="contact.html" class="text-gray-700 hover:text-primary transition-colors">Support</a>
+                <a href="blog.html" class="text-gray-700 hover:text-primary transition-colors">Blog</a>
+                <a href="FAQS.html" class="text-gray-700 hover:text-primary transition-colors">FAQs</a>
+                <form action="search.html" method="GET" class="mt-4">
+                    <input type="text" name="q" placeholder="Search..." class="px-4 py-2 rounded-lg shadow-soft w-full">
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-primary py-20 md:py-28">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="font-serif text-4xl md:text-5xl leading-tight tracking-tight mb-6 text-charcoal">Our Story</h1>
+            <p class="text-lg md:text-xl text-gray-warm mb-8 max-w-2xl mx-auto">HERA was born from the belief that every woman deserves to feel empowered, starting with how she cares for herself each day.</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="bg-charcoal md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=700&q=80"
+                        alt="Woman in mirror" class="rounded-2xl shadow-medium">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="font-serif text-white text-3xl md:text-4xl mb-6">Empowering Women Through Self-Care</h2>
+                    <p class="text-gray-warm mb-6 text-lg">HERA Hair Essentials was founded on the principle that hair care should be more than just maintenance—it should be a ritual of self-love and empowerment.</p>
+                    <p class="text-gray-warm mb-6">We understand that in today's fast-paced world, women often put themselves last. That's why we created products that transform your daily routine into meaningful moments of connection with yourself.</p>
+                    <p class="text-gray-warm mb-8">Every formula is crafted with premium, naturally-derived ingredients that not only nourish your hair but remind you that you deserve the very best.</p>
+                    <a href="ritual.html" class="inline-block bg-primary text-charcoal px-8 py-3 rounded-lg font-medium shadow-gold hover:bg-charcoal hover:text-primary transition-shadow">Discover Your Ritual</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="bg-section-gradient py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-3xl md:text-4xl text-center mb-16">Our Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-charcoal rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-xl mb-4">Self-Love First</h3>
+                    <p class="text-gray-warm">We believe self-care isn't selfish—it's essential. Our products are designed to create moments of mindfulness and self-appreciation in your daily routine.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-charcoal rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-xl mb-4">Premium Quality</h3>
+                    <p class="text-gray-warm">We use only the finest naturally-derived ingredients, ensuring every product delivers exceptional results while being gentle on your hair and scalp.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-charcoal rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-xl mb-4">Female Empowerment</h3>
+                    <p class="text-gray-warm">Every purchase supports women-owned businesses and female entrepreneurs. Together, we're building a community of empowered women lifting each other up.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <h2 class="font-serif text-3xl md:text-4xl mb-6">Meet Our Founder</h2>
+                    <p class="text-gray-warm mb-6 text-lg">"I started HERA because I realized that the ten minutes I spent doing my hair each morning were often the only moments I had to myself all day."</p>
+                    <p class="text-gray-warm mb-6">With nearly a decade of experience specializing  as a Hairdresser, I have consistently sought ways to simplify salon processes while ensuring exceptional results, particularly in styling my clients' hair after a haircut or color service.
+In my quest to enhance my skills and efficiency, I dedicated significant time to research. Through this journey, I uncovered a pivotal realization: mastering hairstyles isn't enough. It's equally important to discover groundbreaking hot tools and hair products that transform the styling experience.
+As I delved deeper, one critical question emerged: How damaging are these hot tools to the hair?
+Understanding the shared concerns of our team and clients, I prioritize the health and well-being of your hair. My commitment is to carefully select hot tools that deliver outstanding performance while safeguarding your hair from damage. I believe it's crucial to offer tools that achieve stunning results without compromising hair health.
+With the right tools and techniques, I create styles that are both effortless and glamorous. My mission is to help you transform your hair care experience, addressing concerns about damage and delivering confidence-boosting results.
+I invite you to trust in my expertise as I deliver excellence in beauty and hair care. Let me help you achieve beautiful, healthy, and stylish hair every day.</p>
+<p class="text-gray-warm mb-6" >HERA was born from my desire to help women reclaim those precious moments of self-care and turn them into powerful rituals of self-love.</p>
+                    <p class="text-gray-warm mb-6">Every product we create is infused with intention—to help you pause, breathe, and remember that you are worthy of care, attention, and love.</p>
+                    <div class="flex items-center">
+                        <div class="w-16 h-16 bg-cream-dark rounded-full mr-4">
+                            <img src="cover1.jpg" alt="Eunice Romo" class="w-full h-full rounded-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-xl">Eunice Romo</h4>
+                            <p class="text-gray-warm">Founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2">
+                    <img src="cover1.jpg"
+                        alt="Eunice Romo, Founder" class="rounded-2xl shadow-medium">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section class="bg-section-gradient py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-3xl md:text-4xl text-center mb-16">Our Promise: Clean, Effective Ingredients</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-soft text-center">
+                    <div class="mb-4">
+                        <img src="argan.jpg"
+                            alt="Argan Oil" class="w-20 h-20 rounded-full mx-auto object-cover">
+                    </div>
+                    <h3 class="font-serif text-lg mb-2">Argan Oil</h3>
+                    <p class="text-gray-warm text-sm">Rich in vitamin E and fatty acids, providing deep nourishment and shine.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-soft text-center">
+                    <div class="mb-4">
+                        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150&q=80"
+                            alt="Keratin" class="w-20 h-20 rounded-full mx-auto object-cover">
+                    </div>
+                    <h3 class="font-serif text-lg mb-2">Keratin Complex</h3>
+                    <p class="text-gray-warm text-sm">Strengthens hair structure and reduces breakage for healthier-looking hair.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-soft text-center">
+                    <div class="mb-4">
+                        <img src="jojobaoil.jpg"
+                            alt="Coconut Oil" class="w-20 h-20 rounded-full mx-auto object-cover">
+                    </div>
+                    <h3 class="font-serif text-lg mb-2">Jojoba Oil</h3>
+                    <p class="text-gray-warm text-sm">Penetrates hair shaft to moisturize and protect from environmental damage.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-soft text-center">
+                    <div class="mb-4">
+                        <img src="botanical.jpg"
+                            alt="Botanical Extracts" class="w-20 h-20 rounded-full mx-auto object-cover">
+                    </div>
+                    <h3 class="font-serif text-lg mb-2">Botanical Extracts</h3>
+                    <p class="text-gray-warm text-sm">Natural plant-based ingredients that soothe and nourish the scalp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="py-4 md:py-4">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-serif text-black text-3xl md:text-4xl mb-6">Join the HERA Community</h2>
+            <p class="text-gray-warm mb-8 max-w-2xl mx-auto">Be part of a movement of women who choose self-love, empowerment, and authentic beauty. Share your journey with #HeraHairEssentials</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <img src="heatspray.gif"
+                    alt="Community member" class="rounded-lg shadow-soft">
+                <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300&q=80"
+                    alt="Community member" class="rounded-lg shadow-soft">
+                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300&q=80"
+                    alt="Community member" class="rounded-lg shadow-soft">
+                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300&q=80"
+                    alt="Community member" class="rounded-lg shadow-soft">
+            </div>
+            <a href="https://www.instagram.com/heraesntls/" class="inline-block bg-charcoal text-white px-8 py-3 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow">Follow @HeraHairEssentials</a>
+        </div>
+    </section>
+
+    <!--Keep shopping-->
+    <section class="container mx-auto px-4 py-2 flex justify-center">
+        <button id="keep-shopping-btn" onclick="window.location.href='shop.html'; document.getElementById('product-component-1753313965709').style.display='none';" class="bg-charcoal text-white px-8 py-3 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow text-center">Let's Nourish That Hair</button>
+    </section>
+    <!-- Hidden Product Component (not visible, but present for script compatibility) -->
+    <div id='product-component-1753313965709' style="display:none;"></div>
+
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-serif text-2xl mb-6 text-primary">HERA</h3>
+                    <p class="text-gray-400 mb-6">Empowered Hair. Empowered Life.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/heraesntls/" class="text-gray-400 hover:text-primary transition-colors" target="_blank">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/heraesntls" class="text-gray-400 hover:text-primary transition-colors" target="_blank">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@herahairesntls" class="text-gray-400 hover:text-primary transition-colors" target="_blank">
+                            <span class="sr-only">TikTok</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-medium text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-colors">About HERA</a></li>
+                        <li><a href="shop.html" class="text-gray-400 hover:text-primary transition-colors">Shop All Products</a>
+                        </li>
+                        <li><a href="ritual.html" class="text-gray-400 hover:text-primary transition-colors">Create Your
+                                Ritual</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium text-white mb-4">Customer Care</h4>
+                    <ul class="space-y-2">
+                        <li><a href="FAQS.html" class="text-gray-400 hover:text-primary transition-colors">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Hair Care Tips</a>
+                        </li>
+                        <li><a href="terms.html#shipping-returns" class="text-gray-400 hover:text-primary transition-colors">Shipping &
+                                Returns</a></li>
+                       
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium text-white mb-4">Contact Us</h4>
+                    <address class="text-gray-400 not-italic">
+                       
+                        <p class="mb-2">support@heraesntls.com</p>
+                        
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 HERA Hair Essentials. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="privacy.html" class="text-gray-400 hover:text-primary transition-colors text-sm">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-primary transition-colors text-sm">Terms of Service</a>
+                    <a href="terms.html#shipping-returns" class="text-gray-400 hover:text-primary transition-colors text-sm">Shipping Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+ <script>document.addEventListener('DOMContentLoaded', function () {
+  var menuButton = document.getElementById('mobile-menu-button');
+  var mobileMenu = document.getElementById('mobile-menu');
+
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener('click', function () {
+      mobileMenu.classList.toggle('hidden');
+    });
+    // Close menu when any link inside mobile menu is clicked
+    var menuLinks = mobileMenu.querySelectorAll('a');
+    menuLinks.forEach(function(link) {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  }
+});
+</script>
+
+    <!--Product Component-->
+     <script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'eyf6fx-fu.myshopify.com',
+      storefrontAccessToken: '3768e3aa0c990cd25c93de476895152e',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '9850645643581',
+        node: document.getElementById('product-component-1753313965709'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Droid Sans, sans-serif",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa",
+          "background-color": "#312e2a"
+        },
+        "background-color": "#36332f",
+        ":focus": {
+          "background-color": "#312e2a"
+        },
+        "border-radius": "10px",
+        "padding-left": "64px",
+        "padding-right": "64px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Add to cart"
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Droid Sans, sans-serif",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa",
+          "background-color": "#312e2a"
+        },
+        "background-color": "#36332f",
+        ":focus": {
+          "background-color": "#312e2a"
+        },
+        "border-radius": "10px",
+        "padding-left": "64px",
+        "padding-right": "64px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Droid Sans, sans-serif",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa",
+          "background-color": "#312e2a"
+        },
+        "background-color": "#36332f",
+        ":focus": {
+          "background-color": "#312e2a"
+        },
+        "border-radius": "10px"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "empty": {
+        "color": "#000000"
+      },
+      "noteDescription": {
+        "color": "#000000"
+      },
+      "discountText": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "discountAmount": {
+        "color": "#000000"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Let's Nourish That Hair!"
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Droid Sans, sans-serif",
+        "background-color": "#36332f",
+        ":hover": {
+          "background-color": "#312e2a"
+        },
+        ":focus": {
+          "background-color": "#312e2a"
+        }
+      },
+      "count": {
+        "font-size": "14px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa"
+        }
+      },
+      "iconPath": {
+        "fill": "#fafafa"
+      }
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ]
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "fullPrice": {
+        "color": "#000000"
+      },
+      "discount": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+</body>
+
+</html>
