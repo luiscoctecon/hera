@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="heraicon.png" type="image/hera-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQs - HERA Hair Essentials</title>
@@ -397,6 +398,26 @@
       });
     });
     </script>
+
+    <!--mobile menu toggle-->
+    <script> document.addEventListener('DOMContentLoaded', function () {
+  var menuButton = document.getElementById('mobile-menu-button');
+  var mobileMenu = document.getElementById('mobile-menu');
+
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener('click', function () {
+      mobileMenu.classList.toggle('hidden');
+    });
+    // Close menu when any link inside mobile menu is clicked
+    var menuLinks = mobileMenu.querySelectorAll('a');
+    menuLinks.forEach(function(link) {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  }
+});</script>
+    
     <!--Product Component-->
      <script type="text/javascript">
 /*<![CDATA[*/
