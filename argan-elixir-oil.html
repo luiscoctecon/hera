@@ -128,26 +128,48 @@
     <section class="container mx-auto px-4 py-16 flex flex-col md:flex-row gap-12">
         <!-- Image Menu Left -->
         <div class="flex flex-col md:w-1/3 items-center">
-            <!-- Main Image with Arrows -->
+            <!-- Main Image/Video Container -->
             <div class="relative w-full flex items-center justify-center mb-4">
                 <button id="img-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-soft z-10 hover:bg-primary-dark hover:text-white transition-colors" aria-label="Previous image">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
                 </button>
-                <img id="main-product-image" src="oilbottle1.jpg" alt="Argan Elixir Oil bottle" class="rounded-xl shadow-soft w-full  h-full object-cover transition-all duration-300">
+                <div id="main-media-container" class="w-full">
+                    <img id="main-product-image" src="oilbottle1.jpg" alt="Argan Elixir Oil bottle" class="rounded-xl shadow-soft w-full h-full object-cover transition-all duration-300">
+                    <video id="main-product-video" class="rounded-xl shadow-soft w-full h-full object-cover transition-all duration-300 hidden" autoplay loop muted playsinline>
+                        <source src="oilhowto.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
                 <button id="img-next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-soft z-10 hover:bg-primary-dark hover:text-white transition-colors" aria-label="Next image">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
                 </button>
             </div>
             <!-- Thumbnails Scrollable -->
-            <div class="flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto max-h-32 md:max-h-40 w-full justify-center">
-                <img src="oil3.jpg" alt="Argan Elixir Oil bottle" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-primary-dark" onclick="setMainImage(0)">
-                <img src="oilinpocket.jpg" alt="Argan Oil texture" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainImage(1)">
-                <img src="oilonhair.jpg" alt="Argan Oil in use" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainImage(2)">
+            <div class="flex gap-4 overflow-x-auto md:overflow-x-auto md:overflow-y-auto max-h-32 md:max-h-40 w-full ">
+                <img src="oil3.jpg" alt="Argan Elixir Oil bottle" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-primary-dark" onclick="setMainMedia('image', 'oil3.jpg')">
+                <div class="video-thumbnail rounded-lg shadow-soft w-20 h-20 cursor-pointer border-2 border-transparent hover:border-primary-dark relative" onclick="setMainMedia('video', 'oilhowto.mp4')">
+                    <video src="oilhowto.mp4" class="w-full h-full object-cover">
+                        <source src="oilhowto.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                <img src="oilbenefits12.jpg" alt="Oil drop on hair" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'oilbenefits12.jpg')">
+                <img src="oilbenefits13.png" alt="Oil applied on hair" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'oilbenefits13.png')">
+                <img src="oilbenefits14.jpg" alt="Hair after using oil" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'oilbenefits14.jpg')">  
+                <img src="oilbenefits15.jpg" alt="Hair before using oil" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'oilbenefits15.jpg')">
+                <img src="heatandoilbenefits2.png" alt="Heat protection with oil" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'heatandoilbenefits2.png')">  
+
             </div>
         </div>
         <!-- Product Info -->
-        <div class="md:w-2/3 flex flex-col gap-6">
+        <div class="md:w-2/3 flex flex-col gap-2">
             <h1 class="font-serif text-4xl text-primary-dark mb-2">Argan Elixir Oil</h1>
+             <div class="flex items-center gap-3 mb-4">
             <div class="flex">
                         <svg class="w-5 h-5 text-yellow" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
@@ -167,7 +189,7 @@
                     </div>
                     <span class="text-sm text-charcoal-light">Based on 6 reviews</span>
                 </div>
-            <div class="flex items-center gap-4 mb-2">
+            <div class="flex items-center gap-2 mb-2">
                 <span class="text-2xl text-primary-dark font-semibold">$22</span>
                 <span class="line-through text-gray-warm">$25</span>
                 <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded">Save 11%</span>
@@ -183,51 +205,26 @@
            <div id='product-component-1753313965709'></div>
         </div>
     </section>
-    <!--FAQS section-->
-    <section class="container mx-auto px-4 py-12">
-        <h2 class="font-serif text-2xl text-black mb-6">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-            <div class="bg-white p-6 rounded-lg shadow-soft">
-                <h3 class="font-semibold text-lg text-charcoal">How often should I use Argan Elixir Oil?</h3>
-                <p class="text-gray-warm">For best results, use daily or as needed on damp or dry hair.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-soft">
-                <h3 class="font-semibold text-lg text-charcoal">Can I use it on color-treated hair?</h3>
-                <p class="text-gray-warm">Yes, it's safe for all hair types, including color-treated hair.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-soft">
-                <h3 class="font-semibold text-lg text-charcoal">Is it suitable for oily hair?</h3>
-                <p class="text-gray-warm">Yes, the lightweight formula won't weigh down your hair or make it greasy.</p>
-                </div>
-                </div>
-                <div class="text-center mt-8">
-                    <a href="FAQS.html#oil" class="text-primary-dark hover:text-primary-light font-semibold">See more</a>
-                    </div>
-                    </section>
 
     <!-- Section Nav -->
     <div class="section-nav container mx-auto px-4 py-12 flex gap-7 justify-center">
-        <button onclick="showSection('how-to-use', this)" class="text-white bg-charcoal font-semibold px-4 py-2 active hover:bg-primary-light rounded-lg transition-colors">How to Use</button>
+       
         <button onclick="showSection('benefits', this)" class="text-white bg-charcoal font-semibold px-4 py-2 active hover:bg-primary-light rounded-lg transition-colors">Benefits</button>
         <button onclick="showSection('ingredients', this)" class="text-white bg-charcoal font-semibold px-4 py-2 active hover:bg-primary-light rounded-lg transition-colors">Ingredients</button>
     </div>
 
     <!-- Section Content -->
     <div class="section-content-parent container mx-auto px-4 mt-8" style="position:relative; min-height:180px;">
-        <div id="how-to-use" class="section-content onclick-active active column-section">
-        <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto auto md:auto w-full justify-center mb-4">
-            <video src="oilhowto.mp4" controls class="rounded-xl shadow-soft w-60 h-full object-fit" style="max-width:100%;"></video>
-        </div>
-        <p class="text-lg text-gray-warm">Apply a small amount to dry hair, after styling with hot tool, focusing on mid-lengths and ends.</p>
-    </div>
-        <div id="benefits" class="section-content onclick-active column-section">
+        
+        <div id="benefits" class="section-content active onclick-active column-section">
         <div class="scroll-row flex auto gap-4 overflow-x-auto md:overflow-x-auto md:overflow-y-auto auto md:max-full w-full  mb-4">
-            <img src="oilbenefits copy.png" alt="Benefit 1" class="rounded-lg shadow-soft w-60 h-full object-cover">
-            <img src="oilbenefits2.png" alt="Benefit 2" class="rounded-lg shadow-soft w-60 h-full object-cover">
             
-            <img src="oilbenefits4.png" alt="Benefit 4" class="rounded-lg shadow-soft w-60 h-full object-cover">  
+            <img src="oilbenefitssmall.jpg" alt="Benefit 2" class="rounded-lg shadow-soft w-60 h-full object-cover">
+            
+           
             <img src="oilbenefits5.png" alt="Benefit 5" class="rounded-lg shadow-soft w-60 h-full object-cover">
             <img src="oilbenefits6.png" alt="Benefit 6" class="rounded-lg shadow-soft w-60 h-full object-cover">
+            
 
         </div>
         <p class="text-lg text-gray-warm">Repairs and reconstructs hair fibers, prevents breakage, and brings life back to your hair. Lightweight, non-greasy formula.</p>
@@ -235,7 +232,7 @@
         <div id="ingredients" class="section-content onclick-active column-section">
         <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto auto md:max-full w-full  mb-4">
         <img src="oilbenefits7.png" alt="Argan Oil" class="rounded-lg shadow-soft w-60 h-full object-cover">  
-        <img src="oilbenefits3.png" alt="Jojoba Oil" class="rounded-lg shadow-soft w-60 h-full object-cover">  
+        <img src="oilbenefitssmall2.jpg" alt="Jojoba Oil" class="rounded-lg shadow-soft w-60 h-full object-cover">  
         </div>
         <p class="text-lg text-gray-warm">100% natural ingredients, vegan certified, cruelty-free.</p>
     </div>
@@ -266,6 +263,28 @@
             });
         });
     </script>
+
+    <!--FAQS section-->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="font-serif text-2xl text-black mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+            <div class="bg-white p-6 rounded-lg shadow-soft">
+                <h3 class="font-semibold text-lg text-charcoal">How often should I use Argan Elixir Oil?</h3>
+                <p class="text-gray-warm">For best results, use daily or as needed on damp or dry hair.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-soft">
+                <h3 class="font-semibold text-lg text-charcoal">Can I use it on color-treated hair?</h3>
+                <p class="text-gray-warm">Yes, it's safe for all hair types, including color-treated hair.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-soft">
+                <h3 class="font-semibold text-lg text-charcoal">Is it suitable for oily hair?</h3>
+                <p class="text-gray-warm">Yes, the lightweight formula won't weigh down your hair or make it greasy.</p>
+                </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="FAQS.html#oil" class="text-primary-dark hover:text-primary-light font-semibold">See more</a>
+                    </div>
+                    </section>
 
     <!-- Comparison Chart -->
     <section class="container mx-auto px-4 py-12">
@@ -453,8 +472,13 @@
         // Image gallery logic
         const images = [
             "oil3.jpg",
-            "oilinpocket.jpg",
-            "oilonhair.jpg"
+            "oilhowto.mp4",
+            "oilbenefits12.jpg",
+            "oilbenefits13.png",
+            "oilbenefits14 2.jpg",
+            "oilbenefits15.jpg",
+            "oilbenefits16.jpg",
+            "heatandoilbenefits2.png",
 
         ];
         let currentImg = 0;
@@ -1299,6 +1323,85 @@
   }
 })();
 /*]]>*/
+</script>
+
+<script>
+    // Function to switch between image and video in the main display
+    function setMainMedia(type, source) {
+        const mainImage = document.getElementById('main-product-image');
+        const mainVideo = document.getElementById('main-product-video');
+        
+        if (type === 'video') {
+            mainImage.classList.add('hidden');
+            mainVideo.classList.remove('hidden');
+            mainVideo.src = source;
+            mainVideo.play();
+        } else {
+            mainVideo.classList.add('hidden');
+            mainImage.classList.remove('hidden');
+            mainImage.src = source;
+        }
+        
+        // Update thumbnail borders
+        const thumbnails = document.querySelectorAll('.video-thumbnail, img.rounded-lg');
+        thumbnails.forEach(thumb => {
+            if ((type === 'video' && thumb.classList.contains('video-thumbnail')) ||
+                (type === 'image' && thumb.src?.includes(source))) {
+                thumb.classList.add('border-primary-dark');
+            } else {
+                thumb.classList.remove('border-primary-dark');
+            }
+        });
+    }
+
+    // Initialize video functionality when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const mainVideo = document.getElementById('main-product-video');
+        const mediaItems = [
+            { type: 'image', source: 'oil3.jpg' },
+            { type: 'video', source: 'oilhowto.mp4' },
+            { type: 'image', source: 'oilbenefits12.jpg' },
+            { type: 'image', source: 'oilbenefits13.png' },
+            { type: 'image', source: 'oilbenefits14.jpg' },
+            { type: 'image', source: 'oilbenefits15.jpg' },
+            { type: 'image', source: 'heatandoilbenefits2.png' },
+            
+        ];
+        let currentIndex = 0;
+
+        // Ensure video restarts when it ends
+        mainVideo.addEventListener('ended', function() {
+            mainVideo.play();
+        });
+        
+        // Handle previous/next buttons
+        const prevButton = document.getElementById('img-prev');
+        const nextButton = document.getElementById('img-next');
+        
+        prevButton.addEventListener('click', function() {
+            currentIndex = (currentIndex - 1 + mediaItems.length) % mediaItems.length;
+            const item = mediaItems[currentIndex];
+            setMainMedia(item.type, item.source);
+        });
+        
+        nextButton.addEventListener('click', function() {
+            currentIndex = (currentIndex + 1) % mediaItems.length;
+            const item = mediaItems[currentIndex];
+            setMainMedia(item.type, item.source);
+        });
+
+        // Update thumbnails when clicking them
+        const thumbnails = document.querySelectorAll('.video-thumbnail, img.rounded-lg');
+        thumbnails.forEach((thumb, index) => {
+            if (!thumb.onclick) {
+                thumb.addEventListener('click', function() {
+                    currentIndex = index;
+                    const item = mediaItems[currentIndex];
+                    setMainMedia(item.type, item.source);
+                });
+            }
+        });
+    });
 </script>
 </body>
 </html>
