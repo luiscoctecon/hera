@@ -273,34 +273,7 @@
             });
         });
 
-        // Image gallery logic
-        const images = [
-            "twisty 1.jpeg",
-            "twisty11.jpg",
-            "twisty12.jpg",
-            "twisty 2.jpeg",
-        ];
-        let currentImg = 0;
-        function setMainImage(idx) {
-            currentImg = idx;
-            document.getElementById('main-product-image').src = images[idx];
-            // update thumbnail borders
-            const thumbs = document.querySelectorAll('.flex.gap-4 img');
-            thumbs.forEach((img, i) => {
-                img.classList.toggle('border-primary-dark', i === idx);
-                img.classList.toggle('border-transparent', i !== idx);
-            });
-        }
-        document.getElementById('img-prev').onclick = function() {
-            currentImg = (currentImg - 1 + images.length) % images.length;
-            setMainImage(currentImg);
-        };
-        document.getElementById('img-next').onclick = function() {
-            currentImg = (currentImg + 1) % images.length;
-            setMainImage(currentImg);
-        };
-        // Initialize
-        setMainImage(0);
+      
     </script>
 
 <!--FAQS Section-->
@@ -1413,5 +1386,6 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 </body>
 </html>
+
 
 
