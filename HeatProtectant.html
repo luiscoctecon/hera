@@ -2,29 +2,63 @@
 <html lang="en">
 <head>
   <link rel="icon" href="heraicon.png" type="image/hera-icon">
+  <script src="https://kit.fontawesome.com/9a0348bff4.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service | HERA Hair Essentials</title>
-    <meta name="description" content="Terms of Service for HERA Hair Essentials. Read our policies and commitments to empowered, authentic hair care.">
+    <title>Heat Protector Spray | HERA Hair Essentials</title>
+    <meta name="description" content="Spray Heat Protector, infused with keratin to provide Instant Shine, deep nourishment, and frizz-free hair. Vegan, cruelty-free, and 100% natural ingredients.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .section-content {
+            transition: opacity 0.3s, transform 0.3s;
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+            position: absolute;
+            left: 0; right: 0;
+            width: 100%;
+        }
+        .section-content.active {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+            position: relative;
+            z-index: 1;
+        }
+        .fade-in {
+            animation: fadeInSection 0.3s forwards;
+        }
+        .fade-out {
+            animation: fadeOutSection 0.3s forwards;
+        }
+        @keyframes fadeInSection {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeOutSection {
+            from { opacity: 1; transform: translateY(0); }
+            to { opacity: 0; transform: translateY(20px); }
+        }
+    </style>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         primary: '#F7F5F2',
-                        'primary-dark': '#525150',
-                        'primary-light': '#525150',
-                        cream: '#f7f5f2',
-                        'cream-dark': '#F7F5F2',
-                        beige: '#525150',
-                        taupe: '#525150',
-                        charcoal: 'rgb(54, 51, 47)',
-                        'charcoal-light': 'rgb(115,114,111)',
-                        'gray-warm': '#1c1c1c',
+                        'primary-dark': '#000000',
+                        'primary-light': 'rgb(115,114,111)',
+                        cream: '#F7f5f2',
+                        'cream-dark': '#E8E0D0',
+                        beige: '#D4C4A8',
+                        taupe: '#B8A082',
+                        charcoal: 'rgb(54,51,47)',
+                        'charcoal-light': '#4A4A4A',
+                        'gray-warm': '#8B8680',
                         white: '#FFFFFF',
+                        yellow: '#D4AF37',
                     },
                     fontFamily: {
                         serif: ['Playfair Display', 'Georgia', 'serif'],
@@ -40,7 +74,7 @@
                     backgroundImage: {
                         'hero-gradient': 'linear-gradient(180deg, #F7F5F2 0%, #E8C547 100%)',
                         'section-gradient': 'linear-gradient(180deg, #F5F1E8 0%, #E8E0D0 100%)',
-                        'gold-gradient': '#525150',
+                        'gold-gradient': 'linear-gradient(135deg, #D4AF37 0%, #B8941F 100%)',
                     }
                 }
             }
@@ -59,7 +93,7 @@
                 <a href="ritual.html" class="text-white hover:text-primary transition-colors">Ritual</a>
                 <a href="contact.html" class="text-white hover:text-primary transition-colors">Support</a>
                 <a href="blog.html" class="text-white hover:text-primary transition-colors">Blog</a>
-                <a href="FAQS.html" class="text-gray-700 hover:text-primary transition-colors">FAQs</a>
+                <a href="FAQS.html" class="text-white hover:text-primary transition-colors">FAQs</a>
             </nav>
             <form class="hidden md:block" action="search.html" method="GET">
                 <input type="text" name="q" placeholder="Search..." class="px-4 py-2 rounded-lg shadow-soft">
@@ -77,7 +111,7 @@
                 <a href="shop.html" class="text-gray-700 hover:text-primary transition-colors">Shop</a>
                 <a href="ritual.html" class="text-gray-700 hover:text-primary transition-colors">Ritual</a>
                 <a href="contact.html" class="text-gray-700 hover:text-primary transition-colors">Support</a>
-                <a href="blog.html" class="text-white hover:text-primary transition-colors">Blog</a>
+                <a href="blog.html" class="text-gray-700 hover:text-primary transition-colors">Blog</a>
                 <a href="FAQS.html" class="text-gray-700 hover:text-primary transition-colors">FAQs</a>
                 <form action="search.html" method="GET" class="mt-4">
                     <input type="text" name="q" placeholder="Search..." class="px-4 py-2 rounded-lg shadow-soft w-full">
@@ -86,64 +120,241 @@
         </div>
     </header>
 
-    <!-- Terms of Service Section -->
-    <section class="container mx-auto px-4 py-16 max-w-3xl">
-        <h1 class="font-serif text-4xl text-primary-dark mb-8 text-center">Terms of Service</h1>
-        <div class="bg-white rounded-2xl shadow-soft p-8">
-            <h2 class="font-serif text-2xl text-primary-dark mb-4">Welcome to HERA Hair Essentials</h2>
-            <p class="text-lg text-gray-warm mb-6">By using our website and purchasing our products, you agree to the following terms and conditions. HERA Hair Essentials is committed to providing a modern, minimalist hair care experience rooted in authenticity, empowerment, and self-love.</p>
-            <h3 class="font-serif text-xl text-primary-dark mb-2">1. Brand Values & Promise</h3>
-            <ul class="list-disc pl-6 text-gray-warm mb-6">
-                <li>We offer high-quality, naturally enriched products designed for women who lead, create, and shine.</li>
-                <li>Our brand is inspired by Greek mythology and built for women who value beauty, ritual, and authenticity.</li>
-                <li>We promise "Empowered Hair. Empowered Life." — every product is an invitation to a ritual of reconnection and self-care.</li>
+    <!-- Product Section -->
+     <section class="container mx-auto px-4 py-16 flex flex-col md:flex-row gap-12">
+        <!-- Image Menu Left -->
+        <div class="flex flex-col md:w-1/3 items-center">
+            <!-- Main Image/Video Container -->
+            <div class="relative w-full flex items-center justify-center mb-4">
+                <button id="img-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-soft z-10 hover:bg-primary-dark hover:text-white transition-colors" aria-label="Previous image">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+                </button>
+                <div id="main-media-container" class="w-full">
+                    <img id="main-product-image" src="heatspray2.jpg" alt="Argan Elixir Oil bottle" class="rounded-xl shadow-soft w-full h-full object-cover transition-all duration-300">
+                    <video id="main-product-video" class="rounded-xl shadow-soft w-full h-full object-cover transition-all duration-300 hidden" autoplay loop muted playsinline>
+                        <source src="heathowto.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <button id="img-next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-soft z-10 hover:bg-primary-dark hover:text-white transition-colors" aria-label="Next image">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                </button>
+            </div>
+            <!-- Thumbnails Scrollable -->
+            <div class="flex gap-4 overflow-x-auto md:overflow-x-auto md:overflow-y-auto max-h-32 md:max-h-40 w-full ">
+                <img src="heatspray2.jpg" alt="Argan Elixir Oil bottle" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-primary-dark" onclick="setMainMedia('image', 'heatspray2.jpg')">
+                <div class="video-thumbnail rounded-lg shadow-soft w-20 h-20 cursor-pointer border-2 border-transparent hover:border-primary-dark relative" onclick="setMainMedia('video', 'heathowto.mp4')">
+                    <video src="heathowto.mp4" class="w-full h-full object-cover">
+                        <source src="heathowto.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                <img src="heatspraybenefits11.jpg" alt="Oil drop on hair" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'heatspraybenefits11.jpg')">
+                <img src="heatspraybenefits12.jpg" alt="Oil applied on hair" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'heatspraybenefits12.jpg')">
+                <img src="heatandoilbenefits2.png" alt="Hair after using oil" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'heatandoilbenefits2.png')">
+                <img src="heatspray.gif" alt="Hair after using oil" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'heatspray.gif')">  
+                
+
+            </div>
+        </div>
+        <!-- Product Info -->
+        <div class="md:w-2/3 flex flex-col gap-6">
+            <h1 class="font-serif text-4xl text-primary-dark mb-2">Heat Protector Spray</h1>
+             <div class="flex items-center gap-3 mb-4">
+            <div class="flex">
+                        <svg class="w-5 h-5 text-yellow" fill="currentColor"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow" fill="currentColor"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow" fill="currentColor"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow" fill="currentColor"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow" fill="currentColor"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <span class="text-sm text-charcoal-light">Based on 5 reviews</span>
+                </div>
+            <div class="flex items-center gap-4 mb-1">
+                <span class="text-2xl text-primary-dark font-semibold">$17</span>
+                <span class="line-through text-gray-warm">$20</span>
+                <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded">Save 15%</span>
+            </div>
+            <ul class="list-disc pl-6 text-lg text-gray-warm mb-4">
+                <li>Vegan</li>
+                <li>Heat Protectant up to 450°F (230°C)</li>
+                <li>Fast Absorbing</li>
+                <li>For All Hair Types</li>
+                <li>For Chemically Treated Hair</li>
             </ul>
-            <h3 id="shipping-returns" class="font-serif text-xl text-primary-dark mb-2">2. Eligibility</h3>
-            <p class="text-gray-warm mb-6">Our products and services are intended for women of all ages, those who are multicultural, high-achieving, and value self-image and authenticity. You must be at least 18 years old to make purchases on our site.</p>
-            <h3 class="font-serif text-xl text-primary-dark mb-2">3. Orders & Payment</h3>
-            <ul class="list-disc pl-6 text-gray-warm mb-6">
-                <li>All orders are subject to acceptance and availability.</li>
-                <li>Prices are listed in USD and may change without notice.</li>
-                <li>Payment must be made in full at the time of purchase.</li>
-            </ul>
-            <h3  class="font-serif text-xl text-primary-dark mb-2">4. Shipping & Returns</h3>
-            <ul class="list-disc pl-6 text-gray-warm mb-6">
-                <li>We ship within the United States. Shipping times and costs are provided at checkout.</li>
-                <li>All sales are final upon purchase. Meaning there are no returns. </li>
-                <li>In the event of a damaged or defective product, please contact us within 7 days.</li>
-            </ul>
-            <h3 class="font-serif text-xl text-primary-dark mb-2">5. Product Use & Safety</h3>
-            <ul class="list-disc pl-6 text-gray-warm mb-6">
-                <li>Our products are made with natural ingredients and are cruelty-free, vegan certified, and suitable for all hair types.</li>
-                <li>Always read product instructions and ingredients before use. Discontinue use if irritation occurs.</li>
-            </ul>
-            <h3 class="font-serif text-xl text-primary-dark mb-2">6. Intellectual Property</h3>
-            <ul class="list-disc pl-6 text-gray-warm mb-6">
-                <li>All content, branding, and product designs are the property of HERA Hair Essentials and may not be reproduced without permission.</li>
-            </ul>
-            <h3 class="font-serif text-xl text-primary-dark mb-2">7. Privacy</h3>
-            <ul class="list-disc pl-6 text-gray-warm mb-6">
-                <li>Your privacy is important to us. Please review our Privacy Policy for details on how we collect, use, and protect your information.</li>
-            </ul>
-            <h3 class="font-serif text-xl text-primary-dark mb-2">8. Limitation of Liability</h3>
-            <ul class="list-disc pl-6 text-gray-warm mb-6">
-                <li>HERA Hair Essentials is not liable for any indirect, incidental, or consequential damages arising from the use of our products or website.</li>
-            </ul>
-            <h3 class="font-serif text-xl text-primary-dark mb-2">9. Changes to Terms</h3>
-            <ul class="list-disc pl-6 text-gray-warm mb-6">
-                <li>We reserve the right to update these Terms of Service at any time. Changes will be posted on this page.</li>
-            </ul>
-            <h3 class="font-serif text-xl text-primary-dark mb-2">10. Contact</h3>
-            <p class="text-gray-warm mb-2">For questions about these terms, please contact us at <a href="mailto:support@heraesntls.com" class="text-primary-dark underline">support@heraesntls.com</a>.</p>
-            <p class="text-gray-warm">Thank you for choosing HERA Hair Essentials — where every ritual is a moment of reconnection and empowerment.</p>
+            <p class="text-lg mb-6">Spray Heat Protector, anti-frizz, leave-in conditoner.<br> 
+             Keratin infussion helps prevent breakage .</p>
+            <div id='product-component-1753391623022'></div>
         </div>
     </section>
-    <!-- Keep Shopping Section -->
-    <section class="container mx-auto px-4 py-8 flex justify-center">
-        <button id="keep-shopping-btn" onclick="window.location.href='shop.html'; document.getElementById('product-component-1753313965709').style.display='none';" class="bg-charcoal text-white px-8 py-3 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow text-center">Let's Nourish That Hair</button>
+
+    <!-- Section Nav -->
+    <div class="section-nav container mx-auto px-4 py-12 flex gap-7 justify-center">
+        <button onclick="showSection('how-to-use', this)" class="text-white bg-charcoal font-semibold px-4 py-2 active hover:bg-primary-light rounded-lg transition-colors">How to Use</button>
+        <button onclick="showSection('benefits', this)" class="text-white bg-charcoal font-semibold px-4 py-2 hover:bg-primary-light rounded-lg transition-colors">Benefits</button>
+        <button onclick="showSection('ingredients', this)" class="text-white bg-charcoal font-semibold px-4 py-2 hover:bg-primary-light rounded-lg transition-colors">Ingredients</button>
+    </div>
+
+    <!-- Section Content -->
+    <div class="section-content-parent container mx-auto px-4 mt-8" style="position:relative; min-height:180px;">
+        <div id="how-to-use" class="section-content onclick-active active column-section">
+            <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto auto md:auto w-full justify-center mb-4">
+              <video src="heathowto.mp4" controls class="rounded-xl shadow-soft w-60 h-100 "></video>
+               
+            </div>
+            <p class="text-lg text-gray-warm">Spray evenly onto damp or dry hair before using heat styling tools. Focus on mid-lengths and ends. Do not rinse out. Style as desired.</p>
+        </div>
+        <div id="benefits" class="section-content onclick-active column-section">
+            <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto max-h-80 md:max-h-80 w-full  mb-4">
+                <img src="heatspraybenefits1.png" alt="Keratin" class="rounded-lg shadow-soft w-60 h-full object-fit">
+                <img src="heatspraybenefits2 copy.png" alt="Keratin Benefits" class="rounded-lg shadow-soft w-60 h-full object-fit">
+                <img src="heatspraybenefits3.png" alt="Keratin Benefits" class="rounded-lg shadow-soft w-60 h-full object-fit">
+                <img src="heatandoilbenefits.png" alt="Heat and Oil Benefits" class="rounded-lg shadow-soft w-60 h-full object-fit">
+                
+               
+            </div>
+            <p class="text-lg text-gray-warm">Instant Shine: Keratin helps achieve smooth, shiny, and frizz-free hair.<br>Deep Nourishment: Keratin nourishes the hair by providing essential vitamins and amino acids.<br>Damage Protection: Shields hair from heat up to 450°F (230°C), keeping it strong and resilient.</p>
+        </div>
+        <div id="ingredients" class="section-content onclick-active column-section">
+            <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto max-h-80 md:max-h-80 w-full justify-center mb-4">
+                <img src="heatspraybenefits copy.png" alt="heatspray" class="rounded-lg shadow-soft w-60 h-full object-cover">
+            </div>
+            <p class="text-lg text-gray-warm">Keratin, essential vitamins, amino acids. 100% natural ingredients. Vegan certified. Cruelty-free.</p>
+        </div>
+    </div>
+    <script>
+        // Animate section transitions
+        function showSection(id, btn) {
+            document.querySelectorAll('.section-content').forEach(sec => {
+                if (sec.classList.contains('active')) {
+                    sec.classList.remove('fade-in');
+                    sec.classList.add('fade-out');
+                    setTimeout(() => {
+                        sec.classList.remove('active', 'fade-out');
+                    }, 300);
+                } else {
+                    sec.classList.remove('fade-in', 'fade-out');
+                }
+            });
+            const next = document.getElementById(id);
+            next.classList.add('active', 'fade-in');
+            document.querySelectorAll('.section-nav button').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+        // Add transition classes on DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.section-content').forEach(sec => {
+                sec.classList.add('transition-section');
+            });
+        });
+    </script>
+
+    <!--FAQS Section-->
+    <section class="container mx-auto px-4 py-12">
+             <div class="space-y-4">
+                <h2 class="font-serif text-2xl md:text-3xl text-primary-dark">Frequently Asked Questions</h2>
+                <div class="bg-white p-6 rounded-lg shadow-soft">
+                  <h3 class="font-semibold text-lg text-charcoal">How do I use the Heat Protector Spray?</h3>
+                    <p class="text-gray-warm">Spray evenly onto damp or dry hair before using heat styling tools. Focus on mid-lengths and ends. Do not rinse out. Style as desired.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-soft">
+                  <h3 class="font-semibold text-lg text-charcoal">What are the benefits of using this spray?</h3>
+                    <p class="text-gray-warm">Instant Shine: Keratin helps achieve smooth, shiny, and frizz-free hair.<br>Deep Nourishment: Keratin nourishes the hair by providing essential vitamins and amino acids.<br>Damage Protection: Shields hair from heat up to 450°F (230°C), keeping it strong and resilient.</p>
+                </div>
+                </div>
+                <div class="text-center mt-8">
+            <a href="FAQS.html#heat-spray" class="text-primary-dark hover:text-primary transition-colors font-semibold">View all FAQs</a>
+            </div>
+            
+            </section>
+
+    <!-- Comparison Chart -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="font-serif text-2xl text-primary-dark mb-6">How Heat Protector Spray Compares</h2>
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white rounded-xl shadow-soft">
+                <thead>
+                    <tr class="bg-charcoal text-white">
+                        <th class="py-3 px-4 text-left">Feature</th>
+                        <th class="py-3 px-4 text-left">Heat Protector Spray</th>
+                        <th class="py-3 px-4 text-left">Typical Heat Spray</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-warm">
+                    <tr>
+                        <td class="py-2 px-4">Vegan</td>
+                        <td class="py-2 px-4">Yes</td>
+                        <td class="py-2 px-4">Rare</td>
+                    </tr>
+                    <tr class="bg-primary">
+                        <td class="py-2 px-4">Heat Protection up to 450°F</td>
+                        <td class="py-2 px-4">Yes</td>
+                        <td class="py-2 px-4">Sometimes</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Fast Absorbing</td>
+                        <td class="py-2 px-4">Yes</td>
+                        <td class="py-2 px-4">No</td>
+                    </tr>
+                    <tr class="bg-primary">
+                        <td class="py-2 px-4">Multi-Use Product</td>
+                        <td class="py-2 px-4">Yes</td>
+                        <td class="py-2 px-4">No</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Nourishes While Protecting Hair Colour Life</td>
+                        <td class="py-2 px-4">Yes</td>
+                        <td class="py-2 px-4">No</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
-    <!-- Hidden Product Component (not visible, but present for script compatibility) -->
-    <div id='product-component-1753313965709' style="display:none;"></div>
+
+    <!-- Reviews Section -->
+    <section class="bg-cream py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-2xl text-primary-dark mb-8">Customer Reviews</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-soft">
+                    <div class="flex items-center mb-2">
+                        <span class="font-semibold text-yellow mr-2">★★★★★</span>
+                        <span class="text-gray-warm text-sm">by Maya</span>
+                    </div>
+                    <p class="text-gray-warm">"My hair feels protected and so much shinier after using this spray. No sticky residue!"</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-soft">
+                    <div class="flex items-center mb-2">
+                        <span class="font-semibold text-yellow mr-2">★★★★★</span>
+                        <span class="text-gray-warm text-sm">by Priya</span>
+                    </div>
+                    <p class="text-gray-warm">"Finally found a heat spray that works for my color-treated hair. Smells amazing too!"</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-soft">
+                    <div class="flex items-center mb-2">
+                        <span class="font-semibold text-yellow mr-2">★★★★★</span>
+                        <span class="text-gray-warm text-sm">by Zoe</span>
+                    </div>
+                    <p class="text-gray-warm">"Noticeable difference after just a week. My ends are less frizzy and more manageable."</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-charcoal text-white py-12">
@@ -153,7 +364,7 @@
                     <h3 class="font-serif text-2xl mb-6 text-primary">HERA</h3>
                     <p class="text-gray-400 mb-6">Empowered Hair. Empowered Life.</p>
                     <div class="flex space-x-4">
-                        <a href="https://www.instagram.com/heraesntls/" class="text-gray-400 hover:text-primary transition-colors" target="_blank">
+                        <a href="https://www.instagram.com/heraesntls/" class="text-gray-400 hover:text-primary transition-colors" target="_blank"> 
                             <span class="sr-only">Instagram</span>
                             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
@@ -187,32 +398,31 @@
                     <ul class="space-y-2">
                         <li><a href="FAQS.html" class="text-gray-400 hover:text-primary transition-colors">FAQ</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Hair Care Tips</a></li>
-                        <li><a href="#shipping-returns" class="text-gray-400 hover:text-primary transition-colors">Shipping & Returns</a></li>
-                        
-                    </ul>
+                        <li><a href="terms.html#shipping-returns" class="text-gray-400 hover:text-primary transition-colors">Shipping & Returns</a></li>
+                       
                 </div>
                 <div>
                     <h4 class="font-medium text-white mb-4">Contact Us</h4>
                     <address class="text-gray-400 not-italic">
-                        
-                        <p class="mb-2">support@heraesntls.com</p>
                        
+                        <p class="mb-2">support@heraesntls.com</p>
+                        
                     </address>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 HERA Hair Essentials. All rights reserved.</p>
                 <div class="flex space-x-6">
-                    <a href="privacy.html" class="text-gray-400 hover:text-primary transition-colors text-sm" target="_blank">Privacy Policy</a>
-                    <a href="terms.html" class="text-gray-400 hover:text-primary transition-colors text-sm" target="_blank">Terms of Service</a>
-                    <a href="#shipping-returns" class="text-gray-400 hover:text-primary transition-colors text-sm">Shipping Policy</a>
+                    <a href="privacy.html" class="text-gray-400 hover:text-primary transition-colors text-sm">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-primary transition-colors text-sm">Terms of Service</a>
+                    <a href="terms.html#shipping-returns" class="text-gray-400 hover:text-primary transition-colors text-sm">Shipping Policy</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    
     <script>
-        // Mobile menu toggle
         document.addEventListener('DOMContentLoaded', function () {
             var menuButton = document.getElementById('mobile-menu-button');
             var mobileMenu = document.getElementById('mobile-menu');
@@ -228,9 +438,38 @@
                 });
             }
         });
+
+        // Image gallery logic
+        const images = [
+            "heatspray2.jpg",
+            "sprayonhands.jpg",
+            "heatsprayhair.jpg",
+            "_MG_6701.jpg",
+            "heatspray.gif"
+        ];
+        let currentImg = 0;
+        function setMainImage(idx) {
+            currentImg = idx;
+            document.getElementById('main-product-image').src = images[idx];
+            // update thumbnail borders
+            const thumbs = document.querySelectorAll('.flex.gap-4 img');
+            thumbs.forEach((img, i) => {
+                img.classList.toggle('border-primary-dark', i === idx);
+                img.classList.toggle('border-transparent', i !== idx);
+            });
+        }
+        document.getElementById('img-prev').onclick = function() {
+            currentImg = (currentImg - 1 + images.length) % images.length;
+            setMainImage(currentImg);
+        };
+        document.getElementById('img-next').onclick = function() {
+            currentImg = (currentImg + 1) % images.length;
+            setMainImage(currentImg);
+        };
+        // Initialize
+        setMainImage(0);
     </script>
-    <!--Product oil component-->
-     <script type="text/javascript">
+    <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
   var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
@@ -257,8 +496,8 @@
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
-        id: '9850645643581',
-        node: document.getElementById('product-component-1753313965709'),
+        id: '9850646626621',
+        node: document.getElementById('product-component-1753391623022'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -502,5 +741,87 @@
 })();
 /*]]>*/
 </script>
+<!-- Heat Protector Ends -->
+ <script>
+    // Function to switch between image and video in the main display
+    function setMainMedia(type, source) {
+        const mainImage = document.getElementById('main-product-image');
+        const mainVideo = document.getElementById('main-product-video');
+        
+        if (type === 'video') {
+            mainImage.classList.add('hidden');
+            mainVideo.classList.remove('hidden');
+            mainVideo.src = source;
+            mainVideo.play();
+        } else {
+            mainVideo.classList.add('hidden');
+            mainImage.classList.remove('hidden');
+            mainImage.src = source;
+        }
+        
+        // Update thumbnail borders
+        const thumbnails = document.querySelectorAll('.video-thumbnail, img.rounded-lg');
+        thumbnails.forEach(thumb => {
+            if ((type === 'video' && thumb.classList.contains('video-thumbnail')) ||
+                (type === 'image' && thumb.src?.includes(source))) {
+                thumb.classList.add('border-primary-dark');
+            } else {
+                thumb.classList.remove('border-primary-dark');
+            }
+        });
+    }
+
+    // Initialize video functionality when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const mainVideo = document.getElementById('main-product-video');
+        const mediaItems = [
+            { type: 'image', source: 'heatspray2.jpg' },
+            { type: 'video', source: 'heathowto.mp4' },
+            { type: 'image', source: 'heatspraybenefits11.jpg' },
+            { type: 'image', source: 'heatspraybenefits12.jpg' },
+            { type: 'image', source: 'heatandoilbenefits2.png' },
+            { type: 'image', source: 'heatspray.gif' },
+            
+            
+        ];
+        let currentIndex = 0;
+
+        // Ensure video restarts when it ends
+        mainVideo.addEventListener('ended', function() {
+            mainVideo.play();
+        });
+        
+        // Handle previous/next buttons
+        const prevButton = document.getElementById('img-prev');
+        const nextButton = document.getElementById('img-next');
+        
+        prevButton.addEventListener('click', function() {
+            currentIndex = (currentIndex - 1 + mediaItems.length) % mediaItems.length;
+            const item = mediaItems[currentIndex];
+            setMainMedia(item.type, item.source);
+        });
+        
+        nextButton.addEventListener('click', function() {
+            currentIndex = (currentIndex + 1) % mediaItems.length;
+            const item = mediaItems[currentIndex];
+            setMainMedia(item.type, item.source);
+        });
+
+        // Update thumbnails when clicking them
+        const thumbnails = document.querySelectorAll('.video-thumbnail, img.rounded-lg');
+        thumbnails.forEach((thumb, index) => {
+            if (!thumb.onclick) {
+                thumb.addEventListener('click', function() {
+                    currentIndex = index;
+                    const item = mediaItems[currentIndex];
+                    setMainMedia(item.type, item.source);
+                });
+            }
+        });
+    });
+</script>
 </body>
 </html>
+    
+    
+ 
