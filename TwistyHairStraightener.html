@@ -133,10 +133,18 @@
                 </button>
                 <div id="main-media-container" class="w-full">
                     <img id="main-product-image" src="oilbottle1.jpg" alt="Argan Elixir Oil bottle" class="rounded-xl shadow-soft w-full h-full object-cover transition-all duration-300">
-                    <video id="main-product-video" class="rounded-xl shadow-soft w-full h-full object-cover transition-all duration-300 hidden" autoplay loop muted playsinline>
-                        <source src="oilhowto.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <div id="main-product-video" class="rounded-xl shadow-soft w-full h-full transition-all duration-300 hidden">
+                        <div style="padding:177.78% 0 0 0;position:relative;">
+                            <iframe src="https://player.vimeo.com/video/1107343487?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;controls=0" 
+                                frameborder="0" 
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                                title="twistyhowto">
+                            </iframe>
+                        </div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
                 </div>
                 <button id="img-next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-soft z-10 hover:bg-primary-dark hover:text-white transition-colors" aria-label="Next image">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
@@ -145,7 +153,7 @@
             <!-- Thumbnails Scrollable -->
             <div class="flex gap-4 overflow-x-auto md:overflow-x-auto md:overflow-y-auto max-h-32 md:max-h-40 w-full ">
                 <img src="Twisty 1.jpeg" alt="Argan Elixir Oil bottle" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-primary-dark" onclick="setMainMedia('image', 'twisty 1.jpeg')">
-                <div class="video-thumbnail rounded-lg shadow-soft w-20 h-20 cursor-pointer border-2 border-transparent hover:border-primary-dark relative" onclick="setMainMedia('video', 'tiwstyhowto.mp4')">
+                <div class="video-thumbnail rounded-lg shadow-soft w-20 h-20 cursor-pointer border-2 border-transparent hover:border-primary-dark relative" onclick="setMainMedia('video', 'twistyhowto.mp4')">
                     <video src="twistyhowto.mp4" class="w-full h-full object-cover">
                         <source src="twistyhowto.mp4" type="video/mp4">
                     </video>
@@ -212,7 +220,18 @@
     <div class="section-content-parent container mx-auto px-4 mt-8" style="position:relative; min-height:180px;">
         <div id="how-to-use" class="section-content onclick-active active column-section">
             <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto auto max-full md:max-full w-full justify-center mb-4">
-                <video src="twistyhowto.mp4" controls class="rounded-lg shadow-soft w-60 h-full object-cover" alt="How to Use Twisty Hair Straightener"></video>
+                <div class="w-60">
+                    <div style="padding:177.78% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/1107343487?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;controls=0" 
+                            frameborder="0" 
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                            title="twistyhowto">
+                        </iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
             </div>
             <p class="text-lg text-gray-warm">Plug in and allow to heat up. Use the twist feature to switch between straightening and creating waves. Glide through sections of hair for your desired look.</p>
         </div>
