@@ -216,15 +216,23 @@
 
     <!-- Section Nav -->
     <div class="section-nav container mx-auto px-4 py-12 flex gap-7 justify-center">
-       
+        <button onclick="showSection('how-to-use', this)" class="text-white bg-charcoal font-semibold px-4 py-2 active hover:bg-primary-light rounded-lg transition-colors">The Elixir</button>
         <button onclick="showSection('benefits', this)" class="text-white bg-charcoal font-semibold px-4 py-2 active hover:bg-primary-light rounded-lg transition-colors">Benefits</button>
         <button onclick="showSection('ingredients', this)" class="text-white bg-charcoal font-semibold px-4 py-2 active hover:bg-primary-light rounded-lg transition-colors">Ingredients</button>
     </div>
 
     <!-- Section Content -->
     <div class="section-content-parent container mx-auto px-4 mt-8" style="position:relative; min-height:180px;">
+
+      <div id="how-to-use" class="section-content active onclick-active column-section">
+      <div class="scroll-row flex  gap-4 overflow-x-auto md:overflow-x-auto md:overflow-y-auto auto w-full mb-4">
+        <video src="oiltransform1.mp4" alt="how-to-use" class="rounded-lg shadow-soft w-60 h-full object-cover" autoplay loop muted playsinline></video>
+        <video src="oiltransform2.mp4" alt="how-to-use" class="rounded-lg shadow-soft w-60 h-full object-cover" autoplay loop muted playsinline></video>
+        <video src="oiltransform3.mp4" alt="how-to-use" class="rounded-lg shadow-soft w-60 h-full object-cover" autoplay loop muted playsinline></video>
+      </div>
+      </div>
         
-        <div id="benefits" class="section-content active onclick-active column-section">
+        <div id="benefits" class="section-content onclick-active column-section">
         <div class="scroll-row flex auto gap-4 overflow-x-auto md:overflow-x-auto md:overflow-y-auto auto md:max-full w-full  mb-4">
             
             <img src="oilbenefitssmall.jpg" alt="Benefit 2" class="rounded-lg shadow-soft w-60 h-full object-cover">
