@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8NR3ZRLWJ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -138,11 +138,11 @@
         <!-- Image Menu Left -->
         <div class="flex flex-col md:w-1/3 items-center">
             <!-- Main Image/Video Container -->
-            <div class="relative w-full flex items-center justify-center mb-4">
-                <button id="img-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-soft z-10 hover:bg-primary-dark hover:text-white transition-colors" aria-label="Previous image">
+            <div class="relative w-full flex items-center justify-center mb-4" id="swipe-container">
+                <button id="img-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-soft z-10 hover:bg-primary-dark hover:text-white transition-colors md:visible" aria-label="Previous image">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
                 </button>
-                <div id="main-media-container" class="w-full">
+                <div id="main-media-container" class="w-full touch-pan-y">
                     <img id="main-product-image" src="oilbottle1.jpg" alt="Argan Elixir Oil bottle" class="rounded-xl shadow-soft w-full h-full object-cover transition-all duration-300">
                     <div id="main-product-video" class="rounded-xl shadow-soft w-full h-full transition-all duration-300 hidden">
                         <div style="padding:177.78% 0 0 0;position:relative;">
@@ -527,6 +527,42 @@
         };
         // Initialize
         setMainImage(0);
+
+        // Touch swipe functionality
+        const swipeContainer = document.getElementById('swipe-container');
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        function handleSwipe() {
+            const swipeThreshold = 50; // minimum distance for a swipe
+            const swipeDistance = touchEndX - touchStartX;
+            
+            if (Math.abs(swipeDistance) > swipeThreshold) {
+                if (swipeDistance > 0) {
+                    // Swiped right - show previous
+                    document.getElementById('img-prev').click();
+                } else {
+                    // Swiped left - show next
+                    document.getElementById('img-next').click();
+                }
+            }
+        }
+
+        swipeContainer.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        }, false);
+
+        swipeContainer.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].clientX;
+            handleSwipe();
+        }, false);
+
+        // Prevent default touch behavior to avoid scrolling while swiping
+        swipeContainer.addEventListener('touchmove', (e) => {
+            if (Math.abs(e.touches[0].clientX - touchStartX) > 10) {
+                e.preventDefault();
+            }
+        }, { passive: false });
     </script>
     
 <!--Oil-->
@@ -1428,5 +1464,3 @@
 </script>
 </body>
 </html>
-
-
