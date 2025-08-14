@@ -107,19 +107,138 @@
     </header>
 
     <!-- Hero Section -->
- <section class="relative bg-hero-gradient py-40 md:py-80 flex flex-col justify-center">
- <img src="community1.jpg" alt="get your oil" class="absolute inset-0 w-full h-full object-cover z-0" >
+ <section class="relative bg-hero-gradient py-40 md:py-40 flex flex-col justify-center">
+  <img src="community1.jpg" alt="Hera Hair Essentials" class="absolute inset-0 w-full h-full object-cover opacity-50">
   
-  
-  <div class="relative z-10 container animate-scale-in mx-auto px-auto md:px-2 flex flex-col items-center ">
+  <div class="relative z-10 container animate-scale-in mx-auto px-1 md:px-2 flex flex-col items-center " style="height: 100%; min-height: 20vh;">
     
-      <h1 class=" font-serif 5vw md-3.5vw leading-tight tracking-tight mb-6 text-white text-center uppercase">
-        Hera Hair Essentials
-      </h1>
-        <a href="shop.html"
-          class="bg-primary text-black px-10 py-4 rounded-sm font-medium shadow-gold hover:shadow-medium transition-shadow  text-center">Shop</a>
-    <h2 class="font-serif 4vw md-2vw leading-tight tracking-tight mb-6 text-white text-center">Transform Your Hair in just one week </h2>
-      <div class="flex flex-col sm:flex-row gap-1 justify-center w-full">
+      <div id="hero-content" class="flex flex-col items-center animate-bounce-in">
+        <h1 style="font-size: 7vw;" class="font-serif leading-tight tracking-tight mb-6 text-white text-center uppercase">
+          Hera Hair Essentials
+        </h1>
+        <div class="flex flex-col sm:flex-row justify-center w-60% mb-6">
+          <a href="shop.html"
+            class="bg-primary text-black px-10 py-4 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow text-center">Shop Now</a>
+        </div>
+        <h2 style="font-size: 4vw;" class="font-serif leading-tight tracking-tight mb-6 text-white text-center">
+          Transform Your Hair in Just One Week <br> Designed by Hairstylists That Understand Your Needs
+        </h2>
+      </div>
+      <style>
+      @keyframes bounce-in-bottom {
+        0% {
+          opacity: 0;
+          transform: translateY(100px) scale(0.95);
+        }
+        60% {
+          opacity: 1;
+          transform: translateY(-20px) scale(1.05);
+        }
+        80% {
+          transform: translateY(10px) scale(0.98);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+      @keyframes float-bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+      @keyframes float-bounce-delayed-1 {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-12px);
+        }
+      }
+      @keyframes float-bounce-delayed-2 {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      .animate-float {
+        animation: float-bounce 3s ease-in-out infinite;
+      }
+      .animate-float-delayed-1 {
+        animation: float-bounce-delayed-1 3s ease-in-out infinite;
+        animation-delay: 0.2s;
+      }
+      .animate-float-delayed-2 {
+        animation: float-bounce-delayed-2 3s ease-in-out infinite;
+        animation-delay: 0.4s;
+      }
+      </style>
+      <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var hero = document.getElementById('hero-content');
+        var heroTitle = hero.querySelector('h1');
+        var shopButton = hero.querySelector('a');
+        var subtitle = hero.querySelector('h2');
+        
+        hero.classList.add('animate-bounce-in');
+        
+        // Wait for the initial animation to complete before starting the infinite bounces
+        setTimeout(() => {
+          heroTitle.classList.add('animate-float');
+          shopButton.classList.add('animate-float-delayed-1');
+          subtitle.classList.add('animate-float-delayed-2');
+        }, 1000);
+      });
+      </script>
+      <style>
+    
+      @keyframes float-bounce-delayed-2 {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      .animate-bounce-in {
+        animation: bounce-in-bottom 1s cubic-bezier(.68,-0.55,.27,1.55) both;
+      }
+      .animate-float {
+        animation: float-bounce 3s ease-in-out infinite;
+      }
+      .animate-float-delayed-1 {
+        animation: float-bounce-delayed-1 3s ease-in-out infinite;
+        animation-delay: 0.2s;
+      }
+      .animate-float-delayed-2 {
+        animation: float-bounce-delayed-2 3s ease-in-out infinite;
+        animation-delay: 0.4s;
+      }
+      #hero-content > * {
+        margin-bottom: 2vw;
+      }
+      #hero-content > *:last-child {
+        margin-bottom: 0;
+      }
+      </style>
+      <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var hero = document.getElementById('hero-content');
+        var heroText = hero.querySelector('h1, h2');
+        
+        hero.classList.add('animate-bounce-in');
+        
+        // Wait for the initial animation to complete before starting the infinite bounce
+        setTimeout(() => {
+          heroText.classList.add('animate-float');
+        }, 1000); // 1000ms = 1s (duration of initial animation)
+      });
+      </script>
       </div>
     </div>
   </div>
@@ -298,7 +417,7 @@ That five minutes in front of the mirror? It's not just about hair - it's your t
                     <div class="flex items-center">
                         <div class="w-12 h-12 bg-cream-dark rounded-full mr-4"></div>
                         <div>
-                            <h4 class="font-medium">Sofia Rodriguez</h4>
+                            <h4 class="font-medium">Maya R</h4>
                             <p class="text-gray-warm text-sm">Business Owner</p>
                         </div>
                     </div>
@@ -380,7 +499,7 @@ That five minutes in front of the mirror? It's not just about hair - it's your t
                     <div class="flex items-center">
                         <div class="w-12 h-12 bg-cream-dark rounded-full mr-4"></div>
                         <div>
-                            <h4 class="font-medium">Maria Chen</h4>
+                            <h4 class="font-medium">Maria C.</h4>
                             <p class="text-gray-warm text-sm">Marketing Executive</p>
                         </div>
                     </div>
