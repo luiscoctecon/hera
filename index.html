@@ -52,6 +52,7 @@
                         'gray-warm': '#1c1c1c',
                         white: '#FFFFFF',
                         yellow: '#D4AF37',
+                        gradient: 'linear-gradient(180deg, #ffffff 0%, #cebf96 100%)',
                     },
                     fontFamily: {
                         serif: ['Playfair Display', 'Georgia', 'serif'],
@@ -120,10 +121,10 @@
     <source src="herahero2.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
-  <div class="grid grid-cols-2 relative z-10 container animate-scale-in mx-auto px-1 md:px-2 flex flex-col  " style="height: 100%; min-height: 20vh;">
-    
-      <div id="hero-content" class="flex flex-col  animate-bounce-in">
-        <h3 style="font-size: 1vw;" class="font-serif leading-tight tracking-tight mb-6 text-white ">
+  <div class="grid grid-cols-2 relative  z-10 container animate-scale-in mx-auto px-1 md:px-2 flex flex-col  " style="height: 100%; min-height: 20vh;">
+
+      <div id="hero-content" class="py-10 md:py-0  flex flex-col  animate-bounce-in">
+        <h3 style="font-size: 1vw;" class="font-serif leading-tight tracking-tight mb-10 text-white ">
           organic luxury hair products
         </h3>
         <h1 style="font-size: 5vw;" class="font-serif leading-tight tracking-tight mb-6 text-white  uppercase">
@@ -135,10 +136,12 @@
         </h2>
         <div class="flex flex-col sm:flex-row  w-60% mb-6">
           <a href="shop.html"
-            class="bg-primary text-black px-10 md:py-4 py-0 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow text-center">See Full Collection</a>
+            class="bg-primary text-black px-10 md:py-4 py-0 rounded-lg font-serif shadow-gold hover:shadow-medium transition-shadow text-center">See Full Collection</a>
         </div>
         <p>used by hair professionals</p>
+        
       </div>
+      
       <style>
       @keyframes bounce-in-bottom {
         0% {
@@ -255,8 +258,15 @@
       });
       </script>
       </div>
+      <div class="flex flex-row  items-center justify-center space-x-8 text-white/90 leading-relaxed z-10">
+        <div class="text-center font-bold text-gradient">Free Shipping <br>Over $25</div>
+        <div class="text-center font-bold text-gradient">5 Day Result Guarantee</div>
+        <div class="text-center font-bold gold-gradient">Satisfaction Guaranteed</div>
+      </div>
     </div>
+    
   </div>
+
 </section>
 
 
