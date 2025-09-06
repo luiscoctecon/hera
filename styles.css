@@ -1,0 +1,378 @@
+/* HERA Hair Essentials - Custom Styles */
+
+/* Animation keyframes */
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #525150;
+    outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F5F1E8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #525152;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B8941F;
+}
+
+/* Image hover effects */
+.product-image {
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+}
+
+/* Button hover effects */
+.btn-primary {
+    background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+}
+
+/* Mobile menu animation */
+.mobile-menu {
+    transition: all 0.3s ease;
+}
+
+.mobile-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.mobile-menu.hide {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+}
+
+/* Form styles */
+.form-input {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #D4AF37;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+/* Loading animation */
+.loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Testimonial cards */
+.testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Newsletter signup animation */
+.newsletter-form {
+    transition: transform 0.3s ease;
+}
+
+.newsletter-form:hover {
+    transform: scale(1.02);
+}
+
+/* FAQ accordion */
+.faq-item {
+    transition: all 0.3s ease;
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-content {
+    max-height: 200px;
+}
+
+/* Product grid hover effects */
+.product-grid-item {
+    transition: all 0.3s ease;
+}
+
+.product-grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Parallax effect for hero sections */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Custom gradient text */
+.gradient-text {
+    background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Responsive video wrapper */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .print-only {
+        display: block !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .bg-cream {
+        background-color: white;
+    }
+    
+    .text-gray-warm {
+        color: #333;
+    }
+    
+    .border-gray-300 {
+        border-color: #666;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .animate-fade-in,
+    .animate-slide-up,
+    .animate-scale-in {
+        animation: none;
+    }
+}
+
+/* Dark mode support (future enhancement) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-cream: #1a1a1a;
+        --text-charcoal: #f5f5f5;
+        --bg-white: #2a2a2a;
+    }
+}
+
+/* Utility classes */
+.text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.backdrop-blur {
+    backdrop-filter: blur(10px);
+}
+
+.aspect-ratio-16-9 {
+    aspect-ratio: 16 / 9;
+}
+
+.aspect-ratio-1-1 {
+    aspect-ratio: 1 / 1;
+}
+
+/* Custom selection colors */
+::selection {
+    background-color: rgba(212, 175, 55, 0.3);
+    color: #2C2C2C;
+}
+
+::-moz-selection {
+    background-color: rgba(212, 175, 55, 0.3);
+    color: #2C2C2C;
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 768px) {
+    button,
+    a,
+    input,
+    textarea {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+@media (min-width: 768px) {
+    md, py-40 {
+        padding-top: 28rem;
+        padding-bottom: 10rem;
+
+
+    }
+}
+
+/* Loading state for images */
+img {
+    transition: opacity 0.3s ease;
+}
+
+img[data-loaded="false"] {
+    opacity: 0;
+}
+
+img[data-loaded="true"] {
+    opacity: 1;
+}
+/* benefits section styles */
+
+/* Custom focus indicators */
+.focus-ring:focus {
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.5);
+    border-radius: 4px;
+}
+
+/* Sticky elements */
+.sticky-header {
+    backdrop-filter: blur(10px);
+    background-color: rgba(245, 241, 232, 0.95);
+}
+
+/* Error states */
+.error {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Success states */
+.success {
+    border-color: #10b981;
+    background-color: #f0fdf4;
+}
+
+.success-message {
+    color: #059669;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}

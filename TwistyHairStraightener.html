@@ -127,25 +127,74 @@
         <!-- Image Menu Left -->
         <div class="flex flex-col md:w-1/3 items-center">
             <!-- Main Image with Arrows -->
-            <div class="relative w-full flex items-center justify-center mb-4">
+            <div class="relative w-full flex items-center  justify-center mb-4">
                 <button id="img-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-soft z-10 hover:bg-primary-dark hover:text-white transition-colors" aria-label="Previous image">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
                 </button>
-                <img id="main-product-image" src="twisty12.jpg" alt="Twisty Hair Straightener" class="rounded-xl shadow-soft w-full auto h-full object-cover transition-all duration-300">
+                <div id="main-media-container" class="w-full">
+                    <img id="main-product-image" src="twisty11.jpg" alt="Argan Elixir Oil bottle" class="rounded-xl shadow-soft w-full h-full object-cover transition-all duration-300">
+                    <div id="main-product-video" class="rounded-xl shadow-soft w-full h-full transition-all duration-300 hidden">
+                        <div style="padding:177.78% 0 0 0;position:relative;">
+                            <iframe src="https://player.vimeo.com/video/1107343487?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;controls=0" 
+                                frameborder="0" 
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                                title="twistyhowto">
+                            </iframe>
+                        </div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                </div>
                 <button id="img-next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-soft z-10 hover:bg-primary-dark hover:text-white transition-colors" aria-label="Next image">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
                 </button>
             </div>
             <!-- Thumbnails Scrollable -->
-            <div class="flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto max-h-32 md:max-h-40 w-full justify-center">
-                <img src="twisty12.jpg" alt="Twisty Hair Straightener" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-primary-dark" onclick="setMainImage(0)">
-                <img src="twisty11.jpg" alt="Wavy Look" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainImage(1)">
-                <img src="Twisty 1.jpeg" alt="Ceramic Plates" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainImage(2)">
+            <div class="flex gap-4 overflow-x-auto md:overflow-x-auto md:overflow-y-auto max-h-32 md:max-h-40 w-full ">
+                <img src="twisty11.jpg" alt="Argan Elixir Oil bottle" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-primary-dark" onclick="setMainMedia('image', 'twisty11.jpg')">
+                <div class="video-thumbnail rounded-lg shadow-soft w-20 h-20 cursor-pointer border-2 border-transparent hover:border-primary-dark relative" onclick="setMainMedia('video', 'twistyhowto.mp4')">
+                    <video src="twistyhowto.mp4" class="w-full h-full object-cover">
+                        <source src="twistyhowto.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                <img src="twistbenefits11.jpg" alt="Oil drop on hair" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'twistbenefits11.jpg')">
+                <img src="twistbenefits12.jpg" alt="Oil applied on hair" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'twistbenefits12.jpg')">
+                <img src="Twisty 1.jpeg" alt="Hair after using oil" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'twisty 1.jpeg')">  
+                <img src="twisty12.jpg" alt="Hair before using oil" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'twisty12.jpg')">
+                <img src="Twisty 2.jpeg" alt="Heat protection with oil" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'twisty 2.jpeg')">  
+
             </div>
         </div>
         <!-- Product Info -->
-        <div class="md:w-2/3 flex flex-col gap-6">
+        <div class="md:w-2/3 flex flex-col gap-2">
             <h1 class="font-serif text-4xl text-black mb-2">Twisty Hair Straightener</h1>
+             <div class="flex items-center gap-3 mb-4">
+            <div class="flex">
+                        <svg class="w-5 h-5 text-yellow" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <span class="text-sm text-charcoal-light">Based on 1 review</span>
+                </div>
             <div class="flex items-center gap-4 mb-2">
                 <span class="text-2xl text-black font-semibold">$75</span>
                 <span class="line-through text-charcoal">$120</span>
@@ -160,41 +209,39 @@
             <div id='product-component-1753391018749'></div>
         </div>
     </section>
-<!--FAQS Section-->
-<section class="container mx-auto px-4 py-12">
-  <div class="space-y-4">
-    <h2 class="font-serif text-2xl md:text-3xl text-black">Frequently Asked Questions</h2>
-    <div class="bg-white p-6 rounded-lg shadow-soft">
-      <h3 class="font-semibold text-lg text-charcoal">How do I use the Twisty Hair Straightener?</h3>
-      <p class="text-gray-warm">Simply plug in, allow to heat up, and use the twist feature to switch between straightening and creating waves. Glide through sections of hair for your desired look.</p>
-    </div>
-    <div class="bg-white p-6 rounded-lg shadow-soft">
-      <h3 class="font-semibold text-lg text-charcoal">What are the benefits of using this straightener?</h3>
-      <p class="text-gray-warm">Effortlessly switch between straight and wavy styles. Ceramic plates ensure smooth, frizz-free hair and even heat distribution for superior protection.</p>
-    </div>
-    </div>
-    <div class="text-center mt-8">
-      <a href="FAQS.html#twisty" class="text-charcoal hover:text-primary transition-colors font-semibold">View all FAQs</a>
-    </div>
-    </section>
-    <!-- Section Nav -->
+
+ <!-- Section Nav -->
     <div class="section-nav container mx-auto px-4 py-12 flex gap-7 justify-center">
         <button onclick="showSection('how-to-use', this)" class="text-primary-dark bg-charcoal font-semibold px-4 py-2 active hover:bg-charcoal-light rounded-lg transition-colors">How to Use</button>
         <button onclick="showSection('benefits', this)" class="text-primary-dark bg-charcoal font-semibold px-4 py-2 hover:bg-charcoal-light rounded-lg transition-colors">Benefits</button>
         
     </div>
-
     <!-- Section Content -->
     <div class="section-content-parent container mx-auto px-4 mt-8" style="position:relative; min-height:180px;">
         <div id="how-to-use" class="section-content onclick-active active column-section">
             <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto auto max-full md:max-full w-full justify-center mb-4">
-                <video src="HERATutorial.mp4" controls class="rounded-lg shadow-soft w-60 h-full object-cover" alt="How to Use Twisty Hair Straightener"></video>
+                <div class="w-60">
+                    <div style="padding:177.78% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/1107343487?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;controls=0" 
+                            frameborder="0" 
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                            title="twistyhowto">
+                        </iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
             </div>
             <p class="text-lg text-gray-warm">Plug in and allow to heat up. Use the twist feature to switch between straightening and creating waves. Glide through sections of hair for your desired look.</p>
         </div>
         <div id="benefits" class="section-content onclick-active  column-section">
-            <div class="scroll-row flex gap-4 overflow-x-auto auto md:overflow-x-visible md:overflow-y-auto max-h-full md:max-h-full w-full justify-center mb-4">
-                <img src="Twisty 2.jpeg" alt="Wavy Benefit" class="rounded-lg shadow-soft w-60 h-80 object-fit">
+            <div class="scroll-row flex gap-4 overflow-x-auto auto md:overflow-x-visible md:overflow-y-auto max-h-full md:max-h-full w-full  mb-4">
+                
+                <img src="twistbenefits.png" alt="Straight Benefit" class="rounded-lg shadow-soft w-60 h-full object-fit">
+                <img src="twistbenefits2.png" alt="Ceramic Plates Benefit" class="rounded-lg shadow-soft w-60 h-full object-fit">
+                <img src="twistbenefits3.png" alt="Heat Protection Benefit" class="rounded-lg shadow-soft w-60 h-full object-fit"> 
+                 
                
             </div>
             <p class="text-lg text-gray-warm">Effortlessly switch between straight and wavy styles. Ceramic plates ensure smooth, frizz-free hair and even heat distribution for superior protection.</p>
@@ -229,9 +276,13 @@
 
         // Image gallery logic
         const images = [
-            "twisty12.jpg",
             "twisty11.jpg",
-            "twisty 1.jpeg"
+            "twistyhowto.mp4",
+            "twistbenefits11.jpg",
+            "twistbenefits12.jpg",
+            "twisty 1.jpeg",
+            "twisty12.jpeg",
+            "twisty 2.jpeg",
         ];
         let currentImg = 0;
         function setMainImage(idx) {
@@ -255,6 +306,25 @@
         // Initialize
         setMainImage(0);
     </script>
+
+<!--FAQS Section-->
+<section class="container mx-auto px-4 py-12">
+  <div class="space-y-4">
+    <h2 class="font-serif text-2xl md:text-3xl text-black">Frequently Asked Questions</h2>
+    <div class="bg-white p-6 rounded-lg shadow-soft">
+      <h3 class="font-semibold text-lg text-charcoal">How do I use the Twisty Hair Straightener?</h3>
+      <p class="text-gray-warm">Simply plug in, allow to heat up, and use the twist feature to switch between straightening and creating waves. Glide through sections of hair for your desired look.</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-soft">
+      <h3 class="font-semibold text-lg text-charcoal">What are the benefits of using this straightener?</h3>
+      <p class="text-gray-warm">Effortlessly switch between straight and wavy styles. Ceramic plates ensure smooth, frizz-free hair and even heat distribution for superior protection.</p>
+    </div>
+    </div>
+    <div class="text-center mt-8">
+      <a href="FAQS.html#twisty" class="text-charcoal hover:text-primary transition-colors font-semibold">View all FAQs</a>
+    </div>
+    </section>
+   
 
     <!-- Comparison Chart -->
     <section class="container mx-auto px-4 py-12">
@@ -1267,6 +1337,84 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 })();
 /*]]>*/
+</script>
+<script>
+    // Function to switch between image and video in the main display
+    function setMainMedia(type, source) {
+        const mainImage = document.getElementById('main-product-image');
+        const mainVideo = document.getElementById('main-product-video');
+        
+        if (type === 'video') {
+            mainImage.classList.add('hidden');
+            mainVideo.classList.remove('hidden');
+            mainVideo.src = source;
+            mainVideo.play();
+        } else {
+            mainVideo.classList.add('hidden');
+            mainImage.classList.remove('hidden');
+            mainImage.src = source;
+        }
+        
+        // Update thumbnail borders
+        const thumbnails = document.querySelectorAll('.video-thumbnail, img.rounded-lg');
+        thumbnails.forEach(thumb => {
+            if ((type === 'video' && thumb.classList.contains('video-thumbnail')) ||
+                (type === 'image' && thumb.src?.includes(source))) {
+                thumb.classList.add('border-primary-dark');
+            } else {
+                thumb.classList.remove('border-primary-dark');
+            }
+        });
+    }
+
+    // Initialize video functionality when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        const mainVideo = document.getElementById('main-product-video');
+        const mediaItems = [
+            { type: 'image', source: 'twisty11.jpg' },
+            { type: 'video', source: 'twistyhowto.mp4' },
+            { type: 'image', source: 'twistbenefits11.jpg' },
+            { type: 'image', source: 'twistbenefits12.jpg' },
+            { type: 'image', source: 'twisty 1.jpeg' },
+            { type: 'image', source: 'twisty12.jpg' },
+            { type: 'image', source: 'twisty 2.jpeg' },
+          
+        ];
+        let currentIndex = 0;
+
+        // Ensure video restarts when it ends
+        mainVideo.addEventListener('ended', function() {
+            mainVideo.play();
+        });
+        
+        // Handle previous/next buttons
+        const prevButton = document.getElementById('img-prev');
+        const nextButton = document.getElementById('img-next');
+        
+        prevButton.addEventListener('click', function() {
+            currentIndex = (currentIndex - 1 + mediaItems.length) % mediaItems.length;
+            const item = mediaItems[currentIndex];
+            setMainMedia(item.type, item.source);
+        });
+        
+        nextButton.addEventListener('click', function() {
+            currentIndex = (currentIndex + 1) % mediaItems.length;
+            const item = mediaItems[currentIndex];
+            setMainMedia(item.type, item.source);
+        });
+
+        // Update thumbnails when clicking them
+        const thumbnails = document.querySelectorAll('.video-thumbnail, img.rounded-lg');
+        thumbnails.forEach((thumb, index) => {
+            if (!thumb.onclick) {
+                thumb.addEventListener('click', function() {
+                    currentIndex = index;
+                    const item = mediaItems[currentIndex];
+                    setMainMedia(item.type, item.source);
+                });
+            }
+        });
+    });
 </script>
 </body>
 </html>
