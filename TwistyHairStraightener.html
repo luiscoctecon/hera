@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C8NR3ZRLWJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C8NR3ZRLWJ');
+</script>
   <link rel="icon" href="heraicon.png" type="image/hera-icon">
     <link rel="icon" href="heraicon.png" type="image/hera-icon">
     <meta charset="UTF-8">
@@ -166,9 +175,8 @@
                 </div>
                 <img src="twistbenefits11.jpg" alt="Oil drop on hair" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'twistbenefits11.jpg')">
                 <img src="twistbenefits12.jpg" alt="Oil applied on hair" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'twistbenefits12.jpg')">
-                <img src="Twisty 1.jpeg" alt="Hair after using oil" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'twisty 1.jpeg')">  
                 <img src="twisty12.jpg" alt="Hair before using oil" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'twisty12.jpg')">
-                <img src="Twisty 2.jpeg" alt="Heat protection with oil" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainMedia('image', 'twisty 2.jpeg')">  
+                 
 
             </div>
         </div>
@@ -274,37 +282,7 @@
             });
         });
 
-        // Image gallery logic
-        const images = [
-            "twisty11.jpg",
-            "twistyhowto.mp4",
-            "twistbenefits11.jpg",
-            "twistbenefits12.jpg",
-            "twisty 1.jpeg",
-            "twisty12.jpeg",
-            "twisty 2.jpeg",
-        ];
-        let currentImg = 0;
-        function setMainImage(idx) {
-            currentImg = idx;
-            document.getElementById('main-product-image').src = images[idx];
-            // update thumbnail borders
-            const thumbs = document.querySelectorAll('.flex.gap-4 img');
-            thumbs.forEach((img, i) => {
-                img.classList.toggle('border-primary-dark', i === idx);
-                img.classList.toggle('border-transparent', i !== idx);
-            });
-        }
-        document.getElementById('img-prev').onclick = function() {
-            currentImg = (currentImg - 1 + images.length) % images.length;
-            setMainImage(currentImg);
-        };
-        document.getElementById('img-next').onclick = function() {
-            currentImg = (currentImg + 1) % images.length;
-            setMainImage(currentImg);
-        };
-        // Initialize
-        setMainImage(0);
+      
     </script>
 
 <!--FAQS Section-->
@@ -1375,9 +1353,8 @@ document.addEventListener('DOMContentLoaded', function () {
             { type: 'video', source: 'twistyhowto.mp4' },
             { type: 'image', source: 'twistbenefits11.jpg' },
             { type: 'image', source: 'twistbenefits12.jpg' },
-            { type: 'image', source: 'twisty 1.jpeg' },
             { type: 'image', source: 'twisty12.jpg' },
-            { type: 'image', source: 'twisty 2.jpeg' },
+           
           
         ];
         let currentIndex = 0;
@@ -1418,3 +1395,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 </body>
 </html>
+
+
+
+

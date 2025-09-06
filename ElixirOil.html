@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/9a0348bff4.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="heraicon.png" type="image/hera-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argan Elixir Oil | HERA Hair Essentials</title>
+    <meta name="description" content="Rapid absorbing elixir oil that is a savior for chemically damaged hair or dry hair without a heavy sensation. Vegan, cruelty-free, and 100% natural ingredients.">
+    <meta property="og:title" content="Hera Hair Essentials | Natural zhair Care Products">
+    <meta property="og:description" content="Premium Argan Elixir Oil. See results in just 3 days. Our fast absorbing oil was engineered with fast absorbing molecules to nourish all hair types. Helps rebuild hair fiber proteins leaving you with shiny, soft healthy hair without looking greasy">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Removed invalid scriptsheet link -->
+    <style>
+        .section-content {
+            transition: opacity 0.3s, transform 0.3s;
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+            position: absolute;
+            left: 0; right: 0;
+            width: 100%;
+        }
+        .section-content.active {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+            position: relative;
+            z-index: 1;
+        }
+        .fade-in {
+            animation: fadeInSection 0.3s forwards;
+        }
+        .fade-out {
+            animation: fadeOutSection 0.3s forwards;
+        }
+        @keyframes fadeInSection {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeOutSection {
+            from { opacity: 1; transform: translateY(0); }
+            to { opacity: 0; transform: translateY(20px); }
+        }
+    </style>
+    <!-- Removed duplicate invalid scriptsheet link -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F7F5F2',
+                        'primary-dark': '#000000',
+                        'primary-light': '#525150',
+                        cream: '#F7F5F2',
+                        'cream-dark': '#f7f5f2',
+                        beige: '#525150',
+                        taupe: '#525150',
+                        charcoal: 'rgb(54, 51, 47)',
+                        'charcoal-light': 'rgb(115,114,111)',
+                        'gray-warm': '#8B8680',
+                        white: '#FFFFFF',
+                        yellow: '#D4AF37',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Playfair Display', 'Georgia', 'serif']
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px rgba(0, 0, 0, 0.08)',
+                        'medium': '0 8px 30px rgba(0, 0, 0, 0.12)',
+                        'strong': '0 12px 40px rgba(0, 0, 0, 0.15)',
+                        'gold': '0 4px 20px rgba(212, 175, 55, 0.2)'
+                    },
+                    backgroundImage: {
+                        'hero-gradient': 'linear-gradient(180deg, #F7F5F2 0%, #E8C547 100%)',
+                        'section-gradient': 'linear-gradient(180deg, #F5F1E8 0%, #E8E0D0 100%)',
+                        'gold-gradient': 'linear-gradient(135deg, #D4AF37 0%, #B8941F 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-charcoal bg-cream">
+    <!-- Header / Navigation -->
+    <header class="bg-charcoal shadow-soft sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center h-20">
+            <a href="index.html" class="font-serif text-white text-2xl text-primary-dark">HERA</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-white hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="text-white hover:text-primary transition-colors">About</a>
+                <a href="shop.html" class="text-white hover:text-primary transition-colors">Shop</a>
+                <a href="ritual.html" class="text-white hover:text-primary transition-colors">Ritual</a>
+                <a href="contact.html" class="text-white hover:text-primary transition-colors">Support</a>
+                <a href="blog.html" class="text-white hover:text-primary transition-colors">Blog</a>
+                <a href="FAQS.html" class="text-gray-700 hover:text-primary transition-colors">FAQs</a>
+            </nav>
+            <form class="hidden md:block" action="search.html" method="GET">
+                <input type="text" name="q" placeholder="Search..." class="px-4 py-2 rounded-lg shadow-soft">
+            </form>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-white" aria-label="Open menu">
+                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-soft absolute w-full left-0 top-20 z-40">
+            <nav class="flex flex-col space-y-4 p-6">
+                <a href="index.html" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                <a href="shop.html" class="text-gray-700 hover:text-primary transition-colors">Shop</a>
+                <a href="ritual.html" class="text-gray-700 hover:text-primary transition-colors">Ritual</a>
+                <a href="contact.html" class="text-gray-700 hover:text-primary transition-colors">Suppport</a>
+                <a href="blog.html" class="text-gray-700 hover:text-primary transition-colors">Blog</a>
+                <a href="FAQS.html" class="text-gray-700 hover:text-primary transition-colors">FAQs</a>
+                <form action="search.html" method="GET" class="mt-4">
+                    <input type="text" name="q" placeholder="Search..." class="px-4 py-2 rounded-lg shadow-soft w-full">
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <section class="container mx-auto px-4 py-16 flex flex-col md:flex-row gap-12">
+        <!-- Image Menu Left -->
+        <div class="flex flex-col md:w-1/3 items-center">
+            <!-- Main Image with Arrows -->
+            <div class="relative w-full flex items-center justify-center mb-4">
+                <button id="img-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-soft z-10 hover:bg-primary-dark hover:text-white transition-colors" aria-label="Previous image">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+                </button>
+                <img id="main-product-image" src="oilbottle2.jpg" alt="Argan Elixir Oil bottle" class="rounded-xl shadow-soft w-full max-w-lg h-96 object-cover transition-all duration-300">
+                <button id="img-next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-soft z-10 hover:bg-primary-dark hover:text-white transition-colors" aria-label="Next image">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                </button>
+            </div>
+            <!-- Thumbnails Scrollable -->
+            <div class="flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto max-h-32 md:max-h-40 w-full justify-center">
+                <img src="oilbottle2.jpg" alt="Argan Elixir Oil bottle" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-primary-dark" onclick="setMainImage(0)">
+                <img src="drip.webp" alt="Argan Oil texture" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainImage(1)">
+                <img src="oilhands.jpg" alt="Argan Oil in use" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainImage(2)">
+            </div>
+        </div>
+        <!-- Product Info -->
+        <div class="md:w-2/3 flex flex-col gap-6">
+            <h1 class="font-serif text-4xl text-primary-dark mb-2">Argan Elixir Oil</h1>
+            <div class="flex items-center gap-4 mb-2">
+                <span class="text-2xl text-primary-dark font-semibold">$22</span>
+                <span class="line-through text-gray-warm">$25</span>
+                <span class="ml-2 px-3 py-1 bg-charcoal text-white rounded-full text-xs font-semibold">Sale</span>
+            </div>
+            <ul class="list-disc pl-6 text-lg text-gray-warm mb-4">
+                <li class="fa-light fa-seeding">Vegan certified</li>
+                <li>100% natural ingredients</li>
+                <li>100% cruelty-free</li>
+                <li>For all hair types</li>
+                <li>For chemically treated hair</li>
+            </ul>
+            <p class="text-lg mb-6">Rapid absorbing elixir oil that is a savior for chemically damaged hair or dry hair without a heavy sensation. Our elixir is designed to repair and reconstruct hair fibers, preventing breakage and bringing life back to your hair.</p>
+           <div id='product-component-1753313965709'></div>
+        </div>
+    </section>
+
+    <!-- Section Nav -->
+    <div class="section-nav container mx-auto px-4 py-12 flex gap-7 justify-center">
+        <button onclick="showSection('how-to-use', this)" class="text-primary-dark font-semibold px-4 py-2 active hover:bg-primary-light rounded-lg transition-colors">How to Use</button>
+        <button onclick="showSection('benefits', this)" class="text-primary-dark font-semibold px-4 py-2 hover:bg-primary-light rounded-lg transition-colors">Benefits</button>
+        <button onclick="showSection('ingredients', this)" class="text-primary-dark font-semibold px-4 py-2 hover:bg-primary-light rounded-lg transition-colors">Ingredients</button>
+    </div>
+
+    <!-- Section Content -->
+    <div class="section-content-parent container mx-auto px-4 mt-8" style="position:relative; min-height:180px;">
+        <div id="how-to-use" class="section-content onclick-active active column-section">
+        <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto max-h-32 md:max-h-40 w-full justify-center mb-4">
+            <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=400&q=80" alt="How to Use 1" class="rounded-lg shadow-soft w-20 h-20 object-cover">
+            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80" alt="How to Use 2" class="rounded-lg shadow-soft w-20 h-20 object-cover">
+        </div>
+        <p class="text-lg text-gray-warm">Apply a small amount to damp or dry hair, focusing on mid-lengths and ends. Style as desired.</p>
+    </div>
+        <div id="benefits" class="section-content onclick-active column-section">
+        <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto max-h-32 md:max-h-40 w-full justify-center mb-4">
+            <img src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=400&q=80" alt="Benefit 1" class="rounded-lg shadow-soft w-20 h-20 object-cover">
+        </div>
+        <p class="text-lg text-gray-warm">Repairs and reconstructs hair fibers, prevents breakage, and brings life back to your hair. Lightweight, non-greasy formula.</p>
+    </div>
+        <div id="ingredients" class="section-content onclick-active column-section">
+        <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto max-h-32 md:max-h-40 w-full justify-center mb-4">
+            <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=400&q=80" alt="Ingredient 1" class="rounded-lg shadow-soft w-20 h-20 object-cover">
+        </div>
+        <p class="text-lg text-gray-warm">100% natural ingredients, vegan certified, cruelty-free.</p>
+    </div>
+    </div>
+    <script>
+        // Animate section transitions
+        function showSection(id, btn) {
+            document.querySelectorAll('.section-content').forEach(sec => {
+                if (sec.classList.contains('active')) {
+                    sec.classList.remove('fade-in');
+                    sec.classList.add('fade-out');
+                    setTimeout(() => {
+                        sec.classList.remove('active', 'fade-out');
+                    }, 300);
+                } else {
+                    sec.classList.remove('fade-in', 'fade-out');
+                }
+            });
+            const next = document.getElementById(id);
+            next.classList.add('active', 'fade-in');
+            document.querySelectorAll('.section-nav button').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+        // Add transition classes on DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.section-content').forEach(sec => {
+                sec.classList.add('transition-section');
+            });
+        });
+    </script>
+
+    <!-- Comparison Chart -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="font-serif text-2xl text-black mb-6">How Argan Elixir Oil Compares</h2>
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white rounded-xl shadow-soft">
+                <thead>
+                    <tr class="bg-charcoal text-white">
+                        <th class="py-3 px-4 text-left">Feature</th>
+                        <th class="py-3 px-4 text-left">Argan Elixir Oil</th>
+                        <th class="py-3 px-4 text-left">Typical Oil</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-warm">
+                    <tr>
+                        <td class="py-2 px-4">Vegan Certified</td>
+                        <td class="py-2 px-4">Yes</td>
+                        <td class="py-2 px-4">Rare</td>
+                    </tr>
+                    <tr class="bg-primary">
+                        <td class="py-2 px-4">100% Natural Ingredients</td>
+                        <td class="py-2 px-4">Yes</td>
+                        <td class="py-2 px-4">Sometimes</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Lightweight, Non-Greasy Formula</td>
+                        <td class="py-2 px-4">Yes</td>
+                        <td class="py-2 px-4">No</td>
+                    </tr>
+                    <tr class="bg-primary">
+                        <td class="py-2 px-4">Multi-Protection</td>
+                        <td class="py-2 px-4">Yes</td>
+                        <td class="py-2 px-4">No</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Absorbs Rapidly</td>
+                        <td class="py-2 px-4">Yes</td>
+                        <td class="py-2 px-4">No</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="bg-cream-dark py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-2xl text-primary-dark mb-8">Customer Reviews</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-soft">
+                    <div class="flex items-center mb-2">
+                        <span class="font-semibold text-yellow mr-2">★★★★★</span>
+                        <span class="text-gray-warm text-sm">by Olivia</span>
+                    </div>
+                    <p class="text-gray-warm">"My hair feels so much softer and healthier. Love that it's lightweight and not greasy!"</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-soft">
+                    <div class="flex items-center mb-2">
+                        <span class="font-semibold text-yellow mr-2">★★★★★</span>
+                        <span class="text-gray-warm text-sm">by Priya</span>
+                    </div>
+                    <p class="text-gray-warm">"Finally found an oil that works for my color-treated hair. Smells amazing too!"</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-soft">
+                    <div class="flex items-center mb-2">
+                        <span class="font-semibold text-yellow mr-2">★★★★★</span>
+                        <span class="text-gray-warm text-sm">by Zoe</span>
+                    </div>
+                    <p class="text-gray-warm">"Noticeable difference after just a week. My ends are less frizzy and more manageable."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Others Also Liked Section -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="font-serif text-2xl text-primary-dark mb-8">Others also liked:</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Heat Protector Product -->
+            <div class="bg-white p-6 rounded-xl shadow-soft flex flex-col items-center">
+                <a href="HeatProtectant.html" class="block mb-4">
+                    <img src="heatspray3.jpg" alt="Heat Protector Spray" class="rounded-xl shadow-soft w-48 h-48 object-cover hover:scale-105 transition-transform duration-200">
+                </a>
+                <h3 class="font-serif text-xl text-primary-dark mb-2">Heat Protector Spray</h3>
+                <p class="text-lg text-gray-warm mb-2">Spray Heat Protector, infused with keratin for instant shine and deep nourishment.</p>
+                <span class="text-primary-dark font-semibold text-lg mb-2">$17 <span class="line-through text-gray-warm text-base ml-2">$20</span></span>
+                <div id='product-component-1753314666213'></div>
+            </div>
+            <!-- Example Second Product -->
+            <div class="bg-white p-6 rounded-xl shadow-soft flex flex-col items-center">
+                <a href="ritual.html" class="block mb-4">
+                    <img src="oilbottle2.jpg" alt="Ritual Oil" class="rounded-xl shadow-soft w-48 h-48 object-cover hover:scale-105 transition-transform duration-200">
+                </a>
+                <h3 class="font-serif text-xl text-primary-dark mb-2">Twisty Straightener</h3>
+                <p class="text-lg text-gray-warm mb-2">The ultimate styling tool for effortless waves, curls, or sleek straight hair.</p>
+                <span class="text-primary-dark font-semibold text-lg mb-2">$70</span>
+                <div id='product-component-1753391018749'></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <!-- ...existing code from index.html footer... -->
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-serif text-2xl mb-6 text-primary">HERA</h3>
+                    <p class="text-gray-400 mb-6">Empowered Hair. Empowered Life.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/heraesntls/" class="text-gray-400 hover:text-primary transition-colors" target="_blank">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/heraesntls" class="text-gray-400 hover:text-primary transition-colors"target="_blank">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@herahairesntls" class="text-gray-400 hover:text-primary transition-colors" target="_blank">
+                            <span class="sr-only">TikTok</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-medium text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-colors">About HERA</a></li>
+                        <li><a href="shop.html" class="text-gray-400 hover:text-primary transition-colors">Shop All Products</a></li>
+                        <li><a href="ritual.html" class="text-gray-400 hover:text-primary transition-colors">Create Your Ritual</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium text-white mb-4">Customer Care</h4>
+                    <ul class="space-y-2">
+                        <li><a href="FAQS.html" class="text-gray-400 hover:text-primary transition-colors">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Hair Care Tips</a></li>
+                        <li><a href="terms.html#shipping-returns" class="text-gray-400 hover:text-primary transition-colors">Shipping & Returns</a></li>
+                        
+                </div>
+                <div>
+                    <h4 class="font-medium text-white mb-4">Contact Us</h4>
+                    <address class="text-gray-400 not-italic">
+                        <p class="mb-2">support@heraesntls.com</p>
+                        
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 HERA Hair Essentials. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="privacy.html" class="text-gray-400 hover:text-primary transition-colors text-sm">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-primary transition-colors text-sm">Terms of Service</a>
+                    <a href="terms.html#shipping-returns" class="text-gray-400 hover:text-primary transition-colors text-sm">Shipping Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Removed external script.js to avoid conflicts with inline script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuButton = document.getElementById('mobile-menu-button');
+            var mobileMenu = document.getElementById('mobile-menu');
+            if (menuButton && mobileMenu) {
+                menuButton.addEventListener('click', function () {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                var menuLinks = mobileMenu.querySelectorAll('a');
+                menuLinks.forEach(function(link) {
+                    link.addEventListener('click', function () {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+        });
+
+        // Image gallery logic
+        const images = [
+            "oilbottle2.jpg",
+            "drip.webp",
+            "oilhands.jpg"
+
+        ];
+        let currentImg = 0;
+        function setMainImage(idx) {
+            currentImg = idx;
+            document.getElementById('main-product-image').src = images[idx];
+            // update thumbnail borders
+            const thumbs = document.querySelectorAll('.flex.gap-4 img');
+            thumbs.forEach((img, i) => {
+                img.classList.toggle('border-primary-dark', i === idx);
+                img.classList.toggle('border-transparent', i !== idx);
+            });
+        }
+        document.getElementById('img-prev').onclick = function() {
+            currentImg = (currentImg - 1 + images.length) % images.length;
+            setMainImage(currentImg);
+        };
+        document.getElementById('img-next').onclick = function() {
+            currentImg = (currentImg + 1) % images.length;
+            setMainImage(currentImg);
+        };
+        // Initialize
+        setMainImage(0);
+    </script>
+    
+<!--Oil-->
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'eyf6fx-fu.myshopify.com',
+      storefrontAccessToken: '3768e3aa0c990cd25c93de476895152e',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '9850645643581',
+        node: document.getElementById('product-component-1753313965709'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Droid Sans, sans-serif",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa",
+          "background-color": "#312e2a"
+        },
+        "background-color": "#36332f",
+        ":focus": {
+          "background-color": "#312e2a"
+        },
+        "border-radius": "10px",
+        "padding-left": "64px",
+        "padding-right": "64px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Add to cart"
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Droid Sans, sans-serif",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa",
+          "background-color": "#312e2a"
+        },
+        "background-color": "#36332f",
+        ":focus": {
+          "background-color": "#312e2a"
+        },
+        "border-radius": "10px",
+        "padding-left": "64px",
+        "padding-right": "64px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Droid Sans, sans-serif",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa",
+          "background-color": "#312e2a"
+        },
+        "background-color": "#36332f",
+        ":focus": {
+          "background-color": "#312e2a"
+        },
+        "border-radius": "10px"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "empty": {
+        "color": "#000000"
+      },
+      "noteDescription": {
+        "color": "#000000"
+      },
+      "discountText": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "discountAmount": {
+        "color": "#000000"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Let's Nourish That Hair!"
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Droid Sans, sans-serif",
+        "background-color": "#36332f",
+        ":hover": {
+          "background-color": "#312e2a"
+        },
+        ":focus": {
+          "background-color": "#312e2a"
+        }
+      },
+      "count": {
+        "font-size": "14px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa"
+        }
+      },
+      "iconPath": {
+        "fill": "#fafafa"
+      }
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ]
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "fullPrice": {
+        "color": "#000000"
+      },
+      "discount": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+<!--heatprotector-->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'eyf6fx-fu.myshopify.com',
+      storefrontAccessToken: '3768e3aa0c990cd25c93de476895152e',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '9850646626621',
+        node: document.getElementById('product-component-1753314666213'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Droid Sans, sans-serif",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa",
+          "background-color": "#312e2a"
+        },
+        "background-color": "#36332f",
+        ":focus": {
+          "background-color": "#312e2a"
+        },
+        "border-radius": "10px",
+        "padding-left": "64px",
+        "padding-right": "64px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Add to cart"
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Droid Sans, sans-serif",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa",
+          "background-color": "#312e2a"
+        },
+        "background-color": "#36332f",
+        ":focus": {
+          "background-color": "#312e2a"
+        },
+        "border-radius": "10px",
+        "padding-left": "64px",
+        "padding-right": "64px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Droid Sans, sans-serif",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa",
+          "background-color": "#312e2a"
+        },
+        "background-color": "#36332f",
+        ":focus": {
+          "background-color": "#312e2a"
+        },
+        "border-radius": "10px"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "empty": {
+        "color": "#000000"
+      },
+      "noteDescription": {
+        "color": "#000000"
+      },
+      "discountText": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "discountAmount": {
+        "color": "#000000"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Let's Nourish That Hair!"
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Droid Sans, sans-serif",
+        "background-color": "#36332f",
+        ":hover": {
+          "background-color": "#312e2a"
+        },
+        ":focus": {
+          "background-color": "#312e2a"
+        }
+      },
+      "count": {
+        "font-size": "14px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa"
+        }
+      },
+      "iconPath": {
+        "fill": "#fafafa"
+      }
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ]
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "fullPrice": {
+        "color": "#000000"
+      },
+      "discount": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+<!--Twisty Straightener-->
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'eyf6fx-fu.myshopify.com',
+      storefrontAccessToken: '3768e3aa0c990cd25c93de476895152e',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '9862845989181',
+        node: document.getElementById('product-component-1753391018749'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Droid Sans, sans-serif",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa",
+          "background-color": "#312e2a"
+        },
+        "background-color": "#36332f",
+        ":focus": {
+          "background-color": "#312e2a"
+        },
+        "border-radius": "10px",
+        "padding-left": "64px",
+        "padding-right": "64px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Add to cart"
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Droid Sans, sans-serif",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa",
+          "background-color": "#312e2a"
+        },
+        "background-color": "#36332f",
+        ":focus": {
+          "background-color": "#312e2a"
+        },
+        "border-radius": "10px",
+        "padding-left": "64px",
+        "padding-right": "64px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Droid Sans, sans-serif",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa",
+          "background-color": "#312e2a"
+        },
+        "background-color": "#36332f",
+        ":focus": {
+          "background-color": "#312e2a"
+        },
+        "border-radius": "10px"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "empty": {
+        "color": "#000000"
+      },
+      "noteDescription": {
+        "color": "#000000"
+      },
+      "discountText": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "discountAmount": {
+        "color": "#000000"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Let's Nourish That Hair!"
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Droid Sans, sans-serif",
+        "background-color": "#36332f",
+        ":hover": {
+          "background-color": "#312e2a"
+        },
+        ":focus": {
+          "background-color": "#312e2a"
+        }
+      },
+      "count": {
+        "font-size": "14px",
+        "color": "#fafafa",
+        ":hover": {
+          "color": "#fafafa"
+        }
+      },
+      "iconPath": {
+        "fill": "#fafafa"
+      }
+    },
+    "googleFonts": [
+      "Droid Sans"
+    ]
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "fullPrice": {
+        "color": "#000000"
+      },
+      "discount": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+</body>
+</html>

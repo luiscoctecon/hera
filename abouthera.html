@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/9a0348bff4.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Eunice & Luis</title>
+<meta property="og:title" content="Hera Hair Essentials | Natural Hair Care Products">
+<meta property="og:description" content="Premium oils, heat protectants, and tools for healthy, styled hair.">
+<meta property="og:image" content="https://yourwebsite.com/images/social-preview.jpg">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta property="og:type" content="website">
+    <style>
+        body {
+            font-family: 'Times New Roman', Open-Sans;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            overflow-x: auto;
+            overflow-wrap: anywhere;
+        }
+        
+        .wrapper-main {
+            height: 100%;
+            width: 100%;
+            padding: 100px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-image: url(backgroundbeige.png)
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        header {
+            
+            border-bottom: 1px solid #eee;
+            background-color: #ffffff;
+            position: sticky;
+            top: 0;
+            padding: 2rem 0;
+            
+            z-index: 1000;
+            
+        
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-cotent: space-between;
+        }
+        .header-container a{
+            height: 150px;
+            position: absolute;
+            right: 43%;
+        }
+        .logo {
+            height: 150px;
+            position: absolute;
+            right: 43%;
+        }
+        .sidenav {
+            height:100%;
+            float: left;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0%;
+            left: 0%;
+            background-color: #f8f5f5;
+            overflow-x: hidden;
+            overflow-y: auto;
+            transition: 0.5s;
+            padding-top: 30px;
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            float: left;
+            color: black;
+            display: block;
+            
+            transition: 0.3s;
+        }
+        .sidenav a:hover {
+            color: #f1f1f1f1;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            font-size: 2rem;
+            transition: margin-left .5s;
+            padding: 0%;
+            position: absolute;
+            left: 3px;
+            top: 10px;
+            height: 0%;
+        }
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+        .language-toggle {
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+            background-color: #4a4743;
+            color: #eee5ec;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .language-toggle:hover {
+            background-color: #black
+            ;
+        }
+
+
+        
+        h1 {
+            color: #000000;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 16px;
+            color: #000000;
+        
+        }
+        .highlight {
+            color: #000000;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+        footer p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <div class="header-container">
+          <a href="heraesntls.com">
+        <img src="Herabiglogo.svg" alt="HERA HAIR ESSENTIALS" class="logo">
+          </a>
+        <button class="language-toggle" onclick="toggleLanguage()">EN/ES</button>
+        
+        <div id="mySidenav" class="sidenav">
+            
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://heraesntls.myshopify.com" target="_blank">Products</a>
+        <a href="heraesntls.com">Home</a>    
+        <a href="contactus.html">Contact</a>
+        </div>
+        <div id="main">
+        
+        <span class="marginLeft" style="font-size:100%;cursor:pointer" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+        </div>
+        </div>
+        <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "200px";
+        document.getElementById("main").style.marginLeft = "100px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+      }
+      </script>
+    </header>
+   
+    <div class="container">
+        <h1>Who We Are</h1>
+        <p>We are <span class="highlight" >Eunice Romo</span> and <span class="highlight">Luis Coctecon</span>, professionals in the beauty industry with nearly a decade of experience. Eunice specializes as a Hairdresser and Luis as a Barber. Together, we have consistently sought ways to simplify salon processes while ensuring exceptional results, particularly in styling our clients' hair after a haircut or color service.</p>
+
+        <p>In our quest to enhance our skills and efficiency, we dedicated significant time to research. Through this journey, we uncovered a pivotal realization: mastering hairstyles isn't enough. It's equally important to discover groundbreaking <span class="highlight">hot tools</span> and <span class="highlight">hair products</span> that transform the styling experience.</p>
+
+        <p>As we delved deeper, one critical question emerged: <em>How damaging are these hot tools to the hair?</em></p>
+
+        <p>Understanding the shared concerns of our team and clients, we prioritize the health and well-being of your hair. Our commitment is to carefully select hot tools that deliver outstanding performance while safeguarding your hair from damage. We believe it's crucial to offer tools that achieve stunning results without compromising hair health.</p>
+
+        <p>With the right tools and techniques, we create styles that are both effortless and glamorous. Our mission is to help you transform your hair care experience, addressing concerns about damage and delivering confidence-boosting results.</p>
+
+        <p>We invite you to trust in our expertise as we deliver excellence in beauty and hair care. Let us help you achieve beautiful, healthy, and stylish hair every day.</p>
+    </div>
+    <footer>
+        <p data-en="&copy; 2023 Hera Hair Essentials. All rights reserved." data-es="&copy; 2023 Hera Hair Essentials. Todos los derechos reservados.">&copy; 2023 Hera Hair Essentials. All rights reserved.</p>
+    </footer>
+    <script>
+        let currentLanguage = 'en';
+
+        function toggleLanguage() {
+            currentLanguage = currentLanguage === 'en' ? 'es' : 'en';
+            document.querySelectorAll('[data-en]').forEach(el => {
+                el.textContent = el.getAttribute(`data-${currentLanguage}`);
+            });
+        }
+    </script>
+</body>
+</html>

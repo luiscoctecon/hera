@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/9a0348bff4.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9a0348bff4.js" crossorigin="anonymous"></script>
+    <title>Contact Us - Eunice & Luis</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', open-sans;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            overflox-x: auto;
+            overflow-wrap: anywhere;
+        }
+        .wrapper-main {
+            height: 100%;
+            width: 100%;
+            padding: 100px;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f8f8f8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        header {
+            background: transparent;
+            padding: 0;
+            
+            
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+     
+        .logo {
+            position: absolute;
+            transform: translatex(-50%);
+            left: 50%;
+            top: -27px;
+            height: 120px;
+            z-index: 10;
+        }
+        .language-toggle {
+            position: absolute;
+            top: 30px;
+            right: 1rem;
+            transform: translateY(-50%);
+            background-color: #4a4743;
+            color: #eee5ec;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            z-index: 10;
+        }
+
+        .language-toggle:hover {
+            background-color: #86827a;
+        }
+    
+     .language-toggle:hover {
+         background-color: #86827a;
+     }
+
+        
+        .sidenav {
+            height: 100%;
+            float: left;
+            width: 0;
+            position: fixed;
+            z-index: 2000; 
+            top: 0%;
+            left: 0%;
+            background-color: #f8f5f5;
+            overflow-x: hidden;
+            overflow-y: auto;
+            transition: 0.5s;
+            padding-top: 30px;
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            float: left;
+            color: black;
+            display: block;
+           
+        }
+        .sidenav a:hover {
+            color: #f1f1f1f1;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            font-size: 2rem;
+            color: black;
+            transition: margin-left .5s;
+            padding: 0%;
+            position: absolute;
+            left: 3px;
+            top: 10px;
+            height: 0%;
+            z-index: 10;
+        }
+
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+        
+      
+        
+        h1 {
+            color: #444;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            color: #000000;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .social-media a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: #000000;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+       
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #151515;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #151515;
+        }
+        footer {
+            background-color: #f8f8f8; 
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+            
+        }
+        footer p {
+            color: #666;
+        }
+         footer icons {
+            color: #666
+            gap: 10px;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="header-container">
+        <a href="heraesntls.com">
+          <img src="Herabiglogo.svg" alt="HERA HAIR ESSENTIALS" class="logo" >
+        </a>
+        <button class="language-toggle" onclick="togglelanguage()">EN/ES</button>
+       
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="heraesntls.com">Home</a>
+            <a href="products.html">Products</a>
+            <a href="abouthera.html">About</a>
+            <a href="blog.html">Blog</a>
+        </div>
+
+        <div id="main">
+            <span class="marginLeft" style="font-size:100%;cursor:pointer" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+        </div>
+    </div>
+    
+     <script>
+         function openNav() {
+             document.getElementById("mySidenav").style.width = "200px";
+             document.getElementById("main").style.marginLeft = "100px";
+             document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+         }
+         function closeNav() {
+             document.getElementById("mySidenav").style.width = "0";
+             document.getElementById("main").style.marginLeft= "0";
+             document.body.style.backgroundColor = "white"; 
+         }
+     </script>
+    </header>
+        
+        <div class="container">
+            <h1>Contact Us</h1>
+        <p>Your opinion is extremely important to us. Feel free to leave your honest review, and we will be happy to assist you with any questions.</p>
+        <p><strong>Location:</strong> Portland, OR, USA</p>
+        
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/heraesntls" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/heraesntls/" target="_blank\"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@herahairesntls" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="9a618e48-3f92-420b-a6b5-35913201c2c4">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="5" placeholder="Your Comment" required></textarea>
+             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+          <p data-en="&copy; 2023 Hera Hair Essentials. All rights reserved." data-es="&copy; 2023 Hera Hair Essentials. Todos los derechos reservados.">&copy; 2023 Hera Hair Essentials. All rights reserved.</p>
+        <div class="icons">
+        <i class="fa-brands fa-apple-pay"></i> <i class="fa-brands fa-cc-visa"></i> <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-brands fa-cc-paypal"></i>
+        </div>
+    </footer>
+    
+    <script>
+        let currentLanguage = 'en';
+
+        function toggleLanguage() {
+            currentLanguage = currentLanguage === 'en' ? 'es' : 'en';
+            document.querySelectorAll('[data-en]').forEach(el => {
+                el.textContent = el.getAttribute(`data-${currentLanguage}`);
+            });
+        }
+    </script>
+</body>
+
+</html>
