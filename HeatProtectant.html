@@ -129,18 +129,18 @@
                 <button id="img-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-soft z-10 hover:bg-primary-dark hover:text-white transition-colors" aria-label="Previous image">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
                 </button>
-                <img id="main-product-image" src="heatspray.jpg" alt="Heat Protector Spray bottle" class="rounded-xl shadow-soft w-full max-w-lg h-96 object-cover transition-all duration-300">
+                <img id="main-product-image" src="heatspray.jpg" alt="Heat Protector Spray bottle" class="rounded-xl shadow-soft w-full max-w-full h-full object-cover transition-all duration-300">
                 <button id="img-next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full p-2 shadow-soft z-10 hover:bg-primary-dark hover:text-white transition-colors" aria-label="Next image">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
                 </button>
             </div>
             <!-- Thumbnails Scrollable -->
-            <div class="flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto max-h-45 md:max-h-60 w-full justify-center">
-                <img src="heatspray.jpg" alt="Heat Protector Spray bottle" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-primary-dark" onclick="setMainImage(0)">
+            <div class="flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto max-h-70 md:max-h-60 w-full justify-center">
+                <img src="heatspray2.jpg" alt="Heat Protector Spray bottle" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-primary-dark" onclick="setMainImage(0)">
                 <img src="sprayonhands.jpg" alt="Keratin Benefits" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainImage(1)">
-                <img src="_MG_6701.webp" alt="Spray in Use" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainImage(2)">
-                <img src="heatspray3.jpg" alt="Heat Protector Spray bottle" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainImage(3)">
-                <img src="heatspraybenefits.png" alt="Keratin Benefits" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainImage(4)">
+                <img src="heatsprayhair.jpg" alt="Spray in Use" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainImage(2)">
+                <img src="_MG_6701.jpg" alt="Heat Protector Spray bottle" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainImage(3)">
+                <img src="heatspray.gif" alt="Keratin Benefits" class="rounded-lg shadow-soft w-20 h-20 object-cover cursor-pointer border-2 border-transparent hover:border-primary-dark" onclick="setMainImage(4)">
             </div>
         </div>
         <!-- Product Info -->
@@ -149,7 +149,7 @@
             <div class="flex items-center gap-4 mb-2">
                 <span class="text-2xl text-primary-dark font-semibold">$17</span>
                 <span class="line-through text-gray-warm">$20</span>
-                <span class="ml-2 px-3 py-1 bg-charcoal text-white rounded-full text-xs font-semibold">Sale</span>
+                <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded">Save 15%</span>
             </div>
             <ul class="list-disc pl-6 text-lg text-gray-warm mb-4">
                 <li>Vegan</li>
@@ -191,23 +191,22 @@
     <!-- Section Content -->
     <div class="section-content-parent container mx-auto px-4 mt-8" style="position:relative; min-height:180px;">
         <div id="how-to-use" class="section-content onclick-active active column-section">
-            <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto max-h-32 md:max-h-40 w-full justify-center mb-4">
-                <img src="heatspray3.jpg" alt="How to Use 1" class="rounded-lg shadow-soft w-20 h-20 object-cover">
-                <img src="sprayonhands.jpg" alt="How to Use 2" class="rounded-lg shadow-soft w-20 h-20 object-cover">
+            <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto auto md:auto w-full justify-center mb-4">
+              <video src="HERATutorial.mp4" controls class="rounded-xl shadow-soft w-60 h-100 "></video>
+               
             </div>
             <p class="text-lg text-gray-warm">Spray evenly onto damp or dry hair before using heat styling tools. Focus on mid-lengths and ends. Do not rinse out. Style as desired.</p>
         </div>
         <div id="benefits" class="section-content onclick-active column-section">
-            <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto max-h-32 md:max-h-40 w-full justify-center mb-4">
-                <img src="heatspraybenefits1.png" alt="Keratin" class="rounded-lg shadow-soft w-20 h-20 object-cover">
-                <img src="heatspraybenefits2.png" alt="Nourishment" class="rounded-lg shadow-soft w-20 h-20 object-cover">
-                <img src="heatspraybenefits3.png" alt="Frizz-Free" class="rounded-lg shadow-soft w-20 h-20 object-cover">
+            <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto max-h-80 md:max-h-80 w-full justify-center mb-4">
+                <img src="heatspraybenefits1.png" alt="Keratin" class="rounded-lg shadow-soft w-60 h-full object-fit">
+               
             </div>
             <p class="text-lg text-gray-warm">Instant Shine: Keratin helps achieve smooth, shiny, and frizz-free hair.<br>Deep Nourishment: Keratin nourishes the hair by providing essential vitamins and amino acids.<br>Damage Protection: Shields hair from heat up to 450°F (230°C), keeping it strong and resilient.</p>
         </div>
         <div id="ingredients" class="section-content onclick-active column-section">
-            <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto max-h-32 md:max-h-40 w-full justify-center mb-4">
-                <img src="heatspray3.jpg" alt="Ingredient 1" class="rounded-lg shadow-soft w-20 h-20 object-cover">
+            <div class="scroll-row flex gap-4 overflow-x-auto md:overflow-x-visible md:overflow-y-auto max-h-80 md:max-h-80 w-full justify-center mb-4">
+                <img src="" alt="Ingredient 1" class="rounded-lg shadow-soft w-60 h-full object-cover">
             </div>
             <p class="text-lg text-gray-warm">Keratin, essential vitamins, amino acids. 100% natural ingredients. Vegan certified. Cruelty-free.</p>
         </div>
@@ -397,9 +396,11 @@
 
         // Image gallery logic
         const images = [
-            "heatspray3.jpg",
-            "heatspraybenefits1.png",
-            "sprayonhands.jpg"
+            "heatspray2.jpg",
+            "sprayonhands.jpg",
+            "heatsprayhair.jpg",
+            "_MG_6701.jpg",
+            "heatspray.gif"
         ];
         let currentImg = 0;
         function setMainImage(idx) {
