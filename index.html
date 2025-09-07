@@ -69,12 +69,51 @@
                         'hero-gradient': 'linear-gradient(180deg, #010000 0%, #000200 100%)',
                         'section-gradient': 'linear-gradient(180deg, #F5F1E8 0%, #E8E0D0 100%)',
                         'gold-gradient': '#525150',
-                         
-                                                     }
+                    }
                 }
             }
         }
     </script>
+    <style>
+        /* Hide scrollbar but keep functionality */
+        .scroll-smooth {
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; /* Firefox */
+        }
+        .scroll-smooth::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Edge */
+        }
+        @media (hover: hover) {
+            .scroll-smooth:hover {
+                cursor: grab;
+            }
+            .scroll-smooth:active {
+                cursor: grabbing;
+            }
+        }
+        
+        /* Fade edges on mobile */
+        @media (max-width: 768px) {
+            .product-container::before,
+            .product-container::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 32px;
+                pointer-events: none;
+                z-index: 1;
+            }
+            .product-container::before {
+                left: 0;
+                background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+            }
+            .product-container::after {
+                right: 0;
+                background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+            }
+        }
+    </style>
 </head>
 
 <body class="font-sans text-charcoal bg-cream">
@@ -259,9 +298,9 @@
       </script>
       </div>
       <div class="flex flex-row  items-center justify-center space-x-8 text-white/90 leading-relaxed z-10">
-        <div class="text-center font-bold text-gradient">Free Shipping <br>Over $25</div>
-        <div class="text-center font-bold text-gradient">5 Day Result Guarantee</div>
-        <div class="text-center font-bold gold-gradient">Satisfaction Guaranteed</div>
+        <div class="text-center 1vw font-bold text-gradient">Free Shipping <br>Over $25</div>
+        <div class="text-center 1vw font-bold text-gradient">5 Day Result Guarantee</div>
+        <div class="text-center 1vw font-bold gold-gradient">Satisfaction Guaranteed</div>
       </div>
     </div>
     
@@ -277,13 +316,41 @@
     <!-- Featured Products -->
     <section style="border-top: 1px;" class="py-10 md:py-2">
         <div class="container mx-auto px-4">
-            <h2 class="font-serif text-3xl md:text-4xl text-center mb-16">Featured Products</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <h2 class="font-serif text-3xl md:text-4xl text-center mb-8 md:mb-16">Best Sellers</h2>
+            
+            <!-- Product Grid/Scroll Container -->
+            <div class="relative">
+                <!-- Scroll Indicators (visible only on mobile) -->
+                <div class="md:hidden absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12"></div>
+                <div class="md:hidden absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12"></div>
+                
+                <!-- Product Container -->
+                <div class="
+                    flex  md:grid md:grid-cols-2  
+                    overflow-auto md:overflow-x-visible 
+                    gap-6 pb-6 md:pb-0 
+                    snap-x snap-mandatory md:snap-none
+                    touch-pan-x md:touch-none
+                    scroll-smooth
+                    -mx-4 px-4 md:mx-0 md:px-0
+                    relative
+                   
+                "
+                style="scrollbar-width: none; -ms-overflow-style: none;"
+                >
                 <!-- Product 1 -->
-                <div class="bg-white rounded-2xl shadow-soft overflow-hidden animate-scale-in">
-                    <a href="HeatProtectant.html">
-                    <img src="heatspray2.jpg"
-                        alt="Keratin Heat Protectant" class="w-full h-80 object-cover"></a>
+                <div class="
+                    flex-shrink-0 md:flex-shrink
+                    w-[400px] md:w-full
+                    snap-start md:snap-align-none
+                    bg-white rounded-2xl shadow-soft overflow-hidden 
+                    transform transition-transform duration-300 hover:scale-[1.02]
+                ">
+                    <a href="HeatProtectant.html" class="block overflow-hidden">
+                        <img src="heatspray2.jpg"
+                            alt="Keratin Heat Protectant" 
+                            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </a>
                     <div class="p-6">
                         <h3 class="text-black font-serif text-xl mb-2">Keratin Heat Protectant</h3>
                         <p class="text-charcoal-light mb-4">Shield your hair from heat damage while adding shine and
@@ -291,16 +358,20 @@
                         <div class="flex justify-between items-center">
                             <span class="text-gray-400 line-through text-sm">$20.00</span>
                             <span class="text-charcoal font-semibold">$15.00</span>
-                           <div id='product-component-1753391623022'></div>
+                            <div id='product-component-1753391623022'></div>
                         </div>
                     </div>
                 </div>
                 <!-- Product 2 -->
-                <div class="bg-white rounded-2xl shadow-soft overflow-hidden hover:animate-scale-in"
+                <div class="flex-shrink-0 md:flex-shrink
+                    w-[400px] md:w-full
+                    snap-start md:snap-align-none
+                    bg-white rounded-2xl shadow-soft overflow-hidden 
+                    transform transition-transform duration-300 hover:scale-[1.02]"
                     style="animation-delay: 0.1s;">
                     <a href="argan-elixir-oil.html">
                     <img src="oil3.jpg"
-                        alt="Argan Oil" class="w-full h-80 object-cover">
+                        alt="Argan Oil" class="w-full h-90 object-fit">
                         </a>
                     <div class="p-6">
                         <h3 class="text-black font-serif text-xl mb-2">Argan Oil</h3>
@@ -311,6 +382,7 @@
                             <div id='product-component-1753313965709'></div>
                         </div>
                     </div>
+                </div>
                 </div>
                     </div>
                 </div>
