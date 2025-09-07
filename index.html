@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add_shopping_cart,delivery_truck_speed,redeem" />
+  
+   
+   
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8NR3ZRLWJ"></script>
 <script>
@@ -75,6 +79,15 @@
         }
     </script>
     <style>
+        
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
         /* Hide scrollbar but keep functionality */
         .scroll-smooth {
             -webkit-overflow-scrolling: touch;
@@ -298,16 +311,105 @@
       </script>
       </div>
       <div class="flex flex-row  items-center justify-center space-x-8 text-white/90 leading-relaxed z-10">
-        <div class="text-center 1vw font-bold text-gradient">Free Shipping <br>Over $25</div>
-        <div class="text-center 1vw font-bold text-gradient">5 Day Result Guarantee</div>
-        <div class="text-center 1vw font-bold gold-gradient">Satisfaction Guaranteed</div>
+        <div class="text-center font-bold text-gradient">
+
+</span>Free Shipping <br>Over $25</div>
+        <div class="text-center font-bold text-gradient">
+5 Day Result Guarantee</div>
+        <div class="text-center font-bold gold-gradient">
+Satisfaction Guaranteed</div>
       </div>
     </div>
     
   </div>
-
+<!-- Shipping Progress Bar -->
 </section>
+<!-- Shipping Progress Bar -->
+<section class="flex flex-col items-center justify-center py-8">
+    <div class="w-full max-w-2xl">
+        <div class="flex items-center justify-between mb-4">
+            <!-- Step 1 -->
+            <div class="flex flex-col items-center flex-1">
+                <span class="material-symbols-outlined text-3xl bg-primary-dark text-white rounded-full p-2 mb-2">
+                    add_shopping_cart
+                </span>
+                <span class="font-semibold">Today</span>
+                <span class="text-xs text-gray-500">Ordered</span>
+            </div>
+            <!-- Progress Bar -->
+            <div class="flex-1 h-1 bg-gray-300 mx-2 relative">
+                <div class="absolute left-0 top-0 h-1 bg-yellow" style="width: 33%;"></div>
+            </div>
+            <!-- Step 2 -->
+            <div class="flex flex-col items-center flex-1">
+                <span class="material-symbols-outlined text-3xl bg-primary-dark text-white rounded-full p-2 mb-2">
+                    local_shipping
+                </span>
+                <span class="font-semibold">Tomorrow</span>
+                <span class="text-xs text-gray-500">Shipped</span>
+            </div>
+            <!-- Progress Bar -->
+            <div class="flex-1 h-1 bg-gray-300 mx-2 relative">
+                <div class="absolute left-0 top-0 h-1 bg-yellow" style="width: 33%;"></div>
+            </div>
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center flex-1">
+                <span class="material-symbols-outlined text-3xl bg-primary-dark text-white rounded-full p-2 mb-2">
+                    redeem
+                </span>
+                <span class="font-semibold">
+                    <span id="delivery-range">Sep 17th - Sep 19th</span>
+                </span>
+                <span class="text-xs text-gray-500">Delivered</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Ensure Material Symbols icons are loaded -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap" />
+<script>
+    // Dynamic delivery date range (6-10 days from today)
+    function getDeliveryRange() {
+        const today = new Date();
+        const start = new Date(today);
+        start.setDate(today.getDate() + 6);
+        const end = new Date(today);
+        end.setDate(today.getDate() + 10);
 
+        function formatDate(d) {
+            const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            const day = d.getDate();
+            const month = months[d.getMonth()];
+            const suffix = (n) => {
+                if (n > 3 && n < 21) return "th";
+                switch (n % 10) {
+                    case 1: return "st";
+                    case 2: return "nd";
+                    case 3: return "rd";
+                    default: return "th";
+                }
+            };
+            return `${month} ${day}${suffix(day)}`;
+        }
+        return `${formatDate(start)} - ${formatDate(end)}`;
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        const el = document.getElementById("delivery-range");
+        if (el) el.textContent = getDeliveryRange();
+    });
+</script>
+
+<style>
+   
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+</style>
 
 <!-- Hero Section End -->
 
