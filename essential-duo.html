@@ -56,7 +56,7 @@
                         primary: '#9E7511',
                         'primary-dark': '#525150',
                         'primary-light': 'linear-gradient(180deg, #ffffff 0%, #cebf96 100%)',
-                        cream: '#f7f5f2',
+                        cream: '#d7d9d0',
                         'cream-dark': '#F7F5F2',
                         beige: '#525150',
                         taupe: '#525150',
@@ -389,7 +389,7 @@ delivery_truck_speed
 </div>
 
 <!-- mobile hero section-->
-<div id="mobile-hero" class="relative block md:hidden">
+<div id="mobile-hero" class="justify-center relative block md:hidden">
   <div class="mx-auto px-0  text-center">
     <h1 class="text-3xl font-bold text-primary">Effortless
       Beauty Everyday</h1>
@@ -399,16 +399,16 @@ delivery_truck_speed
       <div class="hero-slideshow-mobile flex md:hidden relative justify-center h-full w-full rounded-3xl overflow-hidden">
         <div class="slides-mobile relative transition-transform  duration-500 will-change-transform">
           <div class="slide-mobile flex-shrink-0 w-full">
-            <img src="essentialduo.jpg" alt="Essential Duo" class="w-[300px] h-[400px] object-fit rounded-3xl">
+            <img src="essentialduo.jpg" alt="Essential Duo" class="w-[320px] h-[410px] object-fit ">
           </div>
           <div class="slide-mobile flex-shrink-0 w-full h-full">
-            <img src="desktop1.jpg" alt="Hero 2" class="w-[300px] h-[400px] object-fit rounded-3xl">
+            <img src="desktop1.jpg" alt="Hero 2" class="w-[320px] h-[410px] object-fit">
           </div>
           <div class="slide-mobile flex-shrink-0 w-full h-full">
-            <img src="desktop2.jpg" alt="Hero 3" class="w-[300px] h-[400px] object-fit rounded-3xl">
+            <img src="desktop2.jpg" alt="Hero 3" class="w-[320px] h-[410px] object-fit">
           </div>
           <div class="slide-mobile flex-shrink-0 w-full h-full">
-            <img src="desktop3.jpg" alt="Hero 4" class="w-[300px] h-[400px] object-fit rounded-3xl">
+            <img src="desktop3.jpg" alt="Hero 4" class="w-[320px] h-[410px] object-fit">
           </div>
         </div>
         <!-- Mobile dots -->
@@ -625,9 +625,10 @@ section[class*="md:grid"] > :not(#mobile-hero) {
   .hero-slideshow .slide { width: 100%; }
   .hero-slideshow .slide img { display:block; }
 
-  .hero-slideshow-mobile { height: 400px; width: 300px;}
+  .hero-slideshow-mobile { height: 410px; width: 320px;}
   .hero-slideshow-mobile .slides-mobile { display:flex; width: 200%; }
   .hero-slideshow-mobile .slide-mobile { width:100%; }
+  .mobile-hero {align-items: center; justify-content: center; display: flex; text-align: center;}
 
   /* Dots hover */
   .hero-dot:hover, .hero-dot-mobile:hover { transform: scale(1.1); }
@@ -693,7 +694,7 @@ section[class*="md:grid"] > :not(#mobile-hero) {
 <br>
         <h2 class="font-serif text-2xl text-primary mb-6">How Argan Elixir Oil Compares</h2>
         <div class="overflow-x-auto">
-          <table class="min-w-full bg-white rounded-xl shadow-soft">
+          <table class="min-w-full bg-cream rounded-xl shadow-soft">
             <thead>
               <tr class="bg-primary text-white">
                 <th class="py-3 px-4 text-left">Feature</th>
@@ -734,7 +735,7 @@ section[class*="md:grid"] > :not(#mobile-hero) {
      
         <h2 class="font-serif text-2xl text-primary mb-6">How Heat Protector Spray Compares</h2>
         <div class="overflow-x-auto">
-            <table class="min-w-full bg-white rounded-xl shadow-soft">
+            <table class="min-w-full bg-cream rounded-xl shadow-soft">
                 <thead>
                     <tr class="bg-primary text-white">
                         <th class="py-3 px-4 text-left">Feature</th>
@@ -789,14 +790,14 @@ section[class*="md:grid"] > :not(#mobile-hero) {
         <h3 class="font-serif text-2xl mb-4 text-primary">How to Use</h3>
         <div class="grid md:grid-cols-2 gap-8">
           <!-- Video Section -->
-          <div class="aspect-w-32 aspect-h-24">
-            <video class="rounded-lg w-full" controls>
-              <source src="herahero2.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+          <div class="grid col-span-2 align-items-center justify-center ">
+
+          <iframe width="auto" height="auto" src="https://www.youtube-nocookie.com/embed/hjhy-cvBseA?si=fes7fC1XjajQo6oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+             
           </div>
           <!-- Steps Section -->
-          <div class="space-y-4">
+          <div class="grid col-span-2 space-y-4">
             <div class="flex items-start space-x-4">
               <span class="text-xl text-black font-bold">1.</span>
               <p class="text-black">Start with damp or dry hair, focusing on mid-lengths to ends</p>
