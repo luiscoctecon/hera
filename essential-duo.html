@@ -115,38 +115,37 @@
        </svg>
       </button>
      </div>
-     <div id="mobile-menu" class="md:hidden hidden shadow-soft absolute w-full left-0 top-0 z-40 "style="background: radial-gradient(circle at 60% 20%, #3f2805 0%, #110c03 20%, #060606 55%, #000000 100%); background-repeat: no-repeat; background-attachment: fixed; min-height: 100vh;">
+     <div id="mobile-menu" class="md:hidden hidden bg-white shadow-soft absolute w-full left-0 top-20 z-40">
 
       <nav class="flex flex-col space-y-4 p-6">
-       <a href="about.html" class="text-white hover:text-primary transition-colors">About</a>
-       <a href="shop.html" class="text-white hover:text-primary transition-colors">Shop</a>
-       <a href="ritual.html" class="text-white hover:text-primary transition-colors">Ritual</a>
-       <a href="contact.html" class="text-white hover:text-primary transition-colors">Support</a>
-       <a href="blog.html" class="text-white hover:text-primary transition-colors">Blog</a>
-       <a href="FAQS.html" class="text-white hover:text-primary transition-colors">FAQs</a>
+       <a href="about.html" class="text-black hover:text-primary transition-colors">About</a>
+       <a href="shop.html" class="text-black hover:text-primary transition-colors">Shop</a>
+       <a href="ritual.html" class="text-black hover:text-primary transition-colors">Ritual</a>
+       <a href="contact.html" class="text-black hover:text-primary transition-colors">Support</a>
+       <a href="blog.html" class="text-black hover:text-primary transition-colors">Blog</a>
+       <a href="FAQS.html" class="text-black hover:text-primary transition-colors">FAQs</a>
        <form action="search.html" method="GET" class="mt-4">
         <input type="text" name="q" placeholder="Search..." class="px-4 py-2 rounded-lg shadow-soft w-full">
        </form>
       </nav>
      </div>
      <script>
-     // Mobile menu toggle
-  document.addEventListener('DOMContentLoaded', function () {
-    var menuButton = document.getElementById('mobile-menu-button');
-    var mobileMenu = document.getElementById('mobile-menu');
-    if (menuButton && mobileMenu) {
-   menuButton.addEventListener('click', function () {
-     mobileMenu.classList.toggle('hidden');
-   });
-   // Close menu when any link inside mobile menu is clicked
-   var menuLinks = mobileMenu.querySelectorAll('a');
-   menuLinks.forEach(function(link) {
-     link.addEventListener('click', function () {
-    mobileMenu.classList.add('hidden');
-     });
-   });
-    }
-  });
+    // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuButton = document.getElementById('mobile-menu-button');
+            var mobileMenu = document.getElementById('mobile-menu');
+            if (menuButton && mobileMenu) {
+                menuButton.addEventListener('click', function () {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                var menuLinks = mobileMenu.querySelectorAll('a');
+                menuLinks.forEach(function(link) {
+                    link.addEventListener('click', function () {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+        });
     </script>
     </header>
 
