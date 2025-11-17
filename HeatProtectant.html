@@ -1052,7 +1052,7 @@ section[class*="md:grid"] > :not(#mobile-hero) {
     });
 </script>
     <!--scroll animation-->
-  <article id="gallery">
+   <article id="gallery">
     <header>
         <h2>What is the secret?</h2>
     </header>
@@ -1060,23 +1060,49 @@ section[class*="md:grid"] > :not(#mobile-hero) {
         <div>
             <ul class="img-group">
                 <li class="img-container">
-                    <video src="scroll1.mov" autoplay loop muted playsinline></video>
+                   <iframe
+      class="mobile-bg-iframe"
+      src="https://player.vimeo.com/video/1137834334?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1 "
+      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      title="hero hera intro"></iframe>
                     <h3>It all begins with a mist</h3>
                 </li>
                 <li class="img-container">
-                    <video src="scroll2.mov" autoplay loop muted playsinline></video>
+                 
+                    <iframe
+      class="mobile-bg-iframe"
+      src="https://player.vimeo.com/video/1137036233?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1 "
+      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      title="hero hera intro"></iframe>
                     <h3>Floating through the air like perfume - delicate, magnetic -</h3>
                 </li>
                 <li class="img-container">
-                    <video src="scroll3.mov" autoplay loop muted playsinline></video>
+                     <iframe
+      class="mobile-bg-iframe"
+      src="https://player.vimeo.com/video/1137875649?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1 "
+      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      title="hero hera intro"></iframe>
                     <h3>Nourishing your hair deeply, defining its natural beauty</h3>
                 </li>
                 <li class="img-container">
-                    <video src="scroll4.mov" autoplay loop muted playsinline></video>
+                    <iframe
+      class="mobile-bg-iframe"
+      src="https://player.vimeo.com/video/1137892075?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1 "
+      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      title="hero hera intro"></iframe>
                     <h3>Then comes the elixir, so light and pure full of hydration and glow</h3>
                 </li>
                 <li class="img-container">
-                    <video src="scroll5.mov" autoplay loop muted playsinline></video>
+                 <iframe
+      class="mobile-bg-iframe"
+      src="https://player.vimeo.com/video/1137892104?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1 "
+      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      title="hero hera intro"></iframe>
                     <h3>Power that feels invisible but transforms everything it touches</h3>
                 </li>
             </ul>
@@ -1191,7 +1217,17 @@ section[class*="md:grid"] > :not(#mobile-hero) {
     #gallery {
         width: 98vw;
     }
-
+.mobile-bg-iframe {
+      position: relative;
+      inset: 0;
+       width: 100%;
+       height: 800px;
+       overflow-x: hidden;
+        
+        pointer-events: none; /* allow taps to reach UI */
+        display: block;
+        justify-content: center;
+    }
     #gallery h3 {
         font-family: "" Azeret Mono "", monospace;
     }
@@ -1254,8 +1290,8 @@ section[class*="md:grid"] > :not(#mobile-hero) {
     }
 
     .img-container img {
-        width: 300px;
-        height: 400px;
+        width: 100%;
+        height: 100%;
     }
 
     .progress {
