@@ -373,7 +373,7 @@ delivery_truck_speed
       <div class="hero-slideshow hidden md:block relative rounded-3xl overflow-hidden" aria-roledescription="carousel">
         <div class="slides flex transition-transform duration-700 will-change-transform">
           <div class="slide w-full flex-shrink-0">
-            <iframe src="https://player.vimeo.com/video/1140505889?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="2160" height="3840" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="heat scent"></iframe>
+            <iframe src="https://player.vimeo.com/video/1140505889?badge=0&amp;autoplay=1&amp;loop=1&amp;background=1" width="580" height="720" frameborder="0" loading="lazy" allow=" fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="heat scent"></iframe>
             </div>
           <div class="slide w-auto h-auto flex-shrink-0">
             <img src="heatspray2.webp" alt="Essential Duo" class="w-[530px] h-[720px] object-fit">
@@ -425,6 +425,9 @@ delivery_truck_speed
       <!-- Mobile Hero Slideshow -->
       <div class="hero-slideshow-mobile flex md:hidden relative justify-center h-full w-full rounded-3xl overflow-hidden">
         <div class="slides-mobile relative transition-transform  duration-500 will-change-transform">
+          <div class="slide-mobile ">
+            <iframe src="https://player.vimeo.com/video/1140505889?badge=0&amp;autoplay=1&amp;loop=1&amp;background=1" width="460px" height="500px" frameborder="0" loading="lazy" allow="fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="heat scent"></iframe> 
+          </div>
           <div class="slide-mobile flex-shrink-0 w-full justify-center">
             <img src="heatspray2.webp" alt="Essential Duo" class="w-[460px] h-[500px] object-fit ">
           </div>
@@ -670,7 +673,7 @@ section[class*="md:grid"] > :not(#mobile-hero) {
   .mobile-hero {align-items: center; justify-content: center; display: flex; text-align: center;}
 
   /* Dots hover */
-  .hero-dot:hover, .hero-dot-mobile:hover { transform: scale(1.1); }
+  .hero-dot:hover, .hero-dot-mobile:hover { transform: scale(1.1); z-index: 100;}
 
   /* Accessibility focus */
   .hero-prev:focus, .hero-next:focus, .hero-dot:focus, .hero-dot-mobile:focus { outline: 2px solid rgba(212,175,55,0.7); }
@@ -1138,7 +1141,7 @@ section[class*="md:grid"] > :not(#mobile-hero) {
     dots.forEach((d, i) => d.addEventListener('click', () => { goTo(i); resetAutoplay(); }));
 
     function startAutoplay() {
-      autoplayTimer = setInterval(next, 5000);
+      autoplayTimer = setInterval(next, 100000);
     }
     function resetAutoplay() { clearInterval(autoplayTimer); startAutoplay(); }
 

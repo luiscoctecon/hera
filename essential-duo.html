@@ -360,6 +360,9 @@ delivery_truck_speed
       <div class="hero-slideshow hidden md:block relative rounded-3xl overflow-hidden" aria-roledescription="carousel">
         <div class="slides flex transition-transform duration-700 will-change-transform">
           <div class="slide w-auto h-auto flex-shrink-0">
+            <iframe src="https://player.vimeo.com/video/1144185495?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1" style="width:580px; height: 720px;" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Homepage- duo"></iframe>
+          </div>
+          <div class="slide w-auto h-auto flex-shrink-0">
             <img src="essentialduo.jpg" alt="Essential Duo" class="w-[530px] h-[720px] object-fit">
           </div>
 
@@ -421,6 +424,10 @@ delivery_truck_speed
       <!-- Mobile Hero Slideshow -->
       <div class="hero-slideshow-mobile flex md:hidden relative justify-center h-full w-full rounded-3xl overflow-hidden">
         <div class="slides-mobile relative transition-transform  duration-500 will-change-transform">
+           <div class="slides-mobile ">
+            <iframe src="https://player.vimeo.com/video/1144185495?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1" style="width:460px; height: 480px;" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Homepage- duo"></iframe>
+          </div>
+
           <div class="slide-mobile flex-shrink-0 w-full justify-center">
             <img src="essentialduo.webp" alt="Essential Duo" class="w-[460px] h-[480px] object-fit ">
           </div>
@@ -669,11 +676,13 @@ section[class*="md:grid"] > :not(#mobile-hero) {
   .hero-slideshow .slides { display: flex; width: 200%; }
   .hero-slideshow .slide { width: 100%; }
   .hero-slideshow .slide img { display:block; }
+  .hero-slideshow .slide iframe{display:block}
 
   .hero-slideshow-mobile { height: 470px; width: 460px;}
   .hero-slideshow-mobile .slides-mobile { display:flex; width: 200%; }
   .hero-slideshow-mobile .slide-mobile { width:100%; }
   .mobile-hero {align-items: center; justify-content: center; display: flex; text-align: center;}
+  
 
   /* Dots hover */
   .hero-dot:hover, .hero-dot-mobile:hover { transform: scale(1.1); }
@@ -1206,7 +1215,7 @@ section[class*="md:grid"] > :not(#mobile-hero) {
     dots.forEach((d, i) => d.addEventListener('click', () => { goTo(i); resetAutoplay(); }));
 
     function startAutoplay() {
-      autoplayTimer = setInterval(next, 5000);
+      autoplayTimer = setInterval(next, 100000);
     }
     function resetAutoplay() { clearInterval(autoplayTimer); startAutoplay(); }
 
