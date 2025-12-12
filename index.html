@@ -154,7 +154,7 @@
             </button>
         </div>
         <div id="mobile-menu" class="md:hidden hidden bg-white shadow-soft absolute w-full left-0 top-20 z-40">
-            <nav class="flex flex-col space-y-4 p-6">
+            <nav class="flex flex-col space-y-0 p-6">
                 <a href="about.html" class="text-gray-700 hover:text-primary transition-colors">About</a>
                 <a href="shop.html" class="text-gray-700 hover:text-primary transition-colors">Shop</a>
                 <a href="ritual.html" class="text-gray-700 hover:text-primary transition-colors">Ritual</a>
@@ -319,6 +319,8 @@
 
     </section>
 
+    <!--mobile hero -->
+
 <div id="mobile-hero" class="justify-center bg-black relative block md:hidden ">
   <div class="mx-auto px-0 text-center">
     
@@ -332,7 +334,7 @@
       position: relative;
       inset: 0;
        width: 100%;
-       height: 800px;
+       height: 700px;
        overflow-x: hidden;
         
         pointer-events: none; /* allow taps to reach UI */
@@ -345,15 +347,15 @@
         position: absolute;
         inset: 0;
         
-        background: rgba(0,0,0,0.35); /* darken for text legibility */
-        z-index: 1;
+        background: rgba(46, 45, 45, 0.2); /* darken for text legibility */
+        z-index: 0;
         pointer-events: none;
       }
       #mobile-hero h2 {
         font-family: 'Georgia', serif;
-        margin-top: 2rem;
+        margin-top: 0rem;
         color: #ffffff;
-        z-index: 100;
+        z-index: 1000;
         position: absolute;
       }
       #mobile-hero button {
@@ -361,7 +363,7 @@
         z-index: 2;
         display:block;
         margin-top: 150%;
-        margin-left: 30%;
+        margin-left: 35%;
         padding: 1rem 1rem;
        
         border: 2px solid #fff ;
@@ -369,7 +371,7 @@
       #mobile-hero h1 {
         font-family: Georgia, 'Times New Roman', Times, serif;
         color: white;
-        z-index: 100;
+        z-index: 1000;
         display:block;
         margin-bottom: 3rem;
         margin-left: 0rem;
@@ -412,7 +414,7 @@
     <section class=" bg-hero-gradient align-items-center md:px-10 md:py-2">
         <div class="text-center mt-12 py-10">
                 <a href="shop.html"
-                    class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-charcoal hover:text-white transition-colors">View all Products
+                    class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-charcoal shadow-[#fffff] shadow-strong hover:text-white transition-colors">View all Products
                    </a>
             </div>
             <h2 class="font-serif text-3xl md:text-4xl text-white text-center md:">Best Seller</h2>
@@ -426,7 +428,7 @@
 <p class="text-cream text-md mb-4">$35.00</p>
 <div class="justify-center">
                   <a href="https://buy.stripe.com/7sYfZj62gc8re8L8rpdjO01">
-    <button class="bg-black text-white w-full py-4 md:px-10 px-6 rounded-lg font-medium shadow-gold overflow-hidden hover:shadow-medium transition-shadow">
+    <button class="bg-black text-white w-full py-4 md:px-10 px-6 rounded-lg font-medium shadow-[#ffffff] shadow-strong overflow-hidden hover:shadow-medium transition-shadow">
       <span class="hover:text-white text-center transition-colors">Buy Now</span>
     </button>
   </a>
