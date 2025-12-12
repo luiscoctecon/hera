@@ -438,17 +438,18 @@ delivery_truck_speed
     <h1 class="text-3xl font-bold text-[#FAE8E8]">Effortless
       Beauty Everyday</h1>
 </div>
-    <div class="container rounded-3xl mx-auto justify-center align-items-center flex ">
+    <div class="rounded-3xl mx-auto justify-center align-items-center relative flex ">
       <!-- Mobile Hero Slideshow -->
-      <div class="hero-slideshow-mobile md:hidden flex relative justify-center h-full w-full rounded-3xl overflow-hidden">
+      <div class=" container hero-slideshow-mobile md:hidden flex relative justify-center rounded-3xl overflow-hidden" aria-roledescription="carousel">
         <!-- Slides -->
-        <div class="slides-mobile relative">
-          <div class="slide-mobile flex-shrink-0 w-full object-cover">
-            <iframe src="https://player.vimeo.com/video/1140505889?badge=0&amp;autoplay=1&amp;loop=1&amp;background=1" width="460px" height="690px" frameborder="0" loading="lazy" allow="fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="heat scent"></iframe> 
+        <div class="slides-mobile relative flex">
+          <div class="slide-mobile flex-shrink-0">
+            <iframe src="https://player.vimeo.com/video/1140505889?badge=0&amp;autoplay=1&amp;loop=1&amp;background=1" width="350px" height="690px" frameborder="0" loading="lazy" allow=" picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="heat scent"></iframe> 
           </div>
           <div class="slide-mobile flex-shrink-0 ">
-            <img src="beforeandaftermobile.webp" alt="Before and After" class="w-[460px] h-[650px] object-cover">
+            <img src="beforeandaftermobile.webp" alt="Before and After" class="w-[460px] h-[690px] object-fit">
           </div>
+          
           <div class="slide-mobile flex-shrink-0">
             <img src="heatbenefitsmobile1.webp" alt="Essential Duo" class="w-[460px] h-[690px] object-fit ">
           </div>
@@ -589,6 +590,7 @@ delivery_truck_speed
   .hero-slideshow-mobile { height: 690px; width: 460px;}
   .hero-slideshow-mobile .slides-mobile { display:flex; width: 200%; }
   .hero-slideshow-mobile .slide-mobile { width:100%; }
+  
   
 
   /* Dots hover */
