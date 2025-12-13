@@ -1222,30 +1222,12 @@ section[class*="md:grid"] > :not(#mobile-hero) {
 </article>
 <div class="progress"></div>
 
-<script type="module">
-    import { animate, scroll } from "https://cdn.jsdelivr.net/npm/motion@12.23.24/+esm"
-
-    const items = document.querySelectorAll(".img-container")
-
-    // Animate gallery horizontally during vertical scroll
-    scroll(
-        animate(".img-group", {
-            transform: ["none", `translateX(-${items.length - 1}00vw)`],
-        }),
-        { target: document.querySelector(".img-group-container") }
-    )
-
-    // Progress bar representing gallery scroll
-    scroll(animate(".progress", { scaleX: [0, 1] }), {
-        target: document.querySelector(".img-group-container"),
-    })
-</script>
 
 
 
 <style>
     #gallery {
-        width: 98vw;
+        width: 100%;
     }
 .mobile-bg-iframe {
       position: relative;
@@ -1265,36 +1247,22 @@ section[class*="md:grid"] > :not(#mobile-hero) {
     #gallery header,
     #gallery footer {
         color: white;  
-        height: 70vh;
+        height: 10vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .img-group-container {
-        height: 500vh;
+        height: 100%;
         position: relative;
     }
 
     .img-group-container > div {
-        position: sticky;
+        position: relative;
         top: 0;
         overflow: hidden;
-        height: 100vh;
-    }
-
-    .img-group {
-        display: flex;
-    }
-
-    .img-container {
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-        flex: 0 0 auto;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        
     }
 
     #gallery header h2 {
@@ -1309,29 +1277,31 @@ section[class*="md:grid"] > :not(#mobile-hero) {
     .img-container h3 {
         margin: 0;
         color: white;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 700;
         letter-spacing: 2px;
         line-height: 1.2;
         position: relative;
         bottom: 30px;
-        display: inline-block;
+        align-items: center;
         justify-items: center;
+        padding-left: 30%;
+        padding-right: 30%;
     }
-
-    .img-container img {
+@media (max-width: 768px) {
+    .img-container h3 {
+      padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 20px;
+    }
+}
+    .img-container {
         width: 100%;
         height: 100%;
-    }
-
-    .progress {
-        position: fixed;
-        left: 0;
-        right: 0;
-        height: 5px;
-        background: transparent;
-        bottom: 50px;
-        transform: scaleX(0);
+        position: relative;
+        display: flex;
+        flex-direction: column;
     }
 </style>
 
