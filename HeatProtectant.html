@@ -40,8 +40,7 @@
     <title>HERA Hair Essentials - Luxury Hair Care for Women | Heat protectors, oils & tools | Hair Rituals for the woman you are - Natural, Empowering, and rooted in feminine energy.</title>
     <meta name="description2" content="Transform hair care into a self-love ritual with HERA Hair Essentials. Premium hair products for empowered women.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
+   
     <link rel="stylesheet:" href="styles.css">
    
 
@@ -91,12 +90,12 @@
    
 </head>
 
-<body class="font-serif text-charcoal bg-black " >
+<body class="font-sans text-charcoal bg-black " >
   <!-- Header / Navigation -->
-    <header class=" bg-opacity-50 shadow-soft md:sticky top-0 z-50">
+    <header class=" bg-black shadow-soft md:sticky top-0 z-50">
      <div class="container mx-auto px-4 flex justify-between items-center h-20">
       <a href="index.html" class="font-serif text-white text-2xl text-primary-dark ">HERA</a>
-       <h4 class="text-white font-bold font-size-[7rem] md:hidden">Heat Protectant</h4>
+       <h4 class="text-white font-bold font-serif font-size-[8rem] md:hidden">Heat Protectant</h4>
       <nav class="hidden md:flex space-x-8">
        <a href="about.html" class="text-white hover:text-primary transition-colors ">About</a>
        <a href="shop.html" class="text-white hover:text-primary transition-colors">Shop</a>
@@ -154,7 +153,7 @@
     <section class="md:grid grid-cols-4 px-10" style="background: radial-gradient(circle at 50% 20%, #69504e 0%, #171616 20%, #060606 55%, #000000 100%); background-repeat: no-repeat; background-attachment: fixed; min-height: 100vh;">
 
      <div class="  mx-auto md:px-10 md:py-[10px] col-span-2 items-center justify-center md:text-left text-center">
-      <h3 class="text-white font-bold" style="font-size: 2.4rem;">Heat Protectant</h3>
+      <h3 class="text-white font-bold font-serif" style="font-size: 2.4rem;">Heat Protectant</h3>
 <!--5 star reviews-->
 <div class="flex  gap-3 mb-4">
             <div class="flex">
@@ -181,17 +180,17 @@
   l11.547-1.2L16.026,0.6L20.388,10.918z"/>
   </svg>
                     </div>
-                    <span class="text-sm text-charcoal-light">95% customer satisfaction</span>
+                    <span class="text-sm text-charcoal-light">99% customer satisfaction</span>
                 </div>
                 
                 <a href="FAQS.html" class="text-white underline">FAQS</a>
-      <h2 class="text-7xl font-bold text-[#FAE8E8]">Effortless
+      <h2 class="text-7xl font-bold font-serif text-[#FAE8E8]">Effortless
         Beauty <br> Everyday</h2>
         
       <h1 class="mt-4 text-lg text-white">Rich with vitamins and keratin, our light-weight technology allows you to use our heat protectant everyday to detangle your hair, or as a leave-in conditioner.</h1>
 <br>
 <!-- Right For Me Button -->
-<button id="rightForMeBtn" class="flex items-center gap-2 text-sm text-[#FAE8E8] bg-black border border-[#FAE8E8] px-2 py-1 rounded-md hover:bg-charcoal hover:text-white transition-colors" type="button" style="font-size:0.95em;">
+<button id="rightForMeBtn" class="flex items-center gap-2 text-sm text-black bg-[#ffbfbc]  border border-[#FAE8E8] px-2 py-1 rounded-md hover:bg-charcoal hover:text-white transition-colors" type="button" style="font-size:0.95em;">
   <span class="material-symbols-outlined" style="font-size:1em;">info</span>
   <span>Is this right for me?</span>
 </button>
@@ -209,14 +208,16 @@ cruelty_free
 delivery_truck_speed 
 </span> <span class="text-white">FAST SHIPPING</span>
 <br>
+<div class="mt-4 font-sans bg-charcoal text-white border border-white p-4 rounded-3xl  max-w-xs" style="background: radial-gradient(circle at 80% 40%, #69504e 0%, #171616 20%, #060606 55%, #000000 100%); background-repeat:calc(+);">
 <ul>
-<li class="text-white"><strong>ALL DAY HYDRATION &amp; MOISTURE-LOCK</strong></li>
-<li class="text-white"><strong>LIGHTWEIGHT FORMULA</strong></li>
-<li class="text-white"><strong>COCONUT & ROSE WATER SCENT</strong></li>
+<li><strong>&bull; All Day Hidration  &amp; Moisture Lock</strong></li>
+<li><strong>&bull; Lightweight Formula</strong></li>
+<li><strong>&bull; Coconut & Rose Water Scent</strong></li>
 </ul>
+</div>
 <br>
 <!-- Modal Structure -->
-<div id="rightForMeModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+<div id="rightForMeModal" class="fixed inset-0 z-50 flex text-black items-center justify-center bg-[#ffbfbc] bg-opacity-50 hidden">
     <div role="dialog" aria-label="Is this right for me?" aria-modal="true" class="bg-black rounded-xl shadow-strong max-w-lg w-full relative p-6">
         <button id="closeRightForMeModal" type="button" class="absolute top-3 right-3 text-gray-500 hover:text-white" aria-label="Close">
             <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="h-6 w-6" fill="none" viewBox="0 0 18 17">
@@ -226,7 +227,7 @@ delivery_truck_speed
         
         <!-- Quiz Content -->
         <div class=" text-white bg-black">
-            <h3 class="text-2xl font-serif text-center mb-6 text-primary">Find Your Perfect Match</h3>
+            <h3 class="text-2xl font-serif text-center mb-6 ">Find Your Perfect Match</h3>
             
             <form id="hairQuiz" class="space-y-6 bg-black">
                 <!-- Question 1 -->
@@ -286,7 +287,7 @@ delivery_truck_speed
                     </div>
                 </div>
 
-                <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg hover:bg-primary-dark transition-colors">
+                <button type="submit" class="w-full bg-[#ffbfbc] text-black py-3 rounded-lg hover:bg-primary-dark hover:text-white transition-colors">
                     Find My Match
                 </button>
             </form>
@@ -295,8 +296,8 @@ delivery_truck_speed
             <div id="quizResult" class="hidden mt-6 text-center">
                 <h4 class="text-xl text-primary mb-3">This Product is Perfect for You!</h4>
                 <p class="mb-4">Based on your hair profile, the Essential Duo will work wonderfully for your hair type.</p>
-                <a href="https://eyf6fx-fu.myshopify.com/checkouts/cn/hWN4KquJEEOu2hMZ2k2lXegE/en-es?_fd=0&channel=buy_button" class="inline-block bg-primary text-white py-2 px-6 rounded-lg hover:bg-primary-dark transition-colors">
-                    Buy Bundle
+                <a href="https://buy.stripe.com/9B614p3U8c8r5Cf375djO00" class="inline-block bg-primary text-white py-2 px-6 rounded-lg hover:bg-primary-dark transition-colors">
+                    Buy Heat Protectant
                 </a>
             </div>
         </div>
@@ -356,7 +357,7 @@ delivery_truck_speed
        <div class="flex flex-col justify-left
        ">
   <a href="https://buy.stripe.com/9B614p3U8c8r5Cf375djO00">
-    <button class="bg-[#ffbfbc] text-black w-full px-10 py-3 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow">
+    <button class="bg-[#ffbfbc] text-black w-full px-10 py-3 rounded-2xl font-medium shadow-gold hover:shadow-medium transition-shadow">
       <span class="hover:text-white text-center transition-colors">Buy Now</span>
     </button>
   </a>
@@ -386,7 +387,7 @@ delivery_truck_speed
               <img src="beforeandafter.webp" alt="Before and After" class="w-[480px] h-[720px] object-fit">
               </div>
           <div class="slide w-auto h-auto flex-shrink-0">
-            <img src="heatspray2.webp" alt="Essential Duo" class="w-[480px] h-[720px] object-fit">
+            <img src="heatspraybottle.jpg" alt="Essential Duo" class="w-[480px] h-[720px] object-fit">
           </div>
 
           <div class="slide w-full flex-shrink-0">
@@ -433,7 +434,7 @@ delivery_truck_speed
 <!-- mobile hero section-->
 <div id="mobile-hero" class="justify-center relative block md:hidden">
   <div class="mx-auto px-0  text-center">
-    <h1 class="text-3xl font-bold text-[#FAE8E8]">Effortless
+    <h1 class="text-3xl font-bold font-serif text-[#FAE8E8]">Effortless
       Beauty Everyday</h1>
 </div>
     <div class="rounded-3xl mx-auto justify-center align-items-center relative flex ">
@@ -632,16 +633,16 @@ delivery_truck_speed
   l11.547-1.2L16.026,0.6L20.388,10.918z"/>
   </svg>
                     </div>
-                    <span class="text-sm text-charcoal-light">95% customers satisfied</span>
+                    <span class="text-sm text-charcoal-light">99% customers satisfied</span>
                 </div>
                 <!-- Right For Me MOBILE Button -->
-<button id="rightForMeBtnMobile" class="gap-2 text-sm relative text-[#FAE8E8] bg-black border border-[#ffbfbc] px-2 py-1 rounded-md hover:bg-charcoal hover:text-white transition-colors" type="button" style="font-size:0.95em;">
+<button id="rightForMeBtnMobile" class="gap-2 text-sm relative text-black bg-[#ffbfbc]  border border-[#ffbfbc] px-2 py-1 rounded-md hover:bg-charcoal hover:text-white transition-colors" type="button" style="font-size:0.95em;">
   <span class="material-symbols-outlined" style="font-size:1em;">info</span>
   <span>Is this right for me?</span>
 </button>
 <a href="FAQS.html" class="text-white text-center justify-center underline ml-4">FAQS</a>
 <!-- Modal MOBILE Structure -->
-<div id="rightForMeModalMobile" class="fixed inset-0 z-50 flex items-center justify-center px-10 bg-black bg-opacity-50 hidden">
+<div id="rightForMeModalMobile" class="fixed inset-0 z-50 flex items-center justify-center px-10 bg-[#ffbfbc]  bg-opacity-50 hidden">
     <div role="dialog" aria-label="Is this right for me?" aria-modal="true" class="bg-black rounded-xl shadow-strong max-w-lg w-full relative p-6">
         <button id="closeRightForMeModalMobile" type="button" class="absolute top-3 right-3 text-gray-500 hover:text-white" aria-label="Close">
             <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="h-6 w-6" fill="none" viewBox="0 0 18 17">
@@ -651,7 +652,7 @@ delivery_truck_speed
         
         <!-- Quiz Content -->
         <div class=" text-white bg-black">
-            <h3 class="text-2xl font-serif text-center mb-6 text-primary">Find Your Perfect Match</h3>
+            <h3 class="text-2xl font-serif text-center mb-6">Find Your Perfect Match</h3>
             
             <form id="hairQuizMobile" class="space-y-6 bg-black">
                 <!-- Question 1 -->
@@ -711,7 +712,7 @@ delivery_truck_speed
                     </div>
                 </div>
 
-                <button type="submitMobile" class="w-full bg-primary text-white py-3 rounded-lg hover:bg-primary-dark transition-colors">
+                <button type="submitMobile" class="w-full bg-[#ffbfbc] text-black py-3 rounded-lg hover:bg-primary-dark transition-colors">
                     Find My Match
                 </button>
             </form>
@@ -819,22 +820,22 @@ section[class*="md:grid"] > :not(#mobile-hero) {
 <section class="grid grid-cols-3 px-4 bg-black space-x-4 text-center">
   <!-- Benefits Button -->
   <div class="grid col-span-1">
-    <button onclick="openPopup('benefitsPopup')" class="bg-[#e7e1dc] text-black px-6 py-4 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow">
-      <span class="hover:text-white text-center transition-colors">Benefits</span>
+    <button onclick="openPopup('benefitsPopup')" class="bg-[#e7e1dc] text-black px-6 py-4 rounded-lg font-medium border-2 border-[#ffbfbc] hover:bg-black hover:text-white  hover:shadow-medium transition-shadow">
+      <span class="text-center transition-colors">Benefits</span>
     </button>
   </div>
 
   <!-- How to Use Button -->
   <div class="grid col-span-1">
-    <button onclick="openPopup('howToUsePopup')" class="bg-[#e7e1dc] text-black px-6 py-0 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow">
-      <span class="hover:text-white text-center transition-colors">How to Use</span>
+    <button onclick="openPopup('howToUsePopup')" class="bg-[#e7e1dc] text-black px-6 py-0 rounded-lg border-2 border-[#ffbfbc] font-medium hover:bg-black hover:text-white shadow-gold hover:shadow-medium transition-shadow">
+      <span class=" text-center transition-colors">How to Use</span>
     </button>
   </div>
 
   <!-- Reviews Button -->
   <div class="grid col-span-1">
-    <button onclick="openPopup('reviewsPopup')" class="bg-[#e7e1dc] text-black px-6 py-0 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow">
-      <span class="hover:text-white text-center transition-colors">Reviews</span>
+    <button onclick="openPopup('reviewsPopup')" class="bg-[#e7e1dc] text-black px-6 py-0 rounded-lg border-2 border-[#ffbfbc] font-medium shadow-[#ffbfbc] hover:bg-black hover:text-white hover:shadow-strong transition-shadow">
+      <span class=" text-center transition-colors">Reviews</span>
     </button>
   </div>
 
@@ -1064,7 +1065,152 @@ section[class*="md:grid"] > :not(#mobile-hero) {
     }
   });
 </script>
-  
+<section class="review-section bg-black text-white py-5">
+  <div class="max-w-4xl mx-auto py-8 px-4 text-center overflow-x-hidden">
+    <h2 class="text-2xl font-serif mb-4">What Our Customers Are Saying</h2>
+    <div class="review-carousel group relative w-full overflow-x-hidden" style="height: 180px;">
+      <div class="carousel-track flex gap-6 items-stretch w-max"
+        style="animation: scroll-x 30s linear infinite;">
+        <!-- Review 1 -->
+        <div class="bg-white p-4 rounded-lg shadow-soft min-w-[320px] flex-shrink-0">
+          <div class="flex items-center mb-2">
+            <div class="flex text-yellow">★★★★★</div>
+            <span class="ml-2 text-black text-sm">Verified Purchase</span>
+          </div>
+          <h4 class="font-bold text-black mb-1">Jessica</h4>
+          <p class="text-black">"I can use it everyday"</p>
+        </div>
+        <!-- Review 2 -->
+        <div class="bg-white p-4 rounded-lg shadow-soft min-w-[320px] flex-shrink-0">
+          <div class="flex items-center mb-2">
+            <div class="flex text-yellow">★★★★★</div>
+            <h4 class="font-bold text-black mb-1">Amanda</h4>
+          </div>
+          <p class="text-black">"So far the this is the only product that works for my hair"</p>
+        </div>
+        <!-- Review 3 -->
+        <div class="bg-white p-4 rounded-lg shadow-soft min-w-[320px] flex-shrink-0">
+          <div class="flex items-center mb-2">
+            <div class="flex text-yellow">★★★★★</div>
+            <span class="ml-2 text-black text-sm">Verified Purchase</span>
+          </div>
+          <h4 class="font-bold text-black mb-1">Viktoria</h4>
+          <p class="text-black">"100% 💯 guaranteed recommended<br>
+          I have gray hair and it was incredible<br>
+          The result"</p>
+        </div>
+        <!-- Review 4  -->
+        <div class="bg-white p-4 rounded-lg shadow-soft min-w-[320px] flex-shrink-0">
+          <div class="flex items-center mb-2">
+            <div class="flex text-yellow">★★★★★</div>
+            <span class="ml-2 text-black text-sm">Verified Purchase</span>
+          </div>
+          <h4 class="font-bold text-black mb-1">Lorena</h4>
+        </div>
+        <!-- Review 5-->
+          <div class="bg-white p-4 rounded-lg shadow-soft min-w-[320px] flex-shrink-0">
+          <div class="flex items-center mb-2">
+            <div class="flex text-yellow">★★★★★</div>
+            <span class="ml-2 text-black text-sm">Verified Purchase</span>
+          </div>
+          <h4 class="font-bold text-black mb-1">Salome</h4>
+          <p class="text-black">I love the smell and texture of it! It‘s perfect for fine & wavy hair Super nourishing without weighing the hair down.
+</p>
+        </div>
+<!--Review 6-->
+         <div class="bg-white p-4 rounded-lg shadow-soft min-w-[320px] flex-shrink-0">
+          <div class="flex items-center mb-2">
+            <div class="flex text-yellow">★★★★</div>
+            <span class="ml-2 text-black text-sm">Verified Purchase</span>
+          </div>
+          <h4 class="font-bold text-black mb-1">Trinity</h4>
+          <p class="text-black">probably the best hair oil i’ve ever used! makes my hair feel so soft the only downside is I wish the bottle was bigger, but great for travel
+</p>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="bg-white p-4 rounded-lg shadow-soft min-w-[320px] flex-shrink-0">
+          <div class="flex items-center mb-2">
+            <div class="flex text-yellow">★★★★★</div>
+            <span class="ml-2 text-black text-sm">Verified Purchase</span>
+          </div>
+          <h4 class="font-bold text-black mb-1">Jessica</h4>
+          <p class="text-black">"I can use it everyday"</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-soft min-w-[320px] flex-shrink-0">
+          <div class="flex items-center mb-2">
+            <div class="flex text-yellow">★★★★★</div>
+            <h4 class="font-bold text-black mb-1">Amanda</h4>
+          </div>
+          <p class="text-black">"So far the this is the only product that works for my hair"</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-soft min-w-[320px] flex-shrink-0">
+          <div class="flex items-center mb-2">
+            <div class="flex text-yellow">★★★★★</div>
+            <span class="ml-2 text-black text-sm">Verified Purchase</span>
+          </div>
+          <h4 class="font-bold text-black mb-1">Viktoria</h4>
+          <p class="text-black">"100% 💯 guaranteed recommended<br>
+          I have gray hair and it was incredible<br>
+          The result"</p>
+        </div>
+         <div class="bg-white p-4 rounded-lg shadow-soft min-w-[320px] flex-shrink-0">
+          <div class="flex items-center mb-2">
+            <div class="flex text-yellow">★★★★★</div>
+            <span class="ml-2 text-black text-sm">Verified Purchase</span>
+          </div>
+          <h4 class="font-bold text-black mb-1">Lorena</h4>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-soft min-w-[320px] flex-shrink-0">
+          <div class="flex items-center mb-2">
+            <div class="flex text-yellow">★★★★★</div>
+            <span class="ml-2 text-black text-sm">Verified Purchase</span>
+          </div>
+          <h4 class="font-bold text-black mb-1">Salome</h4>
+          <p class="text-black">I love the smell and texture of it! <br>
+            It‘s perfect for fine & wavy hair. <br> Super nourishing without weighing the hair down.
+</p>
+        </div>
+         <div class="bg-white p-4 rounded-lg shadow-soft min-w-[320px] flex-shrink-0">
+          <div class="flex items-center mb-2">
+            <div class="flex text-yellow">★★★★</div>
+            <span class="ml-2 text-black text-sm">Verified Purchase</span>
+          </div>
+          <h4 class="font-bold text-black mb-1">Trinity</h4>
+          <p class="text-black">probably the best hair oil i’ve ever used! <br>makes my hair feel so soft the only downside is I wish the bottle was bigger <br> but great for travel
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    @keyframes scroll-x {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .review-carousel:hover .carousel-track,
+    .review-carousel:focus-within .carousel-track,
+    .review-carousel.group:hover .carousel-track {
+      animation-play-state: paused !important;
+    }
+    .carousel-track {
+      will-change: transform;
+    }
+    @media (max-width: 768px) {
+      .carousel-track > div {
+        min-width: 260px;
+      }
+    }
+  </style>
+  <script>
+    // Duplicate reviews if needed for seamless loop (JS fallback for dynamic content)
+    document.addEventListener('DOMContentLoaded', function () {
+      const track = document.querySelector('.carousel-track');
+      if (track && track.children.length <= 6) {
+        track.innerHTML += track.innerHTML;
+      }
+    });
+  </script>
+</section>
 
 <!-- Shipping Progress Bar -->
 <section class="flex flex-col items-center justify-center py-8">
@@ -1181,35 +1327,102 @@ section[class*="md:grid"] > :not(#mobile-hero) {
     });
 </script>
     <!--scroll animation-->
-   <article id="gallery">
+   <article id="gallery" class ="bg-[#f9f5ed]">
     <header>
-        <h2>What is the secret?</h2>
+        <h2 class="font-serif">What is the secret?</h2>
     </header>
-    <section class="img-group-container">
+    <section class="img-group-container"> 
         <div>
-            <ul class="img-group">
-                <li class="img-container">
-                   <iframe
-      class="mobile-bg-iframe"
-      src="https://player.vimeo.com/video/1139424757?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1 "
-      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      title="hero hera intro"></iframe>
-                    <h3 class="uppercase">Nourishes, detangles, protects against heat</h3>
-                </li>
-                <li class="img-container">
-                 
+            <div class="relative w-full max-w-2xl mx-1">
+              <div id="gallery-slides" class="flex transition-transform duration-700 will-change-transform">
+                <!-- Slide 1 -->
+                <div class="w-full flex-shrink-0 border-1 border-black">
+                  <div class="img-container">
                     <iframe
-      class="mobile-bg-iframe"
-      src="https://player.vimeo.com/video/1139424784?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1 "
-      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      title="hero hera intro"></iframe>
+                      class="mobile-bg-iframe"
+                      src="https://player.vimeo.com/video/1139424757?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      loading="lazy"
+                      title="hero hera intro"></iframe>
+                    <h3 class="uppercase">Nourishes, detangles, protects against heat</h3>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="w-full flex-shrink-0 border-1 border-black">
+                  <div class="img-container">
+                    <iframe
+                      class="mobile-bg-iframe"
+                      src="https://player.vimeo.com/video/1139424784?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                      loading="lazy"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      title="hero hera intro"></iframe>
                     <h3 class="uppercase">Power that feels invisible but transforms everything it touches</h3>
-                </li>
-               
-              
-            </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Arrows -->
+              <button id="gallery-prev" class="button-prev absolute left-2 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2 shadow-md z-20" aria-label="Previous slide" type="button">
+                <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+              </button>
+              <button id="gallery-next" class="button-next absolute right-2 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2 shadow-md z-20" aria-label="Next slide" type="button">
+                <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </button>
+              <!-- Dots -->
+              <div class="absolute left-1/2 -translate-x-1/2 bottom-4 z-20 flex gap-2">
+                <button class="gallery-dot w-2.5 h-2.5 rounded-full bg-black bg-opacity-80"></button>
+                <button class="gallery-dot w-2.5 h-2.5 rounded-full bg-black bg-opacity-40"></button>
+              </div>
+            </div>
+            <script>
+              (function() {
+                const slidesEl = document.getElementById('gallery-slides');
+                const slides = slidesEl.children;
+                const prevBtn = document.getElementById('gallery-prev');
+                const nextBtn = document.getElementById('gallery-next');
+                const dots = document.querySelectorAll('.gallery-dot');
+                let current = 0;
+                let startX = 0;
+                let isDragging = false;
+
+                function goTo(index) {
+                  current = (index + slides.length) % slides.length;
+                  slidesEl.style.transform = `translateX(-${current * 100}%)`;
+                  dots.forEach((d, i) => d.style.opacity = i === current ? '1' : '0.45');
+                }
+
+                prevBtn.addEventListener('click', () => goTo(current - 1));
+                nextBtn.addEventListener('click', () => goTo(current + 1));
+                dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
+
+                // Touch swipe support
+                slidesEl.addEventListener('touchstart', function(e) {
+                  startX = e.touches[0].clientX;
+                  isDragging = true;
+                }, { passive: true });
+
+                slidesEl.addEventListener('touchmove', function(e) {
+                  if (!isDragging) return;
+                  const delta = e.touches[0].clientX - startX;
+                  slidesEl.style.transform = `translateX(${ -current * 100 + (delta / slidesEl.clientWidth) * 100 }%)`;
+                }, { passive: true });
+
+                slidesEl.addEventListener('touchend', function(e) {
+                  isDragging = false;
+                  const endX = e.changedTouches[0].clientX;
+                  const diff = endX - startX;
+                  if (Math.abs(diff) > 100) {
+                    if (diff < 0) goTo(current + 1);
+                    else goTo(current - 1);
+                  } else {
+                    goTo(current);
+                  }
+                });
+
+                goTo(0);
+              })();
+            </script>
         </div>
     </section>
     <footer>
@@ -1218,13 +1431,14 @@ section[class*="md:grid"] > :not(#mobile-hero) {
         </p>
     </footer>
 </article>
-<div class="progress"></div>
+
 
 
 
 
 <style>
-    #gallery {
+    #gallery { display: flex;
+        flex-direction: column;
         width: 100%;
     }
 .mobile-bg-iframe {
@@ -1232,11 +1446,10 @@ section[class*="md:grid"] > :not(#mobile-hero) {
       inset: 0;
        width: 100%;
        height: 800px;
-       overflow-x: hidden;
+       overflow-x: auto;
         
         pointer-events: none; /* allow taps to reach UI */
-        display: block;
-        justify-content: center;
+       
     }
     #gallery h3 {
         font-family: "" Azeret Mono "", monospace;
@@ -1244,8 +1457,9 @@ section[class*="md:grid"] > :not(#mobile-hero) {
 
     #gallery header,
     #gallery footer {
-        color: white;  
-        height: 10vh;
+      
+        color: black;  
+        height: 5%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1254,15 +1468,26 @@ section[class*="md:grid"] > :not(#mobile-hero) {
     .img-group-container {
         height: 100%;
         position: relative;
-    }
-
-    .img-group-container > div {
-        position: relative;
-        top: 0;
         overflow: hidden;
         
+        
     }
-
+.img-container {
+ 
+        width: 100%;
+        height: 100%;
+        position: relative;
+        
+        
+    }
+    #gallery footer p {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 1.2;
+        text-align: center;
+        margin: 0;
+    }
     #gallery header h2 {
         font-size: 56px;
         font-weight: 700;
@@ -1274,7 +1499,7 @@ section[class*="md:grid"] > :not(#mobile-hero) {
 
     .img-container h3 {
         margin: 0;
-        color: white;
+        color: black;
         font-size: 20px;
         font-weight: 700;
         letter-spacing: 2px;
@@ -1283,10 +1508,12 @@ section[class*="md:grid"] > :not(#mobile-hero) {
         bottom: 30px;
         align-items: center;
         justify-items: center;
+        padding-top:5%;
         padding-left: 30%;
         padding-right: 30%;
     }
 @media (max-width: 768px) {
+
     .img-container h3 {
       padding-top: 5%;
         padding-left: 10%;
@@ -1294,22 +1521,16 @@ section[class*="md:grid"] > :not(#mobile-hero) {
         font-size: 20px;
     }
 }
-    .img-container {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-    }
+    
 </style>
 
 
 <!-- Footer -->
- <footer class="bg-charcoal text-white py-12">
+ <footer class="bg-black text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="font-serif text-2xl mb-6 text-primary">HERA</h3>
+                    <h3 class="font-serif text-2xl mb-6 text-white">HERA</h3>
                     <p class="text-whtie mb-6">Empowered Hair. Empowered Life.</p>
                     <div class="flex space-x-4">
                         <a href="https://www.instagram.com/heraesntls/" class="text-white hover:text-primary transition-colors" target="_blank">
