@@ -383,9 +383,27 @@ delivery_truck_speed
       <!-- Hero Slideshow (desktop) -->
       <div class="hero-slideshow hidden md:block relative rounded-3xl overflow-hidden" aria-roledescription="carousel">
         <div class="slides flex transition-transform duration-700 will-change-transform">
-          <div class="slide w-full flex-shrink-0">
-            <iframe src="https://player.vimeo.com/video/1140505889?badge=0&amp;autoplay=1&amp;loop=1&amp;background=1" width="480" height="720" frameborder="0" loading="lazy" allow=" fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="heat scent"></iframe>
-            </div>
+          <div class="slide w-full flex-shrink-0 relative">
+            <!-- Image shown first -->
+            <img id="hero-bottle-img" src="heatspraybottle.jpg" alt="Heat Protectant Bottle" loading="eager" class="w-[480px] h-[720px] object-fit transition-opacity duration-700 opacity-100 absolute inset-0 z-20" style="background: #fff;" />
+            <!-- Video hidden by default -->
+            <iframe id="hero-bottle-video" src="https://player.vimeo.com/video/1140505889?badge=0&amp;autoplay=1&amp;loop=1&amp;background=1" width="480" height="720" frameborder="0" loading="lazy" allow="fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="heat scent" class="transition-opacity duration-700 opacity-0 absolute inset-0 z-10"></iframe>
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              // Animation: fade out image, fade in video after 3s
+              const img = document.getElementById('hero-bottle-img');
+              const vid = document.getElementById('hero-bottle-video');
+              if (img && vid) {
+                setTimeout(() => {
+                  img.style.opacity = '0';
+                  vid.style.opacity = '1';
+                  // Optionally, hide the image after transition for accessibility
+                  setTimeout(() => { img.style.display = 'none'; }, 700);
+                }, 3000);
+              }
+            });
+          </script>
             <div class="slide w-full flex-shrink-0">
               <img src="beforeandafter.webp" alt="Before and After" loading="lazy" class="w-[480px] h-[720px] object-fit">
               </div>
@@ -445,8 +463,26 @@ delivery_truck_speed
       <div class=" container hero-slideshow-mobile md:hidden flex relative justify-center rounded-3xl overflow-hidden" aria-roledescription="carousel">
         <!-- Slides -->
         <div class="slides-mobile relative flex">
-          <div class="slide-mobile flex-shrink-0">
-            <iframe src="https://player.vimeo.com/video/1140505889?badge=0&amp;autoplay=1&amp;loop=1&amp;background=1" width="340px" height="600px" frameborder="0" loading="lazy" allow=" picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="heat scent"></iframe> 
+          <div class="slide-mobile flex-shrink-0 relative">
+            <!-- Image shown first -->
+            <img id="mobile-hero-bottle-img" src="heatspraybottle.jpg" alt="Heat Protectant Bottle" loading="eager" class="w-[340px] h-[600px] object-fit transition-opacity duration-700 opacity-100 absolute inset-0 z-20" style="background: #fff;" />
+            <!-- Video hidden by default -->
+            <iframe id="mobile-hero-bottle-video" src="https://player.vimeo.com/video/1140505889?badge=0&amp;autoplay=1&amp;loop=1&amp;background=1" width="340px" height="600px" frameborder="0" loading="lazy" allow="picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="heat scent" class="transition-opacity duration-700 opacity-0 absolute inset-0 z-10"></iframe>
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+          // Animation: fade out image, fade in video after 3s
+          const img = document.getElementById('mobile-hero-bottle-img');
+          const vid = document.getElementById('mobile-hero-bottle-video');
+          if (img && vid) {
+            setTimeout(() => {
+              img.style.opacity = '0';
+              vid.style.opacity = '1';
+              // Optionally, hide the image after transition for accessibility
+              setTimeout(() => { img.style.display = 'none'; }, 700);
+            }, 3000);
+          }
+              });
+            </script>
           </div>
           <div class="slide-mobile flex-shrink-0 ">
             <img src="beforeandaftermobile.webp" alt="Before and After" loading="lazy" class="w-[460px] h-[600px] object-fit">
