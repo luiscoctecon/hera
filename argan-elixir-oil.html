@@ -284,7 +284,7 @@ delivery_truck_speed
                     </div>
                 </div>
 
-                <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg hover:bg-primary-dark transition-colors">
+                <button type="submit" class="w-full bg-white text-black py-3 rounded-lg hover:bg-primary-dark transition-colors">
                     Find My Match
                 </button>
             </form>
@@ -411,9 +411,7 @@ delivery_truck_speed
             <img src="oilbenefits4.webp" alt="Hero 4" class="w-[480px] h-[720px] object-fit">
           </div>
 
-           <div class="slide w-full flex-shrink-0">
-            <img src="desktop3.webp" alt="Hero 4" class="w-[480px] h-[720px] object-fit">
-          </div>
+           
         </div>
 
         <!-- Arrows -->
@@ -654,6 +652,7 @@ delivery_truck_speed
                     </div>
                     <span class="text-sm text-charcoal-light">100% customer satisfaction</span>
                 </div>
+
                 <!-- Right For Me MOBILE Button -->
                   <p class="text-sm text-white">Is This Right For Me?</p>
 <button id="rightForMeBtnMobile" class="gap-2 text-sm relative text-black bg-[#ffbfbc] border border-[#ffbfbc] px-2 py-1 rounded-md hover:bg-charcoal hover:text-white transition-colors" type="button" style="font-size:0.95em;">
@@ -661,6 +660,7 @@ delivery_truck_speed
   <span>Is this right for me?</span>
 </button>
 <a href="FAQS.html" class="text-white text-center justify-center underline ml-4">FAQS</a>
+
 <!-- Modal MOBILE Structure -->
 <div id="rightForMeModalMobile" class="fixed inset-0 z-50 flex items-center justify-center px-10 bg-black bg-opacity-50 hidden">
     <div role="dialog" aria-label="Is this right for me?" aria-modal="true" class="bg-black rounded-xl shadow-strong max-w-lg w-full relative p-6">
@@ -732,7 +732,7 @@ delivery_truck_speed
                     </div>
                 </div>
 
-                <button type="submitMobile" class="w-full bg-primary text-white py-3 rounded-lg hover:bg-primary-dark transition-colors">
+                <button type="submitMobile" class="w-full bg-white text-black py-3 rounded-lg hover:bg-primary-dark transition-colors">
                     Find My Match
                 </button>
             </form>
@@ -874,7 +874,7 @@ section[class*="md:grid"] > :not(#mobile-hero) {
       
       <!-- Benefits Content -->
       <div class="text-white">
-        <h3 class="font-serif text-2xl mb-4 text-center text-primary">Key Benefits</h3>
+        <h3 class="font-serif text-2xl mb-4 text-center text-black text-benefits">Key Benefits</h3>
 
         <ul class="list-disc list-inside mb-6 text-left justify-center">
         <li class="mb-2 text-black">Nourishes and strengthens hair from root to tip</li>
@@ -882,14 +882,14 @@ section[class*="md:grid"] > :not(#mobile-hero) {
         <li class="mb-2 text-black">The most lightweight, non-greasy formula</li>
         <li class="mb-2 text-black">Guava and floral scent</li>
         </ul>
-<h3 class="font-serif text-2xl mb-4 text-center text-primary">Ingredients</h3>
+<h3 class="font-serif text-2xl mb-4 text-center text-black">Ingredients</h3>
 <p class="text-black">Argan Oil, Jojoba Oil, Vitamin E, Keratin, Micro-molecule technology</p>
 <br>
-        <h2 class="font-serif text-2xl text-primary mb-6">How Argan Elixir Oil Compares</h2>
+        <h2 class="font-serif text-2xl text-black mb-6">How Argan Elixir Oil Compares</h2>
         <div class="overflow-x-auto">
           <table class="min-w-full bg-cream rounded-xl shadow-soft">
             <thead>
-              <tr class="bg-primary text-white">
+              <tr class="bg-black text-white">
                 <th class="py-3 px-4 text-left">Feature</th>
                 <th class="py-3 px-4 text-left">Argan Elixir Oil</th>
                 <th class="py-3 px-4 text-left">Typical Oil</th>
@@ -942,7 +942,7 @@ section[class*="md:grid"] > :not(#mobile-hero) {
       </button>
       <!-- How to Use Content -->
       <div class="container text-white">
-        <h3 class="font-serif text-2xl mb-4 text-primary">How to Use</h3>
+        <h3 class="font-serif text-2xl mb-4 text-black">How to Use</h3>
         <div class="grid md:grid-cols-2 gap-8">
           <!-- Video Section -->
           <div class="grid col-span-2 align-items-center justify-center ">
@@ -985,7 +985,7 @@ section[class*="md:grid"] > :not(#mobile-hero) {
       </button>
       <!-- Reviews Content -->
       <div class="container text-white">
-        <h3 class="font-serif text-2xl mb-4 text-primary">Customer Reviews</h3>
+        <h3 class="font-serif text-2xl mb-4 text-black">Customer Reviews</h3>
         <div class="space-y-6 max-h-[60vh] overflow-y-auto pr-4 custom-scrollbar">
           <!-- Review 1 -->
           <div class="bg-charcoal-light p-4 rounded-lg">
@@ -1636,10 +1636,29 @@ section[class*="md:grid"] > :not(#mobile-hero) {
   })();
 </script>
 
-
+<!-- Subscribe Section -->
+    <section class="bg-[#f9f5ed] py-16 md:py-20 ">
+        <div class="container mx-auto px-4 text-center border-2 border-black rounded-2xl">
+            <h2 class="font-serif text-3xl md:text-4xl mb-6">Join The HERA Community</h2>
+            <p class="text-gray-warm mb-8 max-w-xl mx-auto">Subscribe to receive updates,<strong>15% off coupon</strong>, exclusive offers, and hair
+                care tips to elevate your daily ritual.</p>
+            <div class="max-w-md mx-auto">
+                <form class="flex flex-col sm:flex-row gap-4" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="9a618e48-3f92-420b-a6b5-35913201c2c4">
+                    <input type="email" name="email" placeholder="Your email address"
+                        class="px-4 py-3 rounded-lg shadow-soft flex-grow" required>
+                        <input type="name" name="Full Name" placeholder="Your full name" class="px-4 py-3 rounded-lg shadow-soft flex-grow" required>
+                    <button type="submit"
+                        class="bg-black text-white px-6 py-3 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow">Subscribe</button>
+                </form>
+                <p class="text-gray-warm text-sm mt-4">By subscribing, you agree to our privacy policy and consent to
+                    receive updates from HERA.</p>
+            </div>
+        </div>
+    </section>
 
 <!-- Footer -->
- <footer class="bg-charcoal text-white py-12">
+ <footer class="bg-black text-white  py-12">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>

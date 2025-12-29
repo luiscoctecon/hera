@@ -91,12 +91,12 @@
    
 </head>
 
-<body class="font-serif text-charcoal bg-black " >
+<body class="font-sans text-charcoal bg-black " >
   <!-- Header / Navigation -->
     <header class=" bg-opacity-50 shadow-soft md:sticky top-0 z-50">
      <div class="container mx-auto px-4 flex justify-between items-center h-20">
       <a href="index.html" class="font-serif text-white text-2xl text-primary-dark ">HERA</a>
-       <h4 class="text-white font-bold font-size-[7rem] md:hidden"> The Essential Duo</h4>
+       <h4 class="text-white font-bold font-size-[7rem] font-serif md:hidden"> The Essential Duo</h4>
       <nav class="hidden md:flex space-x-8">
        <a href="about.html" class="text-white hover:text-primary transition-colors ">About</a>
        <a href="shop.html" class="text-white hover:text-primary transition-colors">Shop</a>
@@ -154,7 +154,7 @@
     <section class="md:grid grid-cols-4 px-10" style="background: radial-gradient(circle at 60% 20%, #3f2805 0%, #110c03 20%, #060606 55%, #000000 100%); background-repeat: no-repeat; background-attachment: fixed; min-height: 100vh;">
 
      <div class="  mx-auto md:px-10 md:py-[10px] col-span-2 items-center justify-center md:text-left text-center">
-      <h3 class="text-white font-bold" style="font-size: 2.4rem;">The Essential Hera Duo</h3>
+      <h3 class="text-white font-bold font-serif" style="font-size: 2.4rem;">The Essential Hera Duo</h3>
 <!--5 star reviews-->
 <div class="flex  gap-3 mb-4">
             <div class="flex">
@@ -174,20 +174,21 @@
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                         </svg>
                     </div>
-                    <span class="text-sm text-charcoal-light">1,000+ customers satisfied</span>
+                    <span class="text-sm text-charcoal-light">100% customer satisfaction</span>
                 </div>
                 
                 <a href="FAQS.html" class="text-white underline">FAQS</a>
-      <h1 class="text-7xl font-bold text-primary">Effortless
-        Beauty <br> Everyday</h1>
+      <h2 class="text-7xl font-bold font-serif text-[#FAE8E8]">Effortless
+        Beauty <br> Everyday</h2>
         
-      <h2 class="mt-4 text-lg text-white">Our products help women achieve voluminous, luminous, and effortlessly radiant hair without
-leaving it flat, greasy or stiff</h2>
+      <h1 class="mt-4 text-lg text-white">Our products help women achieve voluminous, luminous, and effortlessly radiant hair without
+leaving it flat, greasy or stiff</h1>
 <br>
 <!-- Right For Me Button -->
-<button id="rightForMeBtn" class="flex items-center gap-2 text-sm text-primary bg-black border border-primary px-2 py-1 rounded-md hover:bg-charcoal hover:text-white transition-colors" type="button" style="font-size:0.95em;">
+ <p class="text-sm text-white">Is this right for me?</p>
+<button id="rightForMeBtn" class="flex items-center gap-2 text-sm text-black bg-[#ffbfbc] border border-[#FAE8E8] px-2 py-1 rounded-md hover:bg-charcoal hover:text-white transition-colors" type="button" style="font-size:0.95em;">
   <span class="material-symbols-outlined" style="font-size:1em;">info</span>
-  <span>Is this right for me?</span>
+  <span>TAKE FREE TEST</span>
 </button>
 <br>
 <!-- Eco Icon -->
@@ -201,7 +202,7 @@ cruelty_free
 <!--free shipping-->
 <span class="material-symbols-outlined text-white" style="font-size:1.2rem; margin-left: 5px;">
 delivery_truck_speed 
-</span> <span class="text-white">FREE SHIPPING</span>
+</span> <span class="text-white">FAST SHIPPING</span>
 
 <!-- Modal Structure -->
 <div id="rightForMeModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
@@ -214,7 +215,7 @@ delivery_truck_speed
         
         <!-- Quiz Content -->
         <div class=" text-white bg-black">
-            <h3 class="text-2xl font-serif text-center mb-6 text-primary">Find Your Perfect Match</h3>
+            <h3 class="text-2xl font-serif text-center mb-6 text-white">Find Your Perfect Match</h3>
             
             <form id="hairQuiz" class="space-y-6 bg-black">
                 <!-- Question 1 -->
@@ -274,14 +275,14 @@ delivery_truck_speed
                     </div>
                 </div>
 
-                <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg hover:bg-primary-dark transition-colors">
+                <button type="submit" class="w-full bg-[#ffbfbc] text-black py-3 rounded-lg hover:bg-primary-dark transition-colors">
                     Find My Match
                 </button>
             </form>
 
             <!-- Result Section (hidden by default) -->
             <div id="quizResult" class="hidden mt-6 text-center">
-                <h4 class="text-xl text-primary mb-3">This Product is Perfect for You!</h4>
+                <h4 class="text-xl text-white mb-3">This Product is Perfect for You!</h4>
                 <p class="mb-4">Based on your hair profile, the Essential Duo will work wonderfully for your hair type.</p>
                 <a href="https://eyf6fx-fu.myshopify.com/checkouts/cn/hWN4KquJEEOu2hMZ2k2lXegE/en-es?_fd=0&channel=buy_button" class="inline-block bg-primary text-white py-2 px-6 rounded-lg hover:bg-primary-dark transition-colors">
                     Buy Bundle
@@ -343,8 +344,8 @@ delivery_truck_speed
 <!--buy button and price-->
 <div class="mx-auto mt-8 justify-left text-left">
            <a href="https://buy.stripe.com/7sYfZj62gc8re8L8rpdjO01">
-            <button class="bg-white text-black px-20 py-3 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow">
-               <span> Buy Your Duo Now </span>
+            <button class="bg-[#ffbfbc] text-black px-20 py-3 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow">
+               <span> Get Your Duo Now </span>
             </button>
            </a>
             <div class="flex items-center px-10 gap-2 mb-2">
@@ -356,42 +357,67 @@ delivery_truck_speed
         </div>
     <div class="justify-right text-right h-full w-full py-[10px] rounded-3xl col-span-2 relative">
 
-      <!-- Hero Slideshow (desktop) -->
+       <!-- Hero Slideshow (desktop) -->
       <div class="hero-slideshow hidden md:block relative rounded-3xl overflow-hidden" aria-roledescription="carousel">
         <div class="slides flex transition-transform duration-700 will-change-transform">
+          <div class="slide w-full flex-shrink-0 relative">
+            <!-- Image shown first -->
+            <img id="hero-bottle-img" src="heatspraybottle.jpg" alt="Heat Protectant Bottle" loading="eager" class="w-[480px] h-[720px] object-fit transition-opacity duration-700 opacity-100 absolute inset-0 z-20" style="background: #fff;" />
+            <!-- Video hidden by default -->
+            <iframe id="hero-bottle-video" src="https://player.vimeo.com/video/1149162095?badge=0&amp;autoplay=1&amp;loop=1&amp;background=1" width="480" height="720" frameborder="0" loading="lazy" allow="fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="heat scent" class="transition-opacity duration-700 opacity-0 absolute inset-0 z-10"></iframe>
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              // Animation: fade out image, fade in video after 3s
+              const img = document.getElementById('hero-bottle-img');
+              const vid = document.getElementById('hero-bottle-video');
+              if (img && vid) {
+                setTimeout(() => {
+                  img.style.opacity = '0';
+                  vid.style.opacity = '1';
+                  // Optionally, hide the image after transition for accessibility
+                  setTimeout(() => { img.style.display = 'none'; }, 700);
+                }, 3000);
+              }
+            });
+          </script>
+         
           <div class="slide w-auto h-auto flex-shrink-0">
-            <iframe src="https://player.vimeo.com/video/1144185495?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1" style="width:580px; height: 720px;" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Homepage- duo"></iframe>
-          </div>
-          <div class="slide w-auto h-auto flex-shrink-0">
-            <img src="essentialduo.jpg" alt="Essential Duo" class="w-[530px] h-[720px] object-fit">
+            <img src="beforeandafter.webp" alt="Essential Duo" class="w-[530px] h-[720px] object-fit">
           </div>
 
           <div class="slide w-full flex-shrink-0">
-            <img src="heatandoilbenefits.png" alt="Hero 2" class="w-[580px] h-[720px] object-fit">
+            <img src="heatspraybenefits12.webp" alt="Hero 0" class="w-[480px] h-[720px] object-fit">
           </div>
 
           <div class="slide w-full flex-shrink-0">
-            <img src="heatspraybenefits copy.png" alt="Hero 3" class="w-[580px] h-[720px] object-fit ">
+            <img src="heatspraybenefits11.webp" alt="Hero 1" class="w-[480px] h-[720px] object-fit ">
           </div>
 
           <div class="slide w-full flex-shrink-0">
-            <img src="heatspraybenefits1.webp" alt="Hero 4" class="w-[580px] h-[720px] object-fit">
+            <img src="heatspraybenefits3.webp" alt="Hero 2" class="w-[480px] h-[720px] object-fit">
           </div>
 
            <div class="slide w-full flex-shrink-0">
-            <img src="heatspraybenefits2 copy.webp" alt="Hero 4" class="w-[580px] h-[720px] object-fit">
+            <img src="heatspraybenefits14.webp" alt="Hero 3" class="w-[480px] h-[720px] object-fit">
           </div>
 
            <div class="slide w-full flex-shrink-0">
-            <img src="heatspraybenefits3.webp" alt="Hero 4" class="w-[580px] h-[720px] object-fit">
+            <img src="heatspraybenefits3.webp" alt="Hero 4" class="w-[480px] h-[720px] object-fit">
           </div>
 
            <div class="slide w-full flex-shrink-0">
-            <img src="oilbenefits16.webp" alt="Hero 4" class="w-[580px] h-[720px] object-fit">
+            <img src="oilbenefits8.jpg" alt="Hero 5" class="w-[480px] h-[720px] object-fit">
           </div>
 
           <div class="slide w-full flex-shrink-0">
-            <img src="desktop3.webp" alt="Hero 4" class="w-[580px] h-[720px] object-fit">
+            <img src="oilbenefits6.webp" alt="Hero 6" class="w-[480px] h-[720px] object-fit">
+          </div>
+          <div class="slide w-full flex-shrink-0">
+            <img src="oilbenefits4.webp" alt="Hero 7" class="w-[480px] h-[720px] object-fit">
+          </div>
+          <div class="slide w-full flex-shrink-0">
+            <img src="oilbenefits copy.webp" alt="Hero 8" class="w-[480px] h-[720px] object-fit">
           </div>
         </div>
 
@@ -417,57 +443,221 @@ delivery_truck_speed
 <!-- mobile hero section-->
 <div id="mobile-hero" class="justify-center relative block md:hidden">
   <div class="mx-auto px-0  text-center">
-    <h1 class="text-3xl font-bold text-primary">Effortless
+    <h1 class="text-3xl font-bold  font-serif text-[#FAE8E8]">Effortless
       Beauty Everyday</h1>
 </div>
-    <div class="container rounded-3xl mx-auto justify-center align-items-center flex">
+    <div class="rounded-3xl mx-auto justify-center align-items-center relative flex ">
       <!-- Mobile Hero Slideshow -->
-      <div class="hero-slideshow-mobile flex md:hidden relative justify-center h-full w-full rounded-3xl overflow-hidden">
-        <div class="slides-mobile relative transition-transform  duration-500 will-change-transform">
-           <div class="slides-mobile ">
-            <iframe src="https://player.vimeo.com/video/1144185495?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1" style="width:460px; height: 480px;" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Homepage- duo"></iframe>
+      <div class=" container hero-slideshow-mobile md:hidden flex relative justify-center rounded-3xl overflow-hidden" aria-roledescription="carousel">
+        <!-- Slides -->
+        <div class="slides-mobile relative flex">
+
+          <div class="slide-mobile flex-shrink-0 relative">
+            <!-- Image shown first -->
+            <img id="mobile-hero-bottle-img" src="heatspraymobile.jpeg" alt="Heat Protectant Bottle" loading="eager" class="w-[460px] h-[600px] object-fit transition-opacity duration-700 opacity-100 absolute inset-0 z-20" style="background: #fff;" />
+            <!-- Video hidden by default -->
+            <iframe id="mobile-hero-bottle-video" src="https://player.vimeo.com/video/1149162095?badge=0&amp;autoplay=1&amp;loop=1&amp;background=1" width="400px" height="580px" frameborder="0" loading="lazy" allow="picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="heat scent" class="transition-opacity duration-700 opacity-0 inset-0 z-10"></iframe>
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+          // Animation: fade out image, fade in video after 3s
+          const img = document.getElementById('mobile-hero-bottle-img');
+          const vid = document.getElementById('mobile-hero-bottle-video');
+          if (img && vid) {
+            setTimeout(() => {
+              img.style.opacity = '0';
+              vid.style.opacity = '1';
+              // Optionally, hide the image after transition for accessibility
+              setTimeout(() => { img.style.display = 'none'; }, 700);
+            }, 3000);
+          }
+              });
+            </script>
           </div>
 
           <div class="slide-mobile flex-shrink-0 w-full justify-center">
             <img src="essentialduo.webp" alt="Essential Duo" class="w-[460px] h-[480px] object-fit ">
           </div>
-          <div class="slide-mobile flex-shrink-0 w-full h-full">
-            <img src="heatandoilbenefits2.png" alt="Hero 2" class="w-[460px] h-[500px] object-fit">
+         <div class="slide-mobile flex-shrink-0 ">
+            <img src="beforeandaftermobile.webp" alt="Before and After" loading="lazy" class="w-[460px] h-[600px] object-fit">
+          </div>
+          
+          <div class="slide-mobile flex-shrink-0">
+            <img src="heatbenefitsmobile1.webp" alt="Essential Duo" loading="lazy" class="w-[460px] h-[600px] object-fit ">
+          </div>
+          <div class="slide-mobile flex-shrink-0 ">
+            <img src="heatspraymobile.jpeg" alt="Hero 4" loading="lazy" class="w-[460px] h-[600px] object-fit">
+          </div>
+          <div class="slide-mobile flex-shrink-0 ">
+            <img src="heatbenefitsmobile2.webp" alt="Hero 2" loading="lazy" class="w-[460px] h-[600px] object-fit">
+          </div>
+          <div class="slide-mobile flex-shrink-0 ">
+            <img src="heatbenefitsmobile3.webp" alt="Hero 3" loading="lazy" class="w-[460px] h-[600px] object-fit">
+          </div>
+          <div class="slide-mobile flex-shrink-0">
+            <img src="heatbenefitsmobile4.webp" alt="Hero 4" loading="lazy" class="w-[460px] h-[600px] object-fit">
+          </div>
+          <div class="slide-mobile flex-shrink-0">
+            <img src="oilmobile.jpeg" alt="Essential Duo" loading="lazy" class="w-[460px] h-[600px] object-fit ">
+          </div>
+          <div class="slide-mobile flex-shrink-0">
+            <img src="oilbenefits13.webp" alt="Hero 2" loading="lazy" class="w-[460px] h-[600px] object-fit">
           </div>
 
-          <div class="slide-mobile flex-shrink-0 w-full h-full">
-            <img src="heatspraybenefits11.jpg" alt="Hero 3" class="w-[460px] h-[500px] object-fit">
+          <div class="slide-mobile flex-shrink-0 ">
+            <img src="oilbenefits14 2.webp" alt="Hero 3" loading="lazy" class="w-[460px] h-[600px] object-fit">
           </div>
 
-          <div class="slide-mobile flex-shrink-0 w-full h-full">
-            <img src="heatspraybenefits12.webp" alt="Hero 3" class="w-[460px] h-[500px] object-fit">
+          <div class="slide-mobile flex-shrink-0 ">
+            <img src="oilbenefits16.webp" alt="Hero 3" loading="lazy" class="w-[460px] h-[600px] object-fit">
           </div>
          
-          <div class="slide-mobile flex-shrink-0 w-full h-full">
-            <img src="oilbenefits13.webp" alt="Hero 4" class="w-[460px] h-[480px] object-fit">
-          </div>
-
-          <div class="slide-mobile flex-shrink-0 w-full h-full">
-            <img src="oilbenefits14 2.webp" alt="Hero 4" class="w-[460px] h-[500px] object-fit">
-          </div>
-
-          <div class="slide-mobile flex-shrink-0 w-full h-full">
-            <img src="mobileslide3.webp" alt="Hero 4" class="w-[460px] h-[500px] object-fit">
+          <div class="slide-mobile flex-shrink-0 ">
+            <img src="mobileslide3.webp" alt="Hero 4" loadig="lazy" class="w-[460px] h-[600px] object-fit">
           </div>
         </div>
-       
-      <!-- Mobile Hero Slideshow -->
-      
+
+      <!-- Mobile arrows -->
+        <button class="hero-mobile-prev absolute left-2 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2 shadow-md z-20" aria-label="Previous slide" type="button">
+          <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <button class="hero-mobile-next absolute right-2 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2 shadow-md z-20" aria-label="Next slide" type="button">
+          <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+
         <!-- Mobile dots -->
         <div class="absolute left-1/2 -translate-x-1/2 bottom-4 z-20 flex gap-2">
           <button class="hero-dot-mobile w-2.5 h-2.5 rounded-full bg-white bg-opacity-80"></button>
           <button class="hero-dot-mobile w-2.5 h-2.5 rounded-full bg-white bg-opacity-40"></button>
           <button class="hero-dot-mobile w-2.5 h-2.5 rounded-full bg-white bg-opacity-40"></button>
           <button class="hero-dot-mobile w-2.5 h-2.5 rounded-full bg-white bg-opacity-40"></button>
+          <button class="hero-dot-mobile w-2.5 h-2.5 rounded-full bg-white bg-opacity-40"></button>
+          <button class="hero-dot-mobile w-2.5 h-2.5 rounded-full bg-white bg-opacity-40"></button>
+          <button class="hero-dot-mobile w-2.5 h-2.5 rounded-full bg-white bg-opacity-40"></button>
+           
+         
         </div>
       </div>
     </div>
+    <script>
+      // Mobile slideshow logic with arrows and swipe
+      (function() {
+        const slidesMobileEl = document.querySelector('.hero-slideshow-mobile .slides-mobile');
+        const slidesMobile = document.querySelectorAll('.hero-slideshow-mobile .slide-mobile');
+        const prevBtnMob = document.querySelector('.hero-mobile-prev');
+        const nextBtnMob = document.querySelector('.hero-mobile-next');
+        const dotsMobile = document.querySelectorAll('.hero-dot-mobile');
+        let currMobile = 0;
+        let startX = 0;
+        let isDragging = false;
 
+        function goToMobile(i) {
+          currMobile = (i + slidesMobile.length) % slidesMobile.length;
+          slidesMobileEl.style.transform = `translateX(-${currMobile * 100}%)`;
+          dotsMobile.forEach((d, idx) => d.style.opacity = idx === currMobile ? '1' : '0.45');
+        }
+
+        // Arrow controls
+        if (nextBtnMob) nextBtnMob.addEventListener('click', () => goToMobile(currMobile + 1));
+        if (prevBtnMob) prevBtnMob.addEventListener('click', () => goToMobile(currMobile - 1));
+
+        // Dots control
+        dotsMobile.forEach((d, i) => d.addEventListener('click', () => goToMobile(i)));
+
+        // Touch handlers for swipe
+        if (slidesMobileEl) {
+          slidesMobileEl.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            isDragging = true;
+          }, { passive: true });
+
+          slidesMobileEl.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            const delta = e.touches[0].clientX - startX;
+            slidesMobileEl.style.transform = `translateX(${ -currMobile * 100 + (delta / slidesMobileEl.clientWidth) * 100 }%)`;
+          }, { passive: true });
+
+          slidesMobileEl.addEventListener('touchend', (e) => {
+            isDragging = false;
+            const endX = e.changedTouches[0].clientX;
+            const diff = endX - startX;
+            if (Math.abs(diff) > 50) {
+              if (diff < 0) goToMobile(currMobile + 1);
+              else goToMobile(currMobile - 1);
+            } else {
+              goToMobile(currMobile);
+            }
+          });
+        }
+
+        // Initialize
+        goToMobile(0);
+      })();
+    </script>
+
+<!-- Desktop Slideshow JS -->
+<script>
+  (function() {
+    // Desktop slideshow
+    const slidesEl = document.querySelector('.hero-slideshow .slides');
+    const slides = document.querySelectorAll('.hero-slideshow .slide');
+    const prevBtn = document.querySelector('.hero-prev');
+    const nextBtn = document.querySelector('.hero-next');
+    const dots = document.querySelectorAll('.hero-dot');
+    let current = 0;
+    let autoplayTimer;
+
+    function goTo(index) {
+      current = (index + slides.length) % slides.length;
+      const offset = -current * 100;
+      slidesEl.style.transform = `translateX(${offset}%)`;
+      dots.forEach((d,i) => d.style.opacity = i===current? '1':'0.45');
+    }
+
+    function next() { goTo(current + 1); }
+    function prev() { goTo(current - 1); }
+
+    if (nextBtn) nextBtn.addEventListener('click', () => { next(); resetAutoplay(); });
+    if (prevBtn) prevBtn.addEventListener('click', () => { prev(); resetAutoplay(); });
+    dots.forEach((d, i) => d.addEventListener('click', () => { goTo(i); resetAutoplay(); }));
+
+    function startAutoplay() {
+      autoplayTimer = setInterval(next, 13000);
+    }
+    function resetAutoplay() { clearInterval(autoplayTimer); startAutoplay(); }
+
+    if (slidesEl) startAutoplay();
+
+    
+  })();
+</script>
+<!-- Slideshow Styles -->
+<style>
+  .hero-slideshow { height: 720px; width: 480px; }
+  
+  .hero-slideshow .slides { display: flex; width: 200%; }
+  .hero-slideshow .slide { width: 100%; }
+  .hero-slideshow .slide img { display:block; }
+
+  .hero-slideshow-mobile { height: 600px; width: 460px;}
+  .hero-slideshow-mobile .slides-mobile { display:flex; width: 200%; }
+  .hero-slideshow-mobile .slide-mobile { width:100%; }
+  
+  
+
+  /* Dots hover */
+  .hero-dot:hover, .hero-dot-mobile:hover { transform: scale(1.1); z-index: 100;}
+
+  /* Accessibility focus */
+  .hero-prev:focus, .hero-next:focus, .hero-dot:focus, .hero-dot-mobile:focus{ outline: 2px solid rgba(212,175,55,0.7); }
+
+  @media (max-width: 767px) {
+    .hero-slideshow { display:none; }
+  }
+
+  @media (min-width: 768px) {
+    .hero-slideshow-mobile { display:none; }
+  }
+</style>
 
 <!--5 star reviews-->
 <div class="flex items-center gap-3 mb-4">
@@ -488,12 +678,14 @@ delivery_truck_speed
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
                         </svg>
                     </div>
-                    <span class="text-sm text-charcoal-light">1,000+ customers satisfied</span>
+                    <span class="text-sm text-charcoal-light">100% customer satisfaction</span>
                 </div>
                 <!-- Right For Me MOBILE Button -->
-<button id="rightForMeBtnMobile" class="gap-2 text-sm relative text-primary bg-black border border-primary px-2 py-1 rounded-md hover:bg-charcoal hover:text-white transition-colors" type="button" style="font-size:0.95em;">
+                 <p class="text-sm text-white">Is This Right For Me?</p>
+<button id="rightForMeBtnMobile" class="gap-2 text-sm relative text-black bg-[#ffbfbc]  border border-[#ffbfbc] px-2 py-1 rounded-md hover:bg-charcoal hover:text-white transition-colors" type="button" style="font-size:0.95em;">
   <span class="material-symbols-outlined" style="font-size:1em;">info</span>
-  <span>Is this right for me?</span>
+  <span>
+  TAKE FREE TEST</span>
 </button>
 <a href="FAQS.html" class="text-white text-center justify-center underline ml-4">FAQS</a>
 <!-- Modal MOBILE Structure -->
@@ -507,7 +699,7 @@ delivery_truck_speed
         
         <!-- Quiz Content -->
         <div class=" text-white bg-black">
-            <h3 class="text-2xl font-serif text-center mb-6 text-primary">Find Your Perfect Match</h3>
+            <h3 class="text-2xl font-serif text-center mb-6 ">Find Your Perfect Match</h3>
             
             <form id="hairQuizMobile" class="space-y-6 bg-black">
                 <!-- Question 1 -->
@@ -567,17 +759,17 @@ delivery_truck_speed
                     </div>
                 </div>
 
-                <button type="submitMobile" class="w-full bg-primary text-white py-3 rounded-lg hover:bg-primary-dark transition-colors">
+                <button type="submitMobile" class="w-full bg-[#ffbfbc] text-black py-3 rounded-lg hover:bg-primary-dark transition-colors">
                     Find My Match
                 </button>
             </form>
 
             <!-- Result Section (hidden by default) -->
             <div id="quizResultMobile" class="hidden mt-6 text-center">
-                <h4 class="text-xl text-primary mb-3">This Product is Perfect for You!</h4>
+                <h4 class="text-xl text-white mb-3">This Product is Perfect for You!</h4>
                 <p class="mb-4">Based on your hair profile, the Essential Duo will work wonderfully for your hair type.</p>
-                <a href="https://eyf6fx-fu.myshopify.com/checkouts/cn/hWN4KquJEEOu2hMZ2k2lXegE/en-es?_fd=0&channel=buy_button" class="inline-block bg-primary text-white py-2 px-6 rounded-lg hover:bg-primary-dark transition-colors">
-                    Buy Bundle
+                <a href="https://buy.stripe.com/7sYfZj62gc8re8L8rpdjO01" class="inline-block text-black bg-[#ffbfbc] py-2 px-6 rounded-lg hover:bg-primary-dark transition-colors">
+                    Get Your Bundle!
                 </a>
             </div>
         </div>
@@ -636,8 +828,8 @@ delivery_truck_speed
 
     <div class="mx-auto mt-8 justify-center text-center">
            <a href="https://buy.stripe.com/7sYfZj62gc8re8L8rpdjO01">
-            <button class="bg-primary text-white px-10 py-3 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow">
-               <span> Buy Your Duo Now </span>
+            <button class="bg-[#ffbfbc] text-black px-10 py-3 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow">
+               <span> Get Your Duo Now </span>
             </button>
            </a>
   <div class="flex items-center gap-2 mb-2 justify-center text-center">
@@ -666,37 +858,6 @@ section[class*="md:grid"] > :not(#mobile-hero) {
   }
 }
 
-/* Small spacing tweak for mobile hero */
-#mobile-hero { padding: 0rem 0; }
-</style>
-<!-- Slideshow Styles -->
-<style>
-  .hero-slideshow { height: 720px; width: 580px; }
-  
-  .hero-slideshow .slides { display: flex; width: 200%; }
-  .hero-slideshow .slide { width: 100%; }
-  .hero-slideshow .slide img { display:block; }
-  .hero-slideshow .slide iframe{display:block}
-
-  .hero-slideshow-mobile { height: 470px; width: 460px;}
-  .hero-slideshow-mobile .slides-mobile { display:flex; width: 200%; }
-  .hero-slideshow-mobile .slide-mobile { width:100%; }
-  .mobile-hero {align-items: center; justify-content: center; display: flex; text-align: center;}
-  
-
-  /* Dots hover */
-  .hero-dot:hover, .hero-dot-mobile:hover { transform: scale(1.1); }
-
-  /* Accessibility focus */
-  .hero-prev:focus, .hero-next:focus, .hero-dot:focus, .hero-dot-mobile:focus { outline: 2px solid rgba(212,175,55,0.7); }
-
-  @media (max-width: 767px) {
-    .hero-slideshow { display:none; }
-  }
-
-  @media (min-width: 768px) {
-    .hero-slideshow-mobile { display:none; }
-  }
 </style>
 
 <!--mobile hero ends-->
@@ -706,22 +867,22 @@ section[class*="md:grid"] > :not(#mobile-hero) {
 <section class="grid grid-cols-3 px-4 bg-black space-x-4 text-center">
   <!-- Benefits Button -->
   <div class="grid col-span-1">
-    <button onclick="openPopup('benefitsPopup')" class="bg-primary text-white px-6 py-4 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow">
-      <span class="hover:text-white text-center transition-colors">Benefits</span>
+    <button onclick="openPopup('benefitsPopup')" class="bg-[#e7e1dc] text-black px-6 py-4 rounded-lg font-medium border-2 border-[#ffbfbc] hover:bg-black hover:text-white  hover:shadow-medium transition-shadow">
+      <span class="text-center hover:test-white transition-colors">Benefits</span>
     </button>
   </div>
 
   <!-- How to Use Button -->
   <div class="grid col-span-1">
-    <button onclick="openPopup('howToUsePopup')" class="bg-primary text-white px-6 py-0 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow">
-      <span class="hover:text-white text-center transition-colors">How to Use</span>
+    <button onclick="openPopup('howToUsePopup')" class="bg-[#e7e1dc] text-black px-6 py-0 rounded-lg border-2 border-[#ffbfbc] font-medium hover:bg-black hover:text-white shadow-gold hover:shadow-medium transition-shadow">
+      <span class=" text-center transition-colors">How to Use</span>
     </button>
   </div>
 
   <!-- Reviews Button -->
   <div class="grid col-span-1">
-    <button onclick="openPopup('reviewsPopup')" class="bg-primary text-white px-6 py-0 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow">
-      <span class="hover:text-white text-center transition-colors">Reviews</span>
+    <button onclick="openPopup('reviewsPopup')" class="bg-[#e7e1dc] text-black px-6 py-0 rounded-lg border-2 border-[#ffbfbc] font-medium shadow-[#ffbfbc] hover:bg-black hover:text-white hover:shadow-strong transition-shadow">
+      <span class=" text-center transition-colors">Reviews</span>
     </button>
   </div>
 
@@ -736,21 +897,21 @@ section[class*="md:grid"] > :not(#mobile-hero) {
       
       <!-- Benefits Content -->
       <div class="text-white">
-        <h3 class="font-serif text-2xl mb-4 text-center text-primary">Key Benefits</h3>
+        <h3 class="font-serif text-2xl mb-4 text-center text-black">Key Benefits</h3>
 
         <ul class="list-disc list-inside mb-6 text-left justify-center">
         <li class="mb-2 text-black">Nourishes and strengthens hair from root to tip</li>
         <li class="mb-2 text-black">Provides heat protection up to 450°F</li>
         <li class="mb-2 text-black">The most lightweight, non-greasy formula</li>
         </ul>
-<h3 class="font-serif text-2xl mb-4 text-center text-primary">Ingredients</h3>
+<h3 class="font-serif text-2xl mb-4 text-center text-black">Ingredients</h3>
 <p class="text-black">Argan Oil, Jojoba Oil, Vitamin E, Keratin, Micro-molecule technology</p>
 <br>
-        <h2 class="font-serif text-2xl text-primary mb-6">How Argan Elixir Oil Compares</h2>
+        <h2 class="font-serif text-2xl text-black mb-6">How Argan Elixir Oil Compares</h2>
         <div class="overflow-x-auto">
           <table class="min-w-full bg-cream rounded-xl shadow-soft">
             <thead>
-              <tr class="bg-primary text-white">
+              <tr class="bg-black text-white">
                 <th class="py-3 px-4 text-left">Feature</th>
                 <th class="py-3 px-4 text-left">Argan Elixir Oil</th>
                 <th class="py-3 px-4 text-left">Typical Oil</th>
@@ -785,13 +946,12 @@ section[class*="md:grid"] > :not(#mobile-hero) {
             </tbody>
           </table>
         </div>
-   
-     
-        <h2 class="font-serif text-2xl text-primary mb-6">How Heat Protector Spray Compares</h2>
+
+        <h2 class="font-serif text-2xl text-black mb-6">How Heat Protector Spray Compares</h2>
         <div class="overflow-x-auto">
             <table class="min-w-full bg-cream rounded-xl shadow-soft">
                 <thead>
-                    <tr class="bg-primary text-white">
+                    <tr class="bg-black text-white">
                         <th class="py-3 px-4 text-left">Feature</th>
                         <th class="py-3 px-4 text-left">Heat Protector Spray</th>
                         <th class="py-3 px-4 text-left">Typical Heat Spray</th>
@@ -841,7 +1001,7 @@ section[class*="md:grid"] > :not(#mobile-hero) {
       </button>
       <!-- How to Use Content -->
       <div class="container text-white">
-        <h3 class="font-serif text-2xl mb-4 text-primary">How to Use</h3>
+        <h3 class="font-serif text-2xl mb-4 text-black">How to Use</h3>
         <div class="grid md:grid-cols-2 gap-8">
           <!-- Video Section -->
           <div class="grid col-span-2 align-items-center justify-center ">
@@ -1105,14 +1265,17 @@ section[class*="md:grid"] > :not(#mobile-hero) {
     });
 </script>
     <!--scroll animation-->
-  <article id="gallery">
+  <article id="gallery" class="bg-[#f9f5ed]">
     <header>
-        <h2>What is the secret?</h2>
+        <h2 class="font-serif text-black">What is the secret?</h2>
     </header>
     <section class="img-group-container">
         <div>
-            <ul class="img-group">
-                <li class="img-container">
+            <div class="relative w-full max-w-2xl mx-1">
+               <div id="gallery-slides" class="flex transition-transform duration-700 will-change-transform">
+                <!-- Slide 1 -->
+                <div class="w-full flex-shrink-0 border-1 border-black">
+                  <div class="img-container">
                    <iframe
       class="mobile-bg-iframe"
       src="https://player.vimeo.com/video/1137834334?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1 "
@@ -1120,8 +1283,12 @@ section[class*="md:grid"] > :not(#mobile-hero) {
       referrerpolicy="strict-origin-when-cross-origin"
       title="hero hera intro"></iframe>
                     <h3>It all begins with a mist</h3>
-                </li>
-                <li class="img-container">
+                </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="w-full flex-shrink-0 border-1 border-black">
+                  <div class="img-container">
                  
                     <iframe
       class="mobile-bg-iframe"
@@ -1130,8 +1297,11 @@ section[class*="md:grid"] > :not(#mobile-hero) {
       referrerpolicy="strict-origin-when-cross-origin"
       title="hero hera intro"></iframe>
                     <h3>Floating through the air like perfume - delicate, magnetic -</h3>
-                </li>
-                <li class="img-container">
+                </div>
+                </div>
+                <!-- Slide 3 -->
+               <div class="w-full flex-shrink-0 border-1 border-black">
+                  <div class="img-container">
                      <iframe
       class="mobile-bg-iframe"
       src="https://player.vimeo.com/video/1137875649?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1 "
@@ -1139,8 +1309,11 @@ section[class*="md:grid"] > :not(#mobile-hero) {
       referrerpolicy="strict-origin-when-cross-origin"
       title="hero hera intro"></iframe>
                     <h3>Nourishing your hair deeply, defining its natural beauty</h3>
-                </li>
-                <li class="img-container">
+                </div>
+                </div>
+                <!-- Slide 4 -->
+                 <div class="w-full flex-shrink-0 border-1 border-black">
+                  <div class="img-container">
                     <iframe
       class="mobile-bg-iframe"
       src="https://player.vimeo.com/video/1137892075?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1 "
@@ -1148,8 +1321,11 @@ section[class*="md:grid"] > :not(#mobile-hero) {
       referrerpolicy="strict-origin-when-cross-origin"
       title="hero hera intro"></iframe>
                     <h3>Then comes the elixir, so light and pure full of hydration and glow</h3>
-                </li>
-                <li class="img-container">
+                </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="w-full flex-shrink-0 border-1 border-black">
+                  <div class="img-container">
                  <iframe
       class="mobile-bg-iframe"
       src="https://player.vimeo.com/video/1137892104?badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1 "
@@ -1157,171 +1333,127 @@ section[class*="md:grid"] > :not(#mobile-hero) {
       referrerpolicy="strict-origin-when-cross-origin"
       title="hero hera intro"></iframe>
                     <h3>Power that feels invisible but transforms everything it touches</h3>
-                </li>
-            </ul>
+                </div>
+            </div>
+        </div>
+         <button id="gallery-prev" class="button-prev absolute left-2 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2 shadow-md z-20" aria-label="Previous slide" type="button">
+                <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+              </button>
+              <button id="gallery-next" class="button-next absolute right-2 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2 shadow-md z-20" aria-label="Next slide" type="button">
+                <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </button>
+              <!-- Dots -->
+              <div class="absolute left-1/2 -translate-x-1/2 bottom-4 z-20 flex gap-2">
+                <button class="gallery-dot w-2.5 h-2.5 rounded-full bg-black bg-opacity-80"></button>
+                <button class="gallery-dot w-2.5 h-2.5 rounded-full bg-black bg-opacity-40"></button>
+              </div>
+            </div>
+            <script>
+              (function() {
+                const slidesEl = document.getElementById('gallery-slides');
+                const slides = slidesEl.children;
+                const prevBtn = document.getElementById('gallery-prev');
+                const nextBtn = document.getElementById('gallery-next');
+                const dots = document.querySelectorAll('.gallery-dot');
+                let current = 0;
+                let startX = 0;
+                let isDragging = false;
+
+                function goTo(index) {
+                  current = (index + slides.length) % slides.length;
+                  slidesEl.style.transform = `translateX(-${current * 100}%)`;
+                  dots.forEach((d, i) => d.style.opacity = i === current ? '1' : '0.45');
+                }
+
+                prevBtn.addEventListener('click', () => goTo(current - 1));
+                nextBtn.addEventListener('click', () => goTo(current + 1));
+                dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
+
+                // Touch swipe support
+                slidesEl.addEventListener('touchstart', function(e) {
+                  startX = e.touches[0].clientX;
+                  isDragging = true;
+                }, { passive: true });
+
+                slidesEl.addEventListener('touchmove', function(e) {
+                  if (!isDragging) return;
+                  const delta = e.touches[0].clientX - startX;
+                  slidesEl.style.transform = `translateX(${ -current * 100 + (delta / slidesEl.clientWidth) * 100 }%)`;
+                }, { passive: true });
+
+                slidesEl.addEventListener('touchend', function(e) {
+                  isDragging = false;
+                  const endX = e.changedTouches[0].clientX;
+                  const diff = endX - startX;
+                  if (Math.abs(diff) > 100) {
+                    if (diff < 0) goTo(current + 1);
+                    else goTo(current - 1);
+                  } else {
+                    goTo(current);
+                  }
+                });
+
+                goTo(0);
+              })();
+            </script>
         </div>
     </section>
     <footer>
-        <p>
-            That is the secret
-        </p>
+       
     </footer>
 </article>
-<div class="progress"></div>
-
-<script type="module">
-    import { animate, scroll } from "https://cdn.jsdelivr.net/npm/motion@12.23.24/+esm"
-
-    const items = document.querySelectorAll(".img-container")
-
-    // Animate gallery horizontally during vertical scroll
-    scroll(
-        animate(".img-group", {
-            transform: ["none", `translateX(-${items.length - 1}00vw)`],
-        }),
-        { target: document.querySelector(".img-group-container") }
-    )
-
-    // Progress bar representing gallery scroll
-    scroll(animate(".progress", { scaleX: [0, 1] }), {
-        target: document.querySelector(".img-group-container"),
-    })
-</script>
-
-<!-- Slideshow JS -->
-<script>
-  (function() {
-    // Desktop slideshow
-    const slidesEl = document.querySelector('.hero-slideshow .slides');
-    const slides = document.querySelectorAll('.hero-slideshow .slide');
-    const prevBtn = document.querySelector('.hero-prev');
-    const nextBtn = document.querySelector('.hero-next');
-    const dots = document.querySelectorAll('.hero-dot');
-    let current = 0;
-    let autoplayTimer;
-
-    function goTo(index) {
-      current = (index + slides.length) % slides.length;
-      const offset = -current * 100;
-      slidesEl.style.transform = `translateX(${offset}%)`;
-      dots.forEach((d,i) => d.style.opacity = i===current? '1':'0.45');
-    }
-
-    function next() { goTo(current + 1); }
-    function prev() { goTo(current - 1); }
-
-    if (nextBtn) nextBtn.addEventListener('click', () => { next(); resetAutoplay(); });
-    if (prevBtn) prevBtn.addEventListener('click', () => { prev(); resetAutoplay(); });
-    dots.forEach((d, i) => d.addEventListener('click', () => { goTo(i); resetAutoplay(); }));
-
-    function startAutoplay() {
-      autoplayTimer = setInterval(next, 100000);
-    }
-    function resetAutoplay() { clearInterval(autoplayTimer); startAutoplay(); }
-
-    if (slidesEl) startAutoplay();
-
-    // Mobile slideshow (swipe)
-    const slidesMobileEl = document.querySelector('.hero-slideshow-mobile .slides-mobile');
-    const slidesMobile = document.querySelectorAll('.hero-slideshow-mobile .slide-mobile');
-    const dotsMobile = document.querySelectorAll('.hero-dot-mobile');
-    let currMobile = 0;
-    let startX = 0;
-    let isDragging = false;
-
-    function goToMobile(i) {
-      currMobile = (i + slidesMobile.length) % slidesMobile.length;
-      slidesMobileEl.style.transform = `translateX(-${currMobile * 100}%)`;
-      dotsMobile.forEach((d, idx) => d.style.opacity = idx===currMobile? '1':'0.45');
-    }
-
-    // Touch handlers
-    if (slidesMobileEl) {
-      slidesMobileEl.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].clientX;
-        isDragging = true;
-      }, { passive: true });
-
-      slidesMobileEl.addEventListener('touchmove', (e) => {
-        if (!isDragging) return;
-        const delta = e.touches[0].clientX - startX;
-        slidesMobileEl.style.transform = `translateX(${ -currMobile * 100 + (delta / slidesMobileEl.clientWidth) * 100 }%)`;
-      }, { passive: true });
-
-      slidesMobileEl.addEventListener('touchend', (e) => {
-        isDragging = false;
-        const endX = e.changedTouches[0].clientX;
-        const diff = endX - startX;
-        if (Math.abs(diff) > 50) {
-          if (diff < 0) goToMobile(currMobile + 1);
-          else goToMobile(currMobile - 1);
-        } else {
-          goToMobile(currMobile);
-        }
-      });
-
-      // Dots control
-      dotsMobile.forEach((d,i) => d.addEventListener('click', () => goToMobile(i)));
-    }
-  })();
-</script>
-
 <style>
-    #gallery {
-        width: 98vw;
+    #gallery { display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 .mobile-bg-iframe {
       position: relative;
       inset: 0;
        width: 100%;
        height: 800px;
-       overflow-x: hidden;
+       overflow-x: auto;
         
         pointer-events: none; /* allow taps to reach UI */
-        display: block;
-        justify-content: center;
-        
-
-      }
+       
+    }
     #gallery h3 {
         font-family: "" Azeret Mono "", monospace;
     }
 
     #gallery header,
     #gallery footer {
-        color: white;  
-        height: 70vh;
+      
+        color: black;  
+        height: 5%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .img-group-container {
-        height: 500vh;
+        height: 100%;
         position: relative;
-    }
-
-    .img-group-container > div {
-        position: sticky;
-        top: 0;
         overflow: hidden;
-        height: 100vh;
+        
+        
     }
-
-    .img-group {
-        display: flex;
+.img-container {
+ 
+        width: 100%;
+        height: 100%;
+        position: relative;
+        
+        
     }
-
-    .img-container {
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-        flex: 0 0 auto;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+    #gallery footer p {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 1.2;
+        text-align: center;
+        margin: 0;
     }
-
     #gallery header h2 {
         font-size: 56px;
         font-weight: 700;
@@ -1329,36 +1461,57 @@ section[class*="md:grid"] > :not(#mobile-hero) {
         line-height: 1.2;
         text-align: center;
         margin: 0;
+        text-transform: uppercase;
     }
 
     .img-container h3 {
         margin: 0;
-        color: white;
-        font-size: 30px;
+        color: black;
+        font-size: 20px;
         font-weight: 700;
         letter-spacing: 2px;
         line-height: 1.2;
         position: relative;
         bottom: 30px;
-        display: inline-block;
+        align-items: center;
         justify-items: center;
+        padding-top:5%;
+        padding-left: 30%;
+        padding-right: 30%;
     }
+@media (max-width: 768px) {
 
-    .img-container img {
-        width: 100%;
-        height: 100%;
+    .img-container h3 {
+      padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 20px;
+        
     }
-
-    .progress {
-        position: fixed;
-        left: 0;
-        right: 0;
-        height: 5px;
-        background: #a29fa5;
-        bottom: 50px;
-        transform: scaleX(0);
-    }
+}
+    
 </style>
+
+<!-- Subscribe Section -->
+    <section class="bg-[#f9f5ed] py-16 md:py-20 ">
+        <div class="container mx-auto px-4 text-center border-2 border-black rounded-2xl">
+            <h2 class="font-serif text-3xl md:text-4xl mb-6">Join The HERA Community</h2>
+            <p class="text-gray-warm mb-8 max-w-xl mx-auto">Subscribe to receive updates,<strong>15% off coupon</strong>, exclusive offers, and hair
+                care tips to elevate your daily ritual.</p>
+            <div class="max-w-md mx-auto">
+                <form class="flex flex-col sm:flex-row gap-4" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="9a618e48-3f92-420b-a6b5-35913201c2c4">
+                    <input type="email" name="email" placeholder="Your email address"
+                        class="px-4 py-3 rounded-lg shadow-soft flex-grow" required>
+                        <input type="name" name="Full Name" placeholder="Your full name" class="px-4 py-3 rounded-lg shadow-soft flex-grow" required>
+                    <button type="submit"
+                        class="bg-charcoal text-white px-6 py-3 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow">Subscribe</button>
+                </form>
+                <p class="text-gray-warm text-sm mt-4">By subscribing, you agree to our privacy policy and consent to
+                    receive updates from HERA.</p>
+            </div>
+        </div>
+    </section>
 
 
 <!-- Footer -->
