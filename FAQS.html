@@ -48,7 +48,7 @@
 </head>
 <body class="font-sans text-charcoal bg-cream">
     <!-- Header / Navigation -->
-    <header class="bg-charcoal shadow-soft sticky top-0 z-50">
+    <header class="bg-black shadow-soft sticky top-0 z-50">
         <div class="container mx-auto px-4 flex justify-between items-center h-20">
             <a href="index.html" class="font-serif text-white text-2xl text-primary-dark">HERA</a>
             <nav class="hidden md:flex space-x-8">
@@ -60,9 +60,10 @@
                 <a href="blog.html" class="text-white hover:text-primary transition-colors">Blog</a>
                 <a href="FAQS.html" class="text-white hover:text-primary transition-colors">FAQs</a>
             </nav>
-            <form class="hidden md:block" action="search.html" method="GET">
-                <input type="text" name="q" placeholder="Search..." class="px-4 py-2 rounded-lg shadow-soft">
-            </form>
+             <button class="hidden md:block bg-white text-charcoal text-center px-4 py-2 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow">
+       <a href="shop.html" class="hover:text-charcoal text-center transition-colors mr-4">SHOP</a>
+      
+      </button>
             <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-white" aria-label="Open menu">
                 <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -311,17 +312,17 @@
     </section>
     <!-- Keep Shopping Section -->
     <section class="container mx-auto px-4 py-8 flex justify-center">
-        <button id="keep-shopping-btn" onclick="window.location.href='shop.html'; document.getElementById('product-component-1753313965709').style.display='none';" class="bg-charcoal text-white px-8 py-3 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow text-center">Let's Nourish That Hair</button>
+        <button id="keep-shopping-btn" onclick="window.location.href='shop.html'; document.getElementById('product-component-1753313965709').style.display='none';" class="bg-black text-white px-8 py-3 rounded-lg font-medium shadow-gold hover:shadow-medium transition-shadow text-center">Let's Nourish That Hair</button>
     </section>
     <!-- Hidden Product Component (not visible, but present for script compatibility) -->
     <div id='product-component-1753313965709' style="display:none;"></div>
 
     <!-- Footer -->
-    <footer class="bg-charcoal text-white py-12">
+    <footer class="bg-black text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="font-serif text-2xl mb-6 text-primary">HERA</h3>
+                    <h3 class="font-serif text-2xl mb-6 text-white">HERA</h3>
                     <p class="text-gray-400 mb-6">Empowered Hair. Empowered Life.</p>
                     <div class="flex space-x-4">
                         <a href="https://www.instagram.com/heraesntls/" class="text-gray-400 hover:text-primary transition-colors" target="_blank">
@@ -418,278 +419,6 @@
   }
 });</script>
     
-    <!--Product Component-->
-     <script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'eyf6fx-fu.myshopify.com',
-      storefrontAccessToken: '3768e3aa0c990cd25c93de476895152e',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '9850645643581',
-        node: document.getElementById('product-component-1753313965709'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
-          "margin-bottom": "50px"
-        }
-      },
-      "button": {
-        "font-family": "Droid Sans, sans-serif",
-        "font-size": "14px",
-        "padding-top": "15px",
-        "padding-bottom": "15px",
-        "color": "#fafafa",
-        ":hover": {
-          "color": "#fafafa",
-          "background-color": "#312e2a"
-        },
-        "background-color": "#36332f",
-        ":focus": {
-          "background-color": "#312e2a"
-        },
-        "border-radius": "10px",
-        "padding-left": "64px",
-        "padding-right": "64px"
-      },
-      "quantityInput": {
-        "font-size": "14px",
-        "padding-top": "15px",
-        "padding-bottom": "15px"
-      }
-    },
-    "contents": {
-      "img": false,
-      "title": false,
-      "price": false
-    },
-    "text": {
-      "button": "Add to cart"
-    },
-    "googleFonts": [
-      "Droid Sans"
-    ]
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        "font-family": "Droid Sans, sans-serif",
-        "font-size": "14px",
-        "padding-top": "15px",
-        "padding-bottom": "15px",
-        "color": "#fafafa",
-        ":hover": {
-          "color": "#fafafa",
-          "background-color": "#312e2a"
-        },
-        "background-color": "#36332f",
-        ":focus": {
-          "background-color": "#312e2a"
-        },
-        "border-radius": "10px",
-        "padding-left": "64px",
-        "padding-right": "64px"
-      },
-      "quantityInput": {
-        "font-size": "14px",
-        "padding-top": "15px",
-        "padding-bottom": "15px"
-      }
-    },
-    "googleFonts": [
-      "Droid Sans"
-    ],
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "option": {},
-  "cart": {
-    "styles": {
-      "button": {
-        "font-family": "Droid Sans, sans-serif",
-        "font-size": "14px",
-        "padding-top": "15px",
-        "padding-bottom": "15px",
-        "color": "#fafafa",
-        ":hover": {
-          "color": "#fafafa",
-          "background-color": "#312e2a"
-        },
-        "background-color": "#36332f",
-        ":focus": {
-          "background-color": "#312e2a"
-        },
-        "border-radius": "10px"
-      },
-      "title": {
-        "color": "#000000"
-      },
-      "header": {
-        "color": "#000000"
-      },
-      "lineItems": {
-        "color": "#000000"
-      },
-      "subtotalText": {
-        "color": "#000000"
-      },
-      "subtotal": {
-        "color": "#000000"
-      },
-      "notice": {
-        "color": "#000000"
-      },
-      "currency": {
-        "color": "#000000"
-      },
-      "close": {
-        "color": "#000000",
-        ":hover": {
-          "color": "#000000"
-        }
-      },
-      "empty": {
-        "color": "#000000"
-      },
-      "noteDescription": {
-        "color": "#000000"
-      },
-      "discountText": {
-        "color": "#000000"
-      },
-      "discountIcon": {
-        "fill": "#000000"
-      },
-      "discountAmount": {
-        "color": "#000000"
-      }
-    },
-    "text": {
-      "total": "Subtotal",
-      "button": "Let's Nourish That Hair!"
-    },
-    "googleFonts": [
-      "Droid Sans"
-    ]
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "font-family": "Droid Sans, sans-serif",
-        "background-color": "#36332f",
-        ":hover": {
-          "background-color": "#312e2a"
-        },
-        ":focus": {
-          "background-color": "#312e2a"
-        }
-      },
-      "count": {
-        "font-size": "14px",
-        "color": "#fafafa",
-        ":hover": {
-          "color": "#fafafa"
-        }
-      },
-      "iconPath": {
-        "fill": "#fafafa"
-      }
-    },
-    "googleFonts": [
-      "Droid Sans"
-    ]
-  },
-  "lineItem": {
-    "styles": {
-      "variantTitle": {
-        "color": "#000000"
-      },
-      "title": {
-        "color": "#000000"
-      },
-      "price": {
-        "color": "#000000"
-      },
-      "fullPrice": {
-        "color": "#000000"
-      },
-      "discount": {
-        "color": "#000000"
-      },
-      "discountIcon": {
-        "fill": "#000000"
-      },
-      "quantity": {
-        "color": "#000000"
-      },
-      "quantityIncrement": {
-        "color": "#000000",
-        "border-color": "#000000"
-      },
-      "quantityDecrement": {
-        "color": "#000000",
-        "border-color": "#000000"
-      },
-      "quantityInput": {
-        "color": "#000000",
-        "border-color": "#000000"
-      }
-    }
-  }
-},
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
+   
 </body>
 </html>
